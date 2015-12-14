@@ -1,0 +1,106 @@
+.TH "IRequired" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IRequired \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <IRequired\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~IRequired\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBcall\fP (const char *opName)=0"
+.br
+.ti -1c
+.RI "virtual int \fBcall\fP (const char *opName, \fBArguments\fP &arguments)=0"
+.br
+.ti -1c
+.RI "virtual int \fBcall\fP (const char *opName, \fBArguments\fP &arguments, \fBICallback\fP &callback)=0"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const byte \fBVERY_URGENT_QUEUE\fP = 0"
+.br
+.ti -1c
+.RI "static const byte \fBURGENT_QUEUE\fP = 50"
+.br
+.ti -1c
+.RI "static const byte \fBDEFAULT_QUEUE\fP = 100"
+.br
+.ti -1c
+.RI "static const byte \fBNON_URGENT_QUEUE\fP = 255"
+.br
+.ti -1c
+.RI "static const byte \fBSYNCHRONOUS\fP = 0"
+.br
+.ti -1c
+.RI "static const byte \fBASYNCHRONOUS_DEFERRED\fP = 1"
+.br
+.ti -1c
+.RI "static const byte \fBASYNCHRONOUS_IMMEDIATE\fP = 2"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 10 of file IRequired\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual ~\fBIRequired\fP ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 21 of file IRequired\&.hpp\&.
+.PP
+.nf
+21 {}
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual int call (const char *opName)\fC [pure virtual]\fP"
+
+.SS "virtual int call (const char *opName, \fBArguments\fP &arguments)\fC [pure virtual]\fP"
+
+.SS "virtual int call (const char *opName, \fBArguments\fP &arguments, \fBICallback\fP &callback)\fC [pure virtual]\fP"
+
+.SH "Field Documentation"
+.PP 
+.SS "const byte ASYNCHRONOUS_DEFERRED = 1\fC [static]\fP"
+
+.PP
+Definition at line 18 of file IRequired\&.hpp\&.
+.SS "const byte ASYNCHRONOUS_IMMEDIATE = 2\fC [static]\fP"
+
+.PP
+Definition at line 19 of file IRequired\&.hpp\&.
+.SS "const byte DEFAULT_QUEUE = 100\fC [static]\fP"
+
+.PP
+Definition at line 14 of file IRequired\&.hpp\&.
+.SS "const byte NON_URGENT_QUEUE = 255\fC [static]\fP"
+
+.PP
+Definition at line 15 of file IRequired\&.hpp\&.
+.SS "const byte SYNCHRONOUS = 0\fC [static]\fP"
+
+.PP
+Definition at line 17 of file IRequired\&.hpp\&.
+.SS "const byte URGENT_QUEUE = 50\fC [static]\fP"
+
+.PP
+Definition at line 13 of file IRequired\&.hpp\&.
+.SS "const byte VERY_URGENT_QUEUE = 0\fC [static]\fP"
+
+.PP
+Definition at line 12 of file IRequired\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

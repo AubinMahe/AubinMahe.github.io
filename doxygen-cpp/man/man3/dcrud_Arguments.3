@@ -1,0 +1,115 @@
+.TH "Arguments" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Arguments \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Arguments\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBArguments\fP ()"
+.br
+.ti -1c
+.RI "\fBArguments\fP (const \fBargs_t\fP &args)"
+.br
+.ti -1c
+.RI "template<class T > void \fBput\fP (const std::string &key, const T &value)"
+.br
+.ti -1c
+.RI "template<class T > bool \fBget\fP (const std::string &name, const T *&target) const "
+.br
+.ti -1c
+.RI "template<class T > bool \fBget\fP (const std::string &name, T &target) const "
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBargs_t\fP \fB_args\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 13 of file Arguments\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBArguments\fP ()\fC [inline]\fP"
+
+.PP
+Definition at line 17 of file Arguments\&.hpp\&.
+.PP
+.nf
+17 {}
+.fi
+.SS "\fBArguments\fP (const \fBargs_t\fP &args)\fC [inline]\fP"
+
+.PP
+Definition at line 19 of file Arguments\&.hpp\&.
+.PP
+.nf
+19                                        :
+20          _args( args )
+21       {}
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "bool get (const std::string &name, const T *&target) const\fC [inline]\fP"
+
+.PP
+Definition at line 27 of file Arguments\&.hpp\&.
+.PP
+.nf
+27                                                                                      {
+28          argsCstIter_t it = _args\&.find( name );
+29          if( it == _args\&.end()) {
+30             return false;
+31          }
+32          target = static_cast<const T *>( it->second );
+33          return true;
+34       }
+.fi
+.SS "bool get (const std::string &name, T &target) const\fC [inline]\fP"
+
+.PP
+Definition at line 36 of file Arguments\&.hpp\&.
+.PP
+.nf
+36                                                                              {
+37          argsCstIter_t it = _args\&.find( name );
+38          if( it == _args\&.end()) {
+39             return false;
+40          }
+41          const T * ptr = static_cast<const T *>( it->second );
+42          if( ! ptr ) {
+43             return false;
+44          }
+45          target = *ptr;
+46          return true;
+47       }
+.fi
+.SS "void put (const std::string &key, const T &value)\fC [inline]\fP"
+
+.PP
+Definition at line 23 of file Arguments\&.hpp\&.
+.PP
+.nf
+23                                                                            {
+24          _args[key] = new T( value );
+25       }
+.fi
+.SH "Field Documentation"
+.PP 
+.SS "\fBargs_t\fP _args"
+
+.PP
+Definition at line 15 of file Arguments\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

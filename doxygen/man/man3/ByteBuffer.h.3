@@ -1,4 +1,4 @@
-.TH "inc/io/ByteBuffer.h" 3 "Wed Dec 9 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "inc/io/ByteBuffer.h" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -36,10 +36,19 @@ inc/io/ByteBuffer.h \-
 .RI "\fBUTIL_ADT\fP (ioByteBuffer)"
 .br
 .ti -1c
+.RI "ioByteBuffer \fBioByteBuffer_wrap\fP (unsigned int capacity, \fBbyte\fP *array)"
+.br
+.ti -1c
 .RI "ioByteBuffer \fBioByteBuffer_new\fP (unsigned int capacity)"
 .br
 .ti -1c
 .RI "void \fBioByteBuffer_delete\fP (ioByteBuffer *This)"
+.br
+.ti -1c
+.RI "ioByteBuffer \fBioByteBuffer_copy\fP (ioByteBuffer This, unsigned int length)"
+.br
+.ti -1c
+.RI "\fBbyte\fP * \fBioByteBuffer_array\fP (ioByteBuffer This)"
 .br
 .ti -1c
 .RI "void \fBioByteBuffer_clear\fP (ioByteBuffer This)"
@@ -120,19 +129,10 @@ inc/io/ByteBuffer.h \-
 .RI "\fBioStatus\fP \fBioByteBuffer_putBuffer\fP (ioByteBuffer This, ioByteBuffer source)"
 .br
 .ti -1c
-.RI "ioByteBuffer \fBioByteBuffer_duplicate\fP (ioByteBuffer This)"
-.br
-.ti -1c
 .RI "\fBioStatus\fP \fBioByteBuffer_send\fP (ioByteBuffer This, SOCKET sckt, struct sockaddr_in *target)"
 .br
 .ti -1c
 .RI "\fBioStatus\fP \fBioByteBuffer_receive\fP (ioByteBuffer This, SOCKET sckt)"
-.br
-.ti -1c
-.RI "\fBbyte\fP * \fBioByteBuffer_getBytes\fP (ioByteBuffer This)"
-.br
-.ti -1c
-.RI "ioByteBuffer \fBioByteBuffer_copy\fP (ioByteBuffer This, unsigned int length)"
 .br
 .ti -1c
 .RI "\fBioStatus\fP \fBioByteBuffer_dump\fP (ioByteBuffer This, FILE *target)"
@@ -154,18 +154,20 @@ inc/io/ByteBuffer.h \-
 .TP
 \fB\fIioByteOrder_LITTLE_ENDIAN \fP\fP
 .PP
-Definition at line 8 of file ByteBuffer\&.h\&.
+Definition at line 12 of file ByteBuffer\&.h\&.
 .PP
 .nf
-8                            {
-9 
-10    ioByteOrder_BIG_ENDIAN,
-11    ioByteOrder_LITTLE_ENDIAN
-12 
-13 } ioByteOrder;
+12                            {
+13 
+14    ioByteOrder_BIG_ENDIAN,
+15    ioByteOrder_LITTLE_ENDIAN
+16 
+17 } ioByteOrder;
 .fi
 .SH "Function Documentation"
 .PP 
+.SS "\fBbyte\fP* ioByteBuffer_array (ioByteBufferThis)"
+
 .SS "void ioByteBuffer_clear (ioByteBufferThis)"
 
 .SS "ioByteBuffer ioByteBuffer_copy (ioByteBufferThis, unsigned intlength)"
@@ -174,15 +176,11 @@ Definition at line 8 of file ByteBuffer\&.h\&.
 
 .SS "\fBioStatus\fP ioByteBuffer_dump (ioByteBufferThis, FILE *target)"
 
-.SS "ioByteBuffer ioByteBuffer_duplicate (ioByteBufferThis)"
-
 .SS "void ioByteBuffer_flip (ioByteBufferThis)"
 
 .SS "\fBioStatus\fP ioByteBuffer_get (ioByteBufferThis, \fBbyte\fP *target, unsigned intfrom, unsigned intto)"
 
 .SS "\fBioStatus\fP ioByteBuffer_getByte (ioByteBufferThis, \fBbyte\fP *target)"
-
-.SS "\fBbyte\fP* ioByteBuffer_getBytes (ioByteBufferThis)"
 
 .SS "\fBioStatus\fP ioByteBuffer_getDouble (ioByteBufferThis, double *target)"
 
@@ -233,6 +231,8 @@ Definition at line 8 of file ByteBuffer\&.h\&.
 .SS "\fBioStatus\fP ioByteBuffer_send (ioByteBufferThis, SOCKETsckt, struct sockaddr_in *target)"
 
 .SS "\fBioStatus\fP ioByteBuffer_setPosition (ioByteBufferThis, unsigned intposition)"
+
+.SS "ioByteBuffer ioByteBuffer_wrap (unsigned intcapacity, \fBbyte\fP *array)"
 
 .SS "UTIL_ADT (ioByteBuffer)"
 

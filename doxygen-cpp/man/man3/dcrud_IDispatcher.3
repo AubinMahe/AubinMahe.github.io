@@ -1,0 +1,51 @@
+.TH "IDispatcher" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IDispatcher \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <IDispatcher\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~IDispatcher\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBIProvided\fP & \fBprovide\fP (const char *name)=0"
+.br
+.ti -1c
+.RI "virtual \fBIRequired\fP & \fBrequire\fP (const char *name)=0"
+.br
+.ti -1c
+.RI "virtual void \fBhandleRequests\fP (void)=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 8 of file IDispatcher\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual ~\fBIDispatcher\fP ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 10 of file IDispatcher\&.hpp\&.
+.PP
+.nf
+10 {}
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void handleRequests (void)\fC [pure virtual]\fP"
+
+.SS "virtual \fBIProvided\fP& provide (const char *name)\fC [pure virtual]\fP"
+
+.SS "virtual \fBIRequired\fP& require (const char *name)\fC [pure virtual]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

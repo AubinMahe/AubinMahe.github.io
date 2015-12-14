@@ -1,0 +1,45 @@
+.TH "inc/dcrud/ICache.hpp" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+inc/dcrud/ICache.hpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Status\&.hpp'\fP
+.br
+\fC#include <set>\fP
+.br
+\fC#include <algorithm>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBICache\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBdcrud\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef bool(* \fBshareablePredicate_t\fP )(const Shareable &shareable)"
+.br
+.ti -1c
+.RI "typedef std::set< Shareable * > \fBshareables_t\fP"
+.br
+.ti -1c
+.RI "typedef shareables_t::iterator \fBshareablesIter_t\fP"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

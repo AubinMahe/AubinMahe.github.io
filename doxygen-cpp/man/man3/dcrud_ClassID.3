@@ -1,0 +1,233 @@
+.TH "ClassID" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ClassID \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ClassID\&.hpp>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBPredefined\fP { \fBNullType\fP, \fBByteType\fP, \fBBooleanType\fP, \fBShortType\fP, \fBIntegerType\fP, \fBLongType\fP, \fBFloatType\fP, \fBDoubleType\fP, \fBStringType\fP, \fBClassIDType\fP, \fBGUIDType\fP, \fBLAST_TYPE\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBClassID\fP (byte p1, byte p2, byte p3, byte clazz)"
+.br
+.ti -1c
+.RI "\fBClassID\fP (const \fBClassID\fP &right)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBClassID\fP &right) const "
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBClassID\fP &right) const "
+.br
+.ti -1c
+.RI "bool \fBisPredefined\fP () const "
+.br
+.ti -1c
+.RI "int \fBcompareTo\fP (const \fBClassID\fP &right) const "
+.br
+.ti -1c
+.RI "\fBPredefined\fP \fBgetPredefined\fP () const "
+.br
+.ti -1c
+.RI "void \fBserialize\fP (\fBio::ByteBuffer\fP &buffer) const "
+.br
+.ti -1c
+.RI "std::string \fBtoString\fP (void) const "
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBserializePredefined\fP (\fBPredefined\fP predefined, \fBio::ByteBuffer\fP &buffer)"
+.br
+.ti -1c
+.RI "static \fBClassID\fP \fBunserialize\fP (\fBio::ByteBuffer\fP &buffer)"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "const byte \fB_p1\fP"
+.br
+.ti -1c
+.RI "const byte \fB_p2\fP"
+.br
+.ti -1c
+.RI "const byte \fB_p3\fP"
+.br
+.ti -1c
+.RI "const byte \fB_class\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const unsigned int \fBSIZE\fP = 4"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 12 of file ClassID\&.hpp\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBPredefined\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINullType \fP\fP
+.TP
+\fB\fIByteType \fP\fP
+.TP
+\fB\fIBooleanType \fP\fP
+.TP
+\fB\fIShortType \fP\fP
+.TP
+\fB\fIIntegerType \fP\fP
+.TP
+\fB\fILongType \fP\fP
+.TP
+\fB\fIFloatType \fP\fP
+.TP
+\fB\fIDoubleType \fP\fP
+.TP
+\fB\fIStringType \fP\fP
+.TP
+\fB\fIClassIDType \fP\fP
+.TP
+\fB\fIGUIDType \fP\fP
+.TP
+\fB\fILAST_TYPE \fP\fP
+.PP
+Definition at line 14 of file ClassID\&.hpp\&.
+.PP
+.nf
+14                       {
+15          NullType,
+16          ByteType,
+17          BooleanType,
+18          ShortType,
+19          IntegerType,
+20          LongType,
+21          FloatType,
+22          DoubleType,
+23          StringType,
+24          ClassIDType,
+25          GUIDType,
+26 
+27          LAST_TYPE
+28       };
+.fi
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBClassID\fP (bytep1, bytep2, bytep3, byteclazz)\fC [inline]\fP"
+
+.PP
+Definition at line 37 of file ClassID\&.hpp\&.
+.PP
+.nf
+37                                                        :
+38          _p1   ( p1    ),
+39          _p2   ( p2    ),
+40          _p3   ( p3    ),
+41          _class( clazz )
+42       {}
+.fi
+.SS "\fBClassID\fP (const \fBClassID\fP &right)\fC [inline]\fP"
+
+.PP
+Definition at line 44 of file ClassID\&.hpp\&.
+.PP
+.nf
+44                                        :
+45          _p1   ( right\&._p1    ),
+46          _p2   ( right\&._p2    ),
+47          _p3   ( right\&._p3    ),
+48          _class( right\&._class )
+49       {}
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "int compareTo (const \fBClassID\fP &right) const"
+
+.SS "\fBPredefined\fP getPredefined () const"
+
+.SS "bool isPredefined () const\fC [inline]\fP"
+
+.PP
+Definition at line 63 of file ClassID\&.hpp\&.
+.PP
+.nf
+63                                 {
+64          return ( _p1 == 0 ) && ( _p2 == 0 ) && ( _p3 == 0 );
+65       }
+.fi
+.SS "bool operator< (const \fBClassID\fP &right) const\fC [inline]\fP"
+
+.PP
+Definition at line 59 of file ClassID\&.hpp\&.
+.PP
+.nf
+59                                                       {
+60          return compareTo( right ) < 0;
+61       }
+.fi
+.SS "bool operator== (const \fBClassID\fP &right) const\fC [inline]\fP"
+
+.PP
+Definition at line 55 of file ClassID\&.hpp\&.
+.PP
+.nf
+55                                                        {
+56          return compareTo( right ) == 0;
+57       }
+.fi
+.SS "void serialize (\fBio::ByteBuffer\fP &buffer) const"
+
+.SS "static void serializePredefined (\fBPredefined\fPpredefined, \fBio::ByteBuffer\fP &buffer)\fC [static]\fP"
+
+.SS "std::string toString (void) const"
+
+.SS "static \fBClassID\fP unserialize (\fBio::ByteBuffer\fP &buffer)\fC [static]\fP"
+
+.SH "Field Documentation"
+.PP 
+.SS "const byte _class"
+
+.PP
+Definition at line 35 of file ClassID\&.hpp\&.
+.SS "const byte _p1"
+
+.PP
+Definition at line 32 of file ClassID\&.hpp\&.
+.SS "const byte _p2"
+
+.PP
+Definition at line 33 of file ClassID\&.hpp\&.
+.SS "const byte _p3"
+
+.PP
+Definition at line 34 of file ClassID\&.hpp\&.
+.SS "const unsigned int SIZE = 4\fC [static]\fP"
+
+.PP
+Definition at line 30 of file ClassID\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

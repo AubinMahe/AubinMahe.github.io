@@ -108,14 +108,22 @@ $(document).ready(function(){initNavTree('da/db8/_g_u_i_d_8h_source.html','../..
 </div><!--header-->
 <div class="contents">
 <a href="../../da/db8/_g_u_i_d_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d6/d6c/_byte_buffer_8h.html">io/ByteBuffer.h</a>&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<a class="code" href="../../da/db8/_g_u_i_d_8h.html#a61450b1122170c989f4ca60e784c35ac">UTIL_ADT</a>( dcrudGUID );</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="../../d4/d85/io_2_status_8h.html#ae4299e55562a35537603a2d56c4e1b80">ioStatus</a> <a class="code" href="../../da/db8/_g_u_i_d_8h.html#ac1d4410b949a868d7b4c9e06b1c037f2">dcrudGUID_unserialize</a>( ioByteBuffer source, dcrudGUID * target );</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<a class="code" href="../../d4/d85/io_2_status_8h.html#ae4299e55562a35537603a2d56c4e1b80">ioStatus</a> <a class="code" href="../../da/db8/_g_u_i_d_8h.html#aaae9b18b229c4f4c6b9872f3972a67a0">dcrudGUID_serialize</a>  ( <span class="keyword">const</span> dcrudGUID This, ioByteBuffer target );</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">bool</span>     <a class="code" href="../../da/db8/_g_u_i_d_8h.html#a735844058eed11e81b986fe2c6fd80ec">dcrudGUID_toString</a>   ( <span class="keyword">const</span> dcrudGUID This, <span class="keywordtype">char</span> * target, <span class="keywordtype">size_t</span> targetSize );</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">int</span>      <a class="code" href="../../da/db8/_g_u_i_d_8h.html#a5bceed51001ca46b72c3852caa22dd15">dcrudGUID_compareTo</a>  ( <span class="keyword">const</span> dcrudGUID * left, <span class="keyword">const</span> dcrudGUID * right );</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d6/d6c/_byte_buffer_8h.html">io/ByteBuffer.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<a class="code" href="../../da/db8/_g_u_i_d_8h.html#a61450b1122170c989f4ca60e784c35ac">UTIL_ADT</a>( dcrudGUID );</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<a class="code" href="../../d4/d85/io_2_status_8h.html#ae4299e55562a35537603a2d56c4e1b80">ioStatus</a> <a class="code" href="../../da/db8/_g_u_i_d_8h.html#ac1d4410b949a868d7b4c9e06b1c037f2">dcrudGUID_unserialize</a>( ioByteBuffer source, dcrudGUID * target );</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<a class="code" href="../../d4/d85/io_2_status_8h.html#ae4299e55562a35537603a2d56c4e1b80">ioStatus</a> <a class="code" href="../../da/db8/_g_u_i_d_8h.html#aaae9b18b229c4f4c6b9872f3972a67a0">dcrudGUID_serialize</a>  ( <span class="keyword">const</span> dcrudGUID This, ioByteBuffer target );</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">bool</span>     <a class="code" href="../../da/db8/_g_u_i_d_8h.html#a735844058eed11e81b986fe2c6fd80ec">dcrudGUID_toString</a>   ( <span class="keyword">const</span> dcrudGUID This, <span class="keywordtype">char</span> * target, <span class="keywordtype">size_t</span> targetSize );</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">int</span>      <a class="code" href="../../da/db8/_g_u_i_d_8h.html#a5bceed51001ca46b72c3852caa22dd15">dcrudGUID_compareTo</a>  ( <span class="keyword">const</span> dcrudGUID * left, <span class="keyword">const</span> dcrudGUID * right );</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="_byte_buffer_8h_html"><div class="ttname"><a href="../../d6/d6c/_byte_buffer_8h.html">ByteBuffer.h</a></div></div>
 <div class="ttc" id="_g_u_i_d_8h_html_a5bceed51001ca46b72c3852caa22dd15"><div class="ttname"><a href="../../da/db8/_g_u_i_d_8h.html#a5bceed51001ca46b72c3852caa22dd15">dcrudGUID_compareTo</a></div><div class="ttdeci">int dcrudGUID_compareTo(const dcrudGUID *left, const dcrudGUID *right)</div></div>
 <div class="ttc" id="_g_u_i_d_8h_html_aaae9b18b229c4f4c6b9872f3972a67a0"><div class="ttname"><a href="../../da/db8/_g_u_i_d_8h.html#aaae9b18b229c4f4c6b9872f3972a67a0">dcrudGUID_serialize</a></div><div class="ttdeci">ioStatus dcrudGUID_serialize(const dcrudGUID This, ioByteBuffer target)</div></div>
@@ -129,7 +137,7 @@ $(document).ready(function(){initNavTree('da/db8/_g_u_i_d_8h_source.html','../..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_3a435a663220092428ebe5e98c15f11a.html">dcrud</a></li><li class="navelem"><a class="el" href="../../da/db8/_g_u_i_d_8h.html">GUID.h</a></li>
-    <li class="footer">Generated on Wed Dec 9 2015 01:54:54 for dcrud by
+    <li class="footer">Generated on Mon Dec 14 2015 22:44:31 for dcrud by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

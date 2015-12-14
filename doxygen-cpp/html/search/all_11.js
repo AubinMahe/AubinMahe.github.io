@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['select',['select',['../d3/dd9/structdcrud_1_1_i_cache.html#a0cf758e1fa585728a92299ce93e01be2',1,'dcrud::ICache']]],
+  ['send',['send',['../da/dda/structio_1_1_byte_buffer.html#a905b251fec7f9222fff8b74b9288ede7',1,'io::ByteBuffer']]],
+  ['serialize',['serialize',['../d4/df5/structdcrud_1_1_class_i_d.html#a7742329f4c5ae405c7499d02fd7dda59',1,'dcrud::ClassID::serialize()'],['../d5/dd6/structdcrud_1_1_g_u_i_d.html#a7742329f4c5ae405c7499d02fd7dda59',1,'dcrud::GUID::serialize()'],['../df/dfb/structdcrud_1_1_shareable.html#ac083d0d026991d81ade676d314f3bdc1',1,'dcrud::Shareable::serialize()']]],
+  ['serializepredefined',['serializePredefined',['../d4/df5/structdcrud_1_1_class_i_d.html#a5db97a37d24ced494c355c6a77bef805',1,'dcrud::ClassID']]],
+  ['set',['set',['../d5/dd6/structdcrud_1_1_g_u_i_d.html#a0bd0d149b7e7e60490194cb97ff3cd18',1,'dcrud::GUID']]],
+  ['setownership',['setOwnership',['../d3/dd9/structdcrud_1_1_i_cache.html#afa64d17f54c3caa45f6329819573d936',1,'dcrud::ICache']]],
+  ['shareable',['Shareable',['../df/dfb/structdcrud_1_1_shareable.html',1,'dcrud']]],
+  ['shareable',['Shareable',['../df/dfb/structdcrud_1_1_shareable.html#af0b35e0ea4fbb7c8ba38e9874ea2e564',1,'dcrud::Shareable']]],
+  ['shareable_2ehpp',['Shareable.hpp',['../d2/dca/_shareable_8hpp.html',1,'']]],
+  ['shareablepredicate_5ft',['shareablePredicate_t',['../d2/de2/namespacedcrud.html#a44982e5d9d89bca27a5077e821e9b86b',1,'dcrud']]],
+  ['shareables_5ft',['shareables_t',['../d2/de2/namespacedcrud.html#a0dcd3488b2a11cd8bc2690f1a1dd9fee',1,'dcrud']]],
+  ['shareablesiter_5ft',['shareablesIter_t',['../d2/de2/namespacedcrud.html#aedbeed4f39a1f1b6b8dec4bedec81c61',1,'dcrud']]],
+  ['shorttype',['ShortType',['../d4/df5/structdcrud_1_1_class_i_d.html#ad3b4c86f67a2b823a1bed8a5609f0cdcab3a88656ad277474f2caf4ed8dfc2755',1,'dcrud::ClassID']]],
+  ['size',['SIZE',['../d4/df5/structdcrud_1_1_class_i_d.html#a0760cd6fcc3f45a64b0402a4cc9b9ce3',1,'dcrud::ClassID::SIZE()'],['../d5/dd6/structdcrud_1_1_g_u_i_d.html#a0760cd6fcc3f45a64b0402a4cc9b9ce3',1,'dcrud::GUID::SIZE()']]],
+  ['status',['Status',['../d2/de2/namespacedcrud.html#a67a0db04d321a74b7e7fcfd3f1a3f70b',1,'dcrud']]],
+  ['status_2ehpp',['Status.hpp',['../da/d3a/_status_8hpp.html',1,'']]],
+  ['stringtype',['StringType',['../d4/df5/structdcrud_1_1_class_i_d.html#ad3b4c86f67a2b823a1bed8a5609f0cdca83ccab8dfcfc3a9e8656224313fb61f3',1,'dcrud::ClassID']]],
+  ['subscribe',['subscribe',['../d3/dd9/structdcrud_1_1_i_cache.html#a72845d7bd48b61e8e5c81bb2b65c8a6a',1,'dcrud::ICache']]],
+  ['synchronized',['Synchronized',['../de/d90/structos_1_1_synchronized.html#a2bc8ec07465c7b035df6afe07b924cca',1,'os::Synchronized']]],
+  ['synchronized',['Synchronized',['../de/d90/structos_1_1_synchronized.html',1,'os']]],
+  ['synchronous',['SYNCHRONOUS',['../d9/d28/structdcrud_1_1_i_required.html#a1e72369c56efec6de0ce6144526f8207',1,'dcrud::IRequired']]]
+];

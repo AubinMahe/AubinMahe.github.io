@@ -108,23 +108,31 @@ $(document).ready(function(){initNavTree('d0/d79/_i_callback_8h_source.html','..
 </div><!--header-->
 <div class="contents">
 <a href="../../d0/d79/_i_callback_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d3/d63/_map_8h.html">coll/Map.h</a>&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<a class="code" href="../../d0/d79/_i_callback_8h.html#a9c8a6c6e267c1b0055c686ae43ac1a33">UTIL_ADT</a>( dcrudICallback );</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../d0/d79/_i_callback_8h.html#a28486c4c1bccece4973d7274b7e64349">    6</a></span>&#160;<span class="keyword">typedef</span> void (* <a class="code" href="../../d0/d79/_i_callback_8h.html#a28486c4c1bccece4973d7274b7e64349">dcrudICallback_function</a>)(</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;   dcrudICallback This,</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> *   intrfc,</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> *   operation,</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;   collMap        results   );</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;dcrudICallback <a class="code" href="../../d0/d79/_i_callback_8h.html#a76710973d48e671deeb5ff81a55f581a">dcrudICallback_new</a>( <a class="code" href="../../d0/d79/_i_callback_8h.html#a28486c4c1bccece4973d7274b7e64349">dcrudICallback_function</a> callback, <span class="keywordtype">void</span> * userData );</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../d0/d79/_i_callback_8h.html#af702230fa3dfd7e86fc16ec2be7553f3">dcrudICallback_delete</a>     ( dcrudICallback * This );</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../d0/d79/_i_callback_8h.html#a2cd2ba1b7acb6ba4431cbab4464cebc0">dcrudICallback_callback</a>   ( dcrudICallback   This, <span class="keyword">const</span> <span class="keywordtype">char</span> * intrfc, <span class="keyword">const</span> <span class="keywordtype">char</span> * operation, collMap results );</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> * <a class="code" href="../../d0/d79/_i_callback_8h.html#ad80a742cd7d133ce4a8054d5cace9601">dcrudICallback_getUserData</a>( dcrudICallback   This );</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d3/d63/_map_8h.html">coll/Map.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<a class="code" href="../../d0/d79/_i_callback_8h.html#a9c8a6c6e267c1b0055c686ae43ac1a33">UTIL_ADT</a>( dcrudICallback );</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../d0/d79/_i_callback_8h.html#a28486c4c1bccece4973d7274b7e64349">   10</a></span>&#160;<span class="keyword">typedef</span> void (* <a class="code" href="../../d0/d79/_i_callback_8h.html#a28486c4c1bccece4973d7274b7e64349">dcrudICallback_function</a>)(</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   dcrudICallback This,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> *   intrfc,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> *   operation,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;   collMap        results   );</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;dcrudICallback <a class="code" href="../../d0/d79/_i_callback_8h.html#a76710973d48e671deeb5ff81a55f581a">dcrudICallback_new</a>( <a class="code" href="../../d0/d79/_i_callback_8h.html#a28486c4c1bccece4973d7274b7e64349">dcrudICallback_function</a> callback, <span class="keywordtype">void</span> * userData );</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../d0/d79/_i_callback_8h.html#af702230fa3dfd7e86fc16ec2be7553f3">dcrudICallback_delete</a>     ( dcrudICallback * This );</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span>   <a class="code" href="../../d0/d79/_i_callback_8h.html#a2cd2ba1b7acb6ba4431cbab4464cebc0">dcrudICallback_callback</a>   ( dcrudICallback   This, <span class="keyword">const</span> <span class="keywordtype">char</span> * intrfc, <span class="keyword">const</span> <span class="keywordtype">char</span> * operation, collMap results );</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> * <a class="code" href="../../d0/d79/_i_callback_8h.html#ad80a742cd7d133ce4a8054d5cace9601">dcrudICallback_getUserData</a>( dcrudICallback   This );</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="_i_callback_8h_html_a2cd2ba1b7acb6ba4431cbab4464cebc0"><div class="ttname"><a href="../../d0/d79/_i_callback_8h.html#a2cd2ba1b7acb6ba4431cbab4464cebc0">dcrudICallback_callback</a></div><div class="ttdeci">void dcrudICallback_callback(dcrudICallback This, const char *intrfc, const char *operation, collMap results)</div></div>
 <div class="ttc" id="_i_callback_8h_html_a9c8a6c6e267c1b0055c686ae43ac1a33"><div class="ttname"><a href="../../d0/d79/_i_callback_8h.html#a9c8a6c6e267c1b0055c686ae43ac1a33">UTIL_ADT</a></div><div class="ttdeci">UTIL_ADT(dcrudICallback)</div></div>
-<div class="ttc" id="_i_callback_8h_html_a28486c4c1bccece4973d7274b7e64349"><div class="ttname"><a href="../../d0/d79/_i_callback_8h.html#a28486c4c1bccece4973d7274b7e64349">dcrudICallback_function</a></div><div class="ttdeci">void(* dcrudICallback_function)(dcrudICallback This, const char *intrfc, const char *operation, collMap results)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d79/_i_callback_8h_source.html#l00006">ICallback.h:6</a></div></div>
+<div class="ttc" id="_i_callback_8h_html_a28486c4c1bccece4973d7274b7e64349"><div class="ttname"><a href="../../d0/d79/_i_callback_8h.html#a28486c4c1bccece4973d7274b7e64349">dcrudICallback_function</a></div><div class="ttdeci">void(* dcrudICallback_function)(dcrudICallback This, const char *intrfc, const char *operation, collMap results)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d79/_i_callback_8h_source.html#l00010">ICallback.h:10</a></div></div>
 <div class="ttc" id="_map_8h_html"><div class="ttname"><a href="../../d3/d63/_map_8h.html">Map.h</a></div></div>
 <div class="ttc" id="_i_callback_8h_html_af702230fa3dfd7e86fc16ec2be7553f3"><div class="ttname"><a href="../../d0/d79/_i_callback_8h.html#af702230fa3dfd7e86fc16ec2be7553f3">dcrudICallback_delete</a></div><div class="ttdeci">void dcrudICallback_delete(dcrudICallback *This)</div></div>
 <div class="ttc" id="_i_callback_8h_html_ad80a742cd7d133ce4a8054d5cace9601"><div class="ttname"><a href="../../d0/d79/_i_callback_8h.html#ad80a742cd7d133ce4a8054d5cace9601">dcrudICallback_getUserData</a></div><div class="ttdeci">void * dcrudICallback_getUserData(dcrudICallback This)</div></div>
@@ -135,7 +143,7 @@ $(document).ready(function(){initNavTree('d0/d79/_i_callback_8h_source.html','..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_3a435a663220092428ebe5e98c15f11a.html">dcrud</a></li><li class="navelem"><a class="el" href="../../d0/d79/_i_callback_8h.html">ICallback.h</a></li>
-    <li class="footer">Generated on Wed Dec 9 2015 01:54:54 for dcrud by
+    <li class="footer">Generated on Mon Dec 14 2015 22:44:31 for dcrud by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

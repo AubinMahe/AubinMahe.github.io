@@ -1,0 +1,64 @@
+.TH "Synchronized" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Synchronized \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Mutex\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSynchronized\fP (\fBMutex\fP &mutex)"
+.br
+.ti -1c
+.RI "\fB~Synchronized\fP ()"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBMutex\fP & \fB_mutex\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 36 of file Mutex\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBSynchronized\fP (\fBMutex\fP &mutex)\fC [inline]\fP"
+
+.PP
+Definition at line 40 of file Mutex\&.hpp\&.
+.PP
+.nf
+40                                     :
+41          _mutex( mutex )
+42       {
+43          _mutex\&.take();
+44       }
+.fi
+.SS "~\fBSynchronized\fP ()\fC [inline]\fP"
+
+.PP
+Definition at line 46 of file Mutex\&.hpp\&.
+.PP
+.nf
+46                        {
+47          _mutex\&.release();
+48       }
+.fi
+.SH "Field Documentation"
+.PP 
+.SS "\fBMutex\fP& _mutex"
+
+.PP
+Definition at line 38 of file Mutex\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

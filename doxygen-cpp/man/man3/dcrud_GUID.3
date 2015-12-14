@@ -1,0 +1,164 @@
+.TH "GUID" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GUID \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GUID\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGUID\fP ()"
+.br
+.ti -1c
+.RI "\fBGUID\fP (const \fBGUID\fP &right)"
+.br
+.ti -1c
+.RI "\fBGUID\fP & \fBoperator=\fP (const \fBGUID\fP &right)"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBGUID\fP &right) const "
+.br
+.ti -1c
+.RI "bool \fBisShared\fP () const "
+.br
+.ti -1c
+.RI "int \fBcompareTo\fP (const \fBGUID\fP &right) const "
+.br
+.ti -1c
+.RI "void \fBset\fP (const \fBGUID\fP &id)"
+.br
+.ti -1c
+.RI "void \fBserialize\fP (\fBio::ByteBuffer\fP &buffer) const "
+.br
+.ti -1c
+.RI "std::string \fBtoString\fP (void) const "
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBGUID\fP \fBunserialize\fP (\fBio::ByteBuffer\fP &buffer)"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "short \fB_publisher\fP"
+.br
+.ti -1c
+.RI "byte \fB_cache\fP"
+.br
+.ti -1c
+.RI "int \fB_instance\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const unsigned int \fBSIZE\fP = 2 + 1 + 4"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 9 of file GUID\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBGUID\fP ()\fC [inline]\fP"
+
+.PP
+Definition at line 19 of file GUID\&.hpp\&.
+.PP
+.nf
+19              :
+20          _publisher( 0 ),
+21          _cache    ( 0 ),
+22          _instance ( 0 )
+23       {}
+.fi
+.SS "\fBGUID\fP (const \fBGUID\fP &right)\fC [inline]\fP"
+
+.PP
+Definition at line 25 of file GUID\&.hpp\&.
+.PP
+.nf
+25                                  :
+26          _publisher( right\&._publisher ),
+27          _cache    ( right\&._cache     ),
+28          _instance ( right\&._instance  )
+29       {}
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "int compareTo (const \fBGUID\fP &right) const"
+
+.SS "bool isShared () const\fC [inline]\fP"
+
+.PP
+Definition at line 42 of file GUID\&.hpp\&.
+.PP
+.nf
+42                             {
+43          return _instance != 0;
+44       }
+.fi
+.SS "bool operator< (const \fBGUID\fP &right) const\fC [inline]\fP"
+
+.PP
+Definition at line 38 of file GUID\&.hpp\&.
+.PP
+.nf
+38                                                    {
+39          return compareTo( right ) < 0;
+40       }
+.fi
+.SS "\fBGUID\fP& operator= (const \fBGUID\fP &right)\fC [inline]\fP"
+
+.PP
+Definition at line 31 of file GUID\&.hpp\&.
+.PP
+.nf
+31                                                {
+32          _publisher = right\&._publisher;
+33          _cache     = right\&._cache;
+34          _instance  = right\&._instance;
+35          return *this;
+36       }
+.fi
+.SS "void serialize (\fBio::ByteBuffer\fP &buffer) const"
+
+.SS "void set (const \fBGUID\fP &id)"
+
+.SS "std::string toString (void) const"
+
+.SS "static \fBGUID\fP unserialize (\fBio::ByteBuffer\fP &buffer)\fC [static]\fP"
+
+.SH "Field Documentation"
+.PP 
+.SS "byte _cache"
+
+.PP
+Definition at line 14 of file GUID\&.hpp\&.
+.SS "int _instance"
+
+.PP
+Definition at line 15 of file GUID\&.hpp\&.
+.SS "short _publisher"
+
+.PP
+Definition at line 13 of file GUID\&.hpp\&.
+.SS "const unsigned int SIZE = 2 + 1 + 4\fC [static]\fP"
+
+.PP
+Definition at line 11 of file GUID\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

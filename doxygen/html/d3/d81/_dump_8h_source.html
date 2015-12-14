@@ -108,15 +108,22 @@ $(document).ready(function(){initNavTree('d3/d81/_dump_8h_source.html','../../')
 </div><!--header-->
 <div class="contents">
 <a href="../../d3/d81/_dump_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d9/d49/types_8h.html">util/types.h</a>&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/d81/_dump_8h.html#a83e7ecc287e359817ebb0d5294a95543">dbgDump_range</a>( FILE * target, <span class="keyword">const</span> <a class="code" href="../../d9/d49/types_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> * buffer, <span class="keywordtype">size_t</span> from, <span class="keywordtype">size_t</span> to );</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/d81/_dump_8h.html#ace186061093a10bcad86dac2b4c501b7">dbgDump</a>( FILE * target, <span class="keyword">const</span> <a class="code" href="../../d9/d49/types_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> * buffer, <span class="keywordtype">size_t</span> length );</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d9/d49/types_8h.html">util/types.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/d81/_dump_8h.html#a83e7ecc287e359817ebb0d5294a95543">dbgDump_range</a>( FILE * target, <span class="keyword">const</span> <a class="code" href="../../d9/d49/types_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> * buffer, <span class="keywordtype">size_t</span> from, <span class="keywordtype">size_t</span> to );</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/d81/_dump_8h.html#ace186061093a10bcad86dac2b4c501b7">dbgDump</a>( FILE * target, <span class="keyword">const</span> <a class="code" href="../../d9/d49/types_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a> * buffer, <span class="keywordtype">size_t</span> length );</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="../../d9/d49/types_8h.html">types.h</a></div></div>
-<div class="ttc" id="types_8h_html_a0c8186d9b9b7880309c27230bbb5e69d"><div class="ttname"><a href="../../d9/d49/types_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a></div><div class="ttdeci">unsigned char byte</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d49/types_8h_source.html#l00011">types.h:11</a></div></div>
+<div class="ttc" id="types_8h_html_a0c8186d9b9b7880309c27230bbb5e69d"><div class="ttname"><a href="../../d9/d49/types_8h.html#a0c8186d9b9b7880309c27230bbb5e69d">byte</a></div><div class="ttdeci">unsigned char byte</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d49/types_8h_source.html#l00015">types.h:15</a></div></div>
 <div class="ttc" id="_dump_8h_html_ace186061093a10bcad86dac2b4c501b7"><div class="ttname"><a href="../../d3/d81/_dump_8h.html#ace186061093a10bcad86dac2b4c501b7">dbgDump</a></div><div class="ttdeci">void dbgDump(FILE *target, const byte *buffer, size_t length)</div></div>
 <div class="ttc" id="_dump_8h_html_a83e7ecc287e359817ebb0d5294a95543"><div class="ttname"><a href="../../d3/d81/_dump_8h.html#a83e7ecc287e359817ebb0d5294a95543">dbgDump_range</a></div><div class="ttdeci">void dbgDump_range(FILE *target, const byte *buffer, size_t from, size_t to)</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -125,7 +132,7 @@ $(document).ready(function(){initNavTree('d3/d81/_dump_8h_source.html','../../')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_d8d324196eda46d07c7b15ece73c3e18.html">dbg</a></li><li class="navelem"><a class="el" href="../../d3/d81/_dump_8h.html">Dump.h</a></li>
-    <li class="footer">Generated on Wed Dec 9 2015 01:54:54 for dcrud by
+    <li class="footer">Generated on Mon Dec 14 2015 22:44:31 for dcrud by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

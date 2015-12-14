@@ -1,4 +1,4 @@
-.TH "inc/io/Status.h" 3 "Wed Dec 9 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "inc/io/Status.h" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -53,21 +53,21 @@ inc/io/Status.h \-
 .TP
 \fB\fIIO_STATUS_LAST \fP\fP
 .PP
-Definition at line 3 of file Status\&.h\&.
+Definition at line 6 of file Status\&.h\&.
 .PP
 .nf
-3                         {
-4 
-5    IO_STATUS_NO_ERROR,
-6    IO_STATUS_OVERFLOW,        /* relative to put operations */
-7    IO_STATUS_UNDERFLOW,       /* relative to get operations */
-8    IO_STATUS_NO_MARK,         /* reset() called without previous call to mark() */
-9    IO_STATUS_SENDTO_FAILED,
-10    IO_STATUS_RECV_FAILED,
-11 
-12    IO_STATUS_LAST
-13 
-14 } ioStatus;
+6                         {
+7 
+8    IO_STATUS_NO_ERROR,
+9    IO_STATUS_OVERFLOW,        /* relative to put operations */
+10    IO_STATUS_UNDERFLOW,       /* relative to get operations */
+11    IO_STATUS_NO_MARK,         /* reset() called without previous call to mark() */
+12    IO_STATUS_SENDTO_FAILED,
+13    IO_STATUS_RECV_FAILED,
+14 
+15    IO_STATUS_LAST
+16 
+17 } ioStatus;
 .fi
 .SH "Variable Documentation"
 .PP 

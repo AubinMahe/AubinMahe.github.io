@@ -1,0 +1,145 @@
+.TH "dcrud" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+dcrud \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBArguments\fP"
+.br
+.ti -1c
+.RI "struct \fBClassID\fP"
+.br
+.ti -1c
+.RI "struct \fBGUID\fP"
+.br
+.ti -1c
+.RI "struct \fBICache\fP"
+.br
+.ti -1c
+.RI "struct \fBICallback\fP"
+.br
+.ti -1c
+.RI "struct \fBIDispatcher\fP"
+.br
+.ti -1c
+.RI "struct \fBIOperation\fP"
+.br
+.ti -1c
+.RI "struct \fBIParticipant\fP"
+.br
+.ti -1c
+.RI "struct \fBIProvided\fP"
+.br
+.ti -1c
+.RI "struct \fBIRequired\fP"
+.br
+.ti -1c
+.RI "struct \fBNetwork\fP"
+.br
+.ti -1c
+.RI "struct \fBShareable\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef std::map< std::string, 
+.br
+const void * > \fBargs_t\fP"
+.br
+.ti -1c
+.RI "typedef args_t::iterator \fBargsIter_t\fP"
+.br
+.ti -1c
+.RI "typedef args_t::const_iterator \fBargsCstIter_t\fP"
+.br
+.ti -1c
+.RI "typedef bool(* \fBshareablePredicate_t\fP )(const \fBShareable\fP &shareable)"
+.br
+.ti -1c
+.RI "typedef std::set< \fBShareable\fP * > \fBshareables_t\fP"
+.br
+.ti -1c
+.RI "typedef shareables_t::iterator \fBshareablesIter_t\fP"
+.br
+.ti -1c
+.RI "typedef \fBShareable\fP *(* \fBfactory_t\fP )(void)"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBStatus\fP { \fBNO_ERROR\fP, \fBALREADY_CREATED\fP, \fBNOT_OWNER\fP, \fBNOT_CREATED\fP, \fBNOT_IN_THIS_CACHE\fP }"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef std::map<std::string, const void *> \fBargs_t\fP"
+
+.PP
+Definition at line 9 of file Arguments\&.hpp\&.
+.SS "typedef args_t::const_iterator \fBargsCstIter_t\fP"
+
+.PP
+Definition at line 11 of file Arguments\&.hpp\&.
+.SS "typedef args_t::iterator \fBargsIter_t\fP"
+
+.PP
+Definition at line 10 of file Arguments\&.hpp\&.
+.SS "typedef \fBShareable\fP*(*  factory_t)(void)"
+
+.PP
+Definition at line 13 of file IParticipant\&.hpp\&.
+.SS "typedef bool( *  shareablePredicate_t)(const \fBShareable\fP &shareable)"
+
+.PP
+Definition at line 14 of file ICache\&.hpp\&.
+.SS "typedef std::set<\fBShareable\fP *> \fBshareables_t\fP"
+
+.PP
+Definition at line 16 of file ICache\&.hpp\&.
+.SS "typedef shareables_t::iterator \fBshareablesIter_t\fP"
+
+.PP
+Definition at line 17 of file ICache\&.hpp\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBStatus\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINO_ERROR \fP\fP
+.TP
+\fB\fIALREADY_CREATED \fP\fP
+.TP
+\fB\fINOT_OWNER \fP\fP
+.TP
+\fB\fINOT_CREATED \fP\fP
+.TP
+\fB\fINOT_IN_THIS_CACHE \fP\fP
+.PP
+Definition at line 5 of file Status\&.hpp\&.
+.PP
+.nf
+5                {
+6 
+7       NO_ERROR,
+8       ALREADY_CREATED,
+9       NOT_OWNER,
+10       NOT_CREATED,
+11       NOT_IN_THIS_CACHE
+12    };
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

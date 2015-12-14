@@ -1,0 +1,531 @@
+.TH "ByteBuffer" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ByteBuffer \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ByteBuffer\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBByteBuffer\fP (unsigned int capacity, byte *\fBarray\fP=0)"
+.br
+.ti -1c
+.RI "\fB~ByteBuffer\fP ()"
+.br
+.ti -1c
+.RI "\fBByteBuffer\fP * \fBcopy\fP (unsigned int length) const "
+.br
+.ti -1c
+.RI "void \fBclear\fP (void)"
+.br
+.ti -1c
+.RI "void \fBmark\fP (void)"
+.br
+.ti -1c
+.RI "void \fBreset\fP (void)"
+.br
+.ti -1c
+.RI "void \fBflip\fP (void)"
+.br
+.ti -1c
+.RI "unsigned int \fBposition\fP (void) const "
+.br
+.ti -1c
+.RI "void \fBposition\fP (unsigned int position)"
+.br
+.ti -1c
+.RI "unsigned int \fBlimit\fP (void) const "
+.br
+.ti -1c
+.RI "unsigned int \fBremaining\fP (void) const "
+.br
+.ti -1c
+.RI "void \fBput\fP (const byte *src, unsigned int from, unsigned int to)"
+.br
+.ti -1c
+.RI "void \fBget\fP (byte *target, unsigned int from, unsigned int to)"
+.br
+.ti -1c
+.RI "void \fBputByte\fP (byte value)"
+.br
+.ti -1c
+.RI "byte \fBgetByte\fP (void)"
+.br
+.ti -1c
+.RI "void \fBputBoolean\fP (bool value)"
+.br
+.ti -1c
+.RI "bool \fBgetBoolean\fP (void)"
+.br
+.ti -1c
+.RI "void \fBputShort\fP (unsigned short value)"
+.br
+.ti -1c
+.RI "unsigned short \fBgetShort\fP (void)"
+.br
+.ti -1c
+.RI "void \fBputInt\fP (unsigned int value)"
+.br
+.ti -1c
+.RI "void \fBputIntAt\fP (unsigned int value, unsigned int index)"
+.br
+.ti -1c
+.RI "int \fBgetInt\fP (void)"
+.br
+.ti -1c
+.RI "void \fBputLong\fP (uint64_t value)"
+.br
+.ti -1c
+.RI "uint64_t \fBgetLong\fP (void)"
+.br
+.ti -1c
+.RI "void \fBputFloat\fP (float value)"
+.br
+.ti -1c
+.RI "float \fBgetFloat\fP (void)"
+.br
+.ti -1c
+.RI "void \fBputDouble\fP (double value)"
+.br
+.ti -1c
+.RI "double \fBgetDouble\fP (void)"
+.br
+.ti -1c
+.RI "void \fBputString\fP (const char *value)"
+.br
+.ti -1c
+.RI "void \fBgetString\fP (char *target, unsigned int sizeOfTarget)"
+.br
+.ti -1c
+.RI "void \fBputString\fP (const std::string &value)"
+.br
+.ti -1c
+.RI "std::string \fBgetString\fP ()"
+.br
+.ti -1c
+.RI "void \fBput\fP (\fBByteBuffer\fP &source)"
+.br
+.ti -1c
+.RI "void \fBsend\fP (SOCKET sckt, struct sockaddr_in &target)"
+.br
+.ti -1c
+.RI "bool \fBreceive\fP (SOCKET sckt)"
+.br
+.ti -1c
+.RI "byte * \fBarray\fP (void)"
+.br
+.ti -1c
+.RI "void \fBdump\fP (FILE *target) const "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 20 of file ByteBuffer\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBByteBuffer\fP (unsigned intcapacity, byte *array = \fC0\fP)\fC [inline]\fP"
+
+.PP
+Definition at line 33 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+33                                                             {
+34          if( array ) {
+35             _buffer = ioByteBuffer_wrap( capacity, array );
+36          }
+37          else {
+38             _buffer = ioByteBuffer_new( capacity );
+39          }
+40       }
+.fi
+.SS "~\fBByteBuffer\fP ()\fC [inline]\fP"
+
+.PP
+Definition at line 42 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+42                      {
+43          ioByteBuffer_delete( &_buffer );
+44       }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "byte* array (void)\fC [inline]\fP"
+
+.PP
+Definition at line 197 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+197                            {
+198          return ioByteBuffer_array( _buffer );
+199       }
+.fi
+.SS "void clear (void)\fC [inline]\fP"
+
+.PP
+Definition at line 50 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+50                          {
+51          ioByteBuffer_clear( _buffer );
+52       }
+.fi
+.SS "\fBByteBuffer\fP* copy (unsigned intlength) const\fC [inline]\fP"
+
+.PP
+Definition at line 46 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+46                                                      {
+47          return new io::ByteBuffer( ioByteBuffer_copy( _buffer, length ));
+48       }
+.fi
+.SS "void dump (FILE *target) const\fC [inline]\fP"
+
+.PP
+Definition at line 201 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+201                                        {
+202          ioByteBuffer_dump( _buffer, target );
+203       }
+.fi
+.SS "void flip (void)\fC [inline]\fP"
+
+.PP
+Definition at line 62 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+62                         {
+63          ioByteBuffer_flip( _buffer );
+64       }
+.fi
+.SS "void get (byte *target, unsigned intfrom, unsigned intto)\fC [inline]\fP"
+
+.PP
+Definition at line 86 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+86                                                                     {
+87          ioByteBuffer_get( _buffer, target, from, to );
+88       }
+.fi
+.SS "bool getBoolean (void)\fC [inline]\fP"
+
+.PP
+Definition at line 104 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+104                               {
+105          byte value = 0;
+106          ioByteBuffer_getByte( _buffer, &value );
+107          return value != 0;
+108       }
+.fi
+.SS "byte getByte (void)\fC [inline]\fP"
+
+.PP
+Definition at line 94 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+94                            {
+95          byte value = 0;
+96          ioByteBuffer_getByte( _buffer, &value );
+97          return value;
+98       }
+.fi
+.SS "double getDouble (void)\fC [inline]\fP"
+
+.PP
+Definition at line 158 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+158                                {
+159          double value = NAN;
+160          if( ioByteBuffer_getDouble( _buffer, &value )) {
+161             return value;
+162          }
+163          return NAN;
+164       }
+.fi
+.SS "float getFloat (void)\fC [inline]\fP"
+
+.PP
+Definition at line 148 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+148                              {
+149          float value = 0\&.0f;
+150          ioByteBuffer_getFloat( _buffer, &value );
+151          return value;
+152       }
+.fi
+.SS "int getInt (void)\fC [inline]\fP"
+
+.PP
+Definition at line 128 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+128                          {
+129          unsigned int value = 0;
+130          ioByteBuffer_getInt( _buffer, &value );
+131          return value;
+132       }
+.fi
+.SS "uint64_t getLong (void)\fC [inline]\fP"
+
+.PP
+Definition at line 138 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+138                                {
+139          uint64_t value = 0;
+140          ioByteBuffer_getLong( _buffer, &value );
+141          return value;
+142       }
+.fi
+.SS "unsigned short getShort (void)\fC [inline]\fP"
+
+.PP
+Definition at line 114 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+114                                       {
+115          unsigned short value = 0;
+116          ioByteBuffer_getShort( _buffer, &value );
+117          return value;
+118       }
+.fi
+.SS "void getString (char *target, unsigned intsizeOfTarget)\fC [inline]\fP"
+
+.PP
+Definition at line 170 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+170                                                                  {
+171          ioByteBuffer_getString( _buffer, target, sizeOfTarget );
+172       }
+.fi
+.SS "std::string getString ()\fC [inline]\fP"
+
+.PP
+Definition at line 178 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+178                             {
+179          static const unsigned sizeOfTarget = 64*1024;
+180          char target[sizeOfTarget];
+181          ioByteBuffer_getString( _buffer, target, sizeOfTarget );
+182          return std::string( target );
+183       }
+.fi
+.SS "unsigned int limit (void) const\fC [inline]\fP"
+
+.PP
+Definition at line 74 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+74                                        {
+75          return ioByteBuffer_getLimit( _buffer );
+76       }
+.fi
+.SS "void mark (void)\fC [inline]\fP"
+
+.PP
+Definition at line 54 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+54                         {
+55          ioByteBuffer_mark( _buffer );
+56       }
+.fi
+.SS "unsigned int position (void) const\fC [inline]\fP"
+
+.PP
+Definition at line 66 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+66                                           {
+67          return ioByteBuffer_getPosition( _buffer );
+68       }
+.fi
+.SS "void position (unsigned intposition)\fC [inline]\fP"
+
+.PP
+Definition at line 70 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+70                                              {
+71          ioByteBuffer_setPosition( _buffer, position );
+72       }
+.fi
+.SS "void put (const byte *src, unsigned intfrom, unsigned intto)\fC [inline]\fP"
+
+.PP
+Definition at line 82 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+82                                                                        {
+83          ioByteBuffer_put( _buffer, src, from, to );
+84       }
+.fi
+.SS "void put (\fBByteBuffer\fP &source)\fC [inline]\fP"
+
+.PP
+Definition at line 185 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+185                                       {
+186          ioByteBuffer_putBuffer( _buffer, source\&._buffer );
+187       }
+.fi
+.SS "void putBoolean (boolvalue)\fC [inline]\fP"
+
+.PP
+Definition at line 100 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+100                                     {
+101          ioByteBuffer_putByte( _buffer, value ? 1 : 0 );
+102       };
+.fi
+.SS "void putByte (bytevalue)\fC [inline]\fP"
+
+.PP
+Definition at line 90 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+90                                  {
+91          ioByteBuffer_putByte( _buffer, value );
+92       }
+.fi
+.SS "void putDouble (doublevalue)\fC [inline]\fP"
+
+.PP
+Definition at line 154 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+154                                      {
+155          ioByteBuffer_putDouble( _buffer, value );
+156       }
+.fi
+.SS "void putFloat (floatvalue)\fC [inline]\fP"
+
+.PP
+Definition at line 144 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+144                                    {
+145          ioByteBuffer_putFloat( _buffer, value );
+146       }
+.fi
+.SS "void putInt (unsigned intvalue)\fC [inline]\fP"
+
+.PP
+Definition at line 120 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+120                                         {
+121          ioByteBuffer_putInt( _buffer, value );
+122       }
+.fi
+.SS "void putIntAt (unsigned intvalue, unsigned intindex)\fC [inline]\fP"
+
+.PP
+Definition at line 124 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+124                                                               {
+125          ioByteBuffer_putIntAt( _buffer, value, index );
+126       }
+.fi
+.SS "void putLong (uint64_tvalue)\fC [inline]\fP"
+
+.PP
+Definition at line 134 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+134                                      {
+135          ioByteBuffer_putLong( _buffer, value );
+136       }
+.fi
+.SS "void putShort (unsigned shortvalue)\fC [inline]\fP"
+
+.PP
+Definition at line 110 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+110                                             {
+111          ioByteBuffer_putShort( _buffer, value );
+112       }
+.fi
+.SS "void putString (const char *value)\fC [inline]\fP"
+
+.PP
+Definition at line 166 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+166                                            {
+167          ioByteBuffer_putString( _buffer, value );
+168       }
+.fi
+.SS "void putString (const std::string &value)\fC [inline]\fP"
+
+.PP
+Definition at line 174 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+174                                                 {
+175          ioByteBuffer_putString( _buffer, value\&.c_str());
+176       }
+.fi
+.SS "bool receive (SOCKETsckt)\fC [inline]\fP"
+
+.PP
+Definition at line 193 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+193                                   {
+194          return ioByteBuffer_receive( _buffer, sckt );
+195       }
+.fi
+.SS "unsigned int remaining (void) const\fC [inline]\fP"
+
+.PP
+Definition at line 78 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+78                                            {
+79          return ioByteBuffer_remaining( _buffer );
+80       }
+.fi
+.SS "void reset (void)\fC [inline]\fP"
+
+.PP
+Definition at line 58 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+58                          {
+59          ioByteBuffer_reset( _buffer );
+60       }
+.fi
+.SS "void send (SOCKETsckt, struct sockaddr_in &target)\fC [inline]\fP"
+
+.PP
+Definition at line 189 of file ByteBuffer\&.hpp\&.
+.PP
+.nf
+189                                                             {
+190          ioByteBuffer_send( _buffer, sckt, &target );
+191       }
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

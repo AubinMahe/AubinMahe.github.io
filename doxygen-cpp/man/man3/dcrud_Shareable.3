@@ -1,0 +1,101 @@
+.TH "Shareable" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Shareable \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Shareable\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBShareable\fP (const \fBClassID\fP &classId)"
+.br
+.ti -1c
+.RI "virtual \fB~Shareable\fP ()"
+.br
+.ti -1c
+.RI "virtual const \fBGUID\fP & \fBgetGUID\fP (void) const "
+.br
+.ti -1c
+.RI "virtual const \fBClassID\fP & \fBgetClassID\fP (void) const "
+.br
+.ti -1c
+.RI "virtual void \fBserialize\fP (\fBio::ByteBuffer\fP &target) const =0"
+.br
+.ti -1c
+.RI "virtual void \fBunserialize\fP (\fBio::ByteBuffer\fP &source)=0"
+.br
+.in -1c
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBGUID\fP \fB_id\fP"
+.br
+.ti -1c
+.RI "const \fBClassID\fP \fB_class\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 13 of file Shareable\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBShareable\fP (const \fBClassID\fP &classId)\fC [inline]\fP"
+
+.PP
+Definition at line 18 of file Shareable\&.hpp\&.
+.PP
+.nf
+18                                            :
+19          _class( classId )
+20       {}
+.fi
+.SS "virtual ~\fBShareable\fP ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 22 of file Shareable\&.hpp\&.
+.PP
+.nf
+22 {}
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual const \fBClassID\fP& getClassID (void) const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 26 of file Shareable\&.hpp\&.
+.PP
+.nf
+26 { return _class; }
+.fi
+.SS "virtual const \fBGUID\fP& getGUID (void) const\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 24 of file Shareable\&.hpp\&.
+.PP
+.nf
+24 { return _id; }
+.fi
+.SS "virtual void serialize (\fBio::ByteBuffer\fP &target) const\fC [pure virtual]\fP"
+
+.SS "virtual void unserialize (\fBio::ByteBuffer\fP &source)\fC [pure virtual]\fP"
+
+.SH "Field Documentation"
+.PP 
+.SS "const \fBClassID\fP _class"
+
+.PP
+Definition at line 16 of file Shareable\&.hpp\&.
+.SS "\fBGUID\fP _id"
+
+.PP
+Definition at line 15 of file Shareable\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

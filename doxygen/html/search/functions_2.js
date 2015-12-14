@@ -1,14 +1,13 @@
 var searchData=
 [
+  ['iobytebuffer_5farray',['ioByteBuffer_array',['../d6/d6c/_byte_buffer_8h.html#a08b8d89356ddf4545eb64e3335c0e1ce',1,'ByteBuffer.h']]],
   ['iobytebuffer_5fclear',['ioByteBuffer_clear',['../d6/d6c/_byte_buffer_8h.html#a061da624334046d08f0b2b9c04f93291',1,'ByteBuffer.h']]],
   ['iobytebuffer_5fcopy',['ioByteBuffer_copy',['../d6/d6c/_byte_buffer_8h.html#a9e4c1e53268e3232e0b9effa0ea5d95f',1,'ByteBuffer.h']]],
   ['iobytebuffer_5fdelete',['ioByteBuffer_delete',['../d6/d6c/_byte_buffer_8h.html#a0682eb8ce3f0bce71611583b6830face',1,'ByteBuffer.h']]],
   ['iobytebuffer_5fdump',['ioByteBuffer_dump',['../d6/d6c/_byte_buffer_8h.html#a1e7dd8cf8b47d563cd8dd0c01e16b8d8',1,'ByteBuffer.h']]],
-  ['iobytebuffer_5fduplicate',['ioByteBuffer_duplicate',['../d6/d6c/_byte_buffer_8h.html#ad56715c9d43e281ab0778a164f5c4a0f',1,'ByteBuffer.h']]],
   ['iobytebuffer_5fflip',['ioByteBuffer_flip',['../d6/d6c/_byte_buffer_8h.html#acfe1a71cd438e103e1bf6485bcbf8ab5',1,'ByteBuffer.h']]],
   ['iobytebuffer_5fget',['ioByteBuffer_get',['../d6/d6c/_byte_buffer_8h.html#a12ac23e8b3e07b0cbb72ed8f2b665c7d',1,'ByteBuffer.h']]],
   ['iobytebuffer_5fgetbyte',['ioByteBuffer_getByte',['../d6/d6c/_byte_buffer_8h.html#a35d556784782815a14f06a530b5b0eb8',1,'ByteBuffer.h']]],
-  ['iobytebuffer_5fgetbytes',['ioByteBuffer_getBytes',['../d6/d6c/_byte_buffer_8h.html#aef1d6cfdab443b209cc9837d2837e862',1,'ByteBuffer.h']]],
   ['iobytebuffer_5fgetdouble',['ioByteBuffer_getDouble',['../d6/d6c/_byte_buffer_8h.html#a806215bbe4371877c1bba311ddf0842d',1,'ByteBuffer.h']]],
   ['iobytebuffer_5fgetfloat',['ioByteBuffer_getFloat',['../d6/d6c/_byte_buffer_8h.html#a8f6b13d466f3c9789611ebcf3db4858b',1,'ByteBuffer.h']]],
   ['iobytebuffer_5fgetint',['ioByteBuffer_getInt',['../d6/d6c/_byte_buffer_8h.html#a48dbb2a76134491e5eaa070661d0710c',1,'ByteBuffer.h']]],
@@ -33,5 +32,6 @@ var searchData=
   ['iobytebuffer_5fremaining',['ioByteBuffer_remaining',['../d6/d6c/_byte_buffer_8h.html#afa464eabce1aa99898de42bc09bc5fe7',1,'ByteBuffer.h']]],
   ['iobytebuffer_5freset',['ioByteBuffer_reset',['../d6/d6c/_byte_buffer_8h.html#ac490803a0b7b00857216a5c80f3aadc1',1,'ByteBuffer.h']]],
   ['iobytebuffer_5fsend',['ioByteBuffer_send',['../d6/d6c/_byte_buffer_8h.html#adb5a8ecee518a1a0039c11f613a3b400',1,'ByteBuffer.h']]],
-  ['iobytebuffer_5fsetposition',['ioByteBuffer_setPosition',['../d6/d6c/_byte_buffer_8h.html#ad21a314182f8915de38aff70c33326f9',1,'ByteBuffer.h']]]
+  ['iobytebuffer_5fsetposition',['ioByteBuffer_setPosition',['../d6/d6c/_byte_buffer_8h.html#ad21a314182f8915de38aff70c33326f9',1,'ByteBuffer.h']]],
+  ['iobytebuffer_5fwrap',['ioByteBuffer_wrap',['../d6/d6c/_byte_buffer_8h.html#a76706c3f072687c07ba739449f05066c',1,'ByteBuffer.h']]]
 ];

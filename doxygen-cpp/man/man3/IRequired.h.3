@@ -1,0 +1,109 @@
+.TH "/home/aubin/Dev/Git/dcrud/C/inc/dcrud/IRequired.h" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/aubin/Dev/Git/dcrud/C/inc/dcrud/IRequired.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <dcrud/Status\&.h>\fP
+.br
+\fC#include <dcrud/ICallback\&.h>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef enum \fBdcrudQueueIndex_e\fP \fBdcrudQueueIndex\fP"
+.br
+.ti -1c
+.RI "typedef enum \fBdcrudCallMode_e\fP \fBdcrudCallMode\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBdcrudQueueIndex_e\fP { \fBDCRUD_VERY_URGENT_QUEUE\fP = 0, \fBDCRUD_URGENT_QUEUE\fP = 50, \fBDCRUD_DEFAULT_QUEUE\fP = 100, \fBDCRUD_NON_URGENT_QUEUE\fP = 255 }"
+.br
+.ti -1c
+.RI "enum \fBdcrudCallMode_e\fP { \fBDCRUD_SYNCHRONOUS\fP, \fBDCRUD_ASYNCHRONOUS_DEFERRED\fP, \fBDCRUD_ASYNCHRONOUS_IMMEDIATE\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUTIL_ADT\fP (dcrudIRequired)"
+.br
+.ti -1c
+.RI "\fBdcrudStatus\fP \fBdcrudIRequired_call\fP (dcrudIRequired This, const char *opName, collMap arguments, dcrudICallback callback, int *callId)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef enum \fBdcrudCallMode_e\fP  \fBdcrudCallMode\fP"
+
+.SS "typedef enum \fBdcrudQueueIndex_e\fP  \fBdcrudQueueIndex\fP"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBdcrudCallMode_e\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIDCRUD_SYNCHRONOUS \fP\fP
+.TP
+\fB\fIDCRUD_ASYNCHRONOUS_DEFERRED \fP\fP
+.TP
+\fB\fIDCRUD_ASYNCHRONOUS_IMMEDIATE \fP\fP
+.PP
+Definition at line 18 of file IRequired\&.h\&.
+.PP
+.nf
+18                              {
+19 
+20    DCRUD_SYNCHRONOUS,
+21    DCRUD_ASYNCHRONOUS_DEFERRED,
+22    DCRUD_ASYNCHRONOUS_IMMEDIATE
+23 
+24 } dcrudCallMode;
+.fi
+.SS "enum \fBdcrudQueueIndex_e\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIDCRUD_VERY_URGENT_QUEUE \fP\fP
+.TP
+\fB\fIDCRUD_URGENT_QUEUE \fP\fP
+.TP
+\fB\fIDCRUD_DEFAULT_QUEUE \fP\fP
+.TP
+\fB\fIDCRUD_NON_URGENT_QUEUE \fP\fP
+.PP
+Definition at line 9 of file IRequired\&.h\&.
+.PP
+.nf
+9                                {
+10 
+11    DCRUD_VERY_URGENT_QUEUE =   0,
+12    DCRUD_URGENT_QUEUE      =  50,
+13    DCRUD_DEFAULT_QUEUE     = 100,
+14    DCRUD_NON_URGENT_QUEUE  = 255
+15 
+16 } dcrudQueueIndex;
+.fi
+.SH "Function Documentation"
+.PP 
+.SS "\fBdcrudStatus\fP dcrudIRequired_call (dcrudIRequiredThis, const char *opName, collMaparguments, dcrudICallbackcallback, int *callId)"
+
+.SS "UTIL_ADT (dcrudIRequired)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

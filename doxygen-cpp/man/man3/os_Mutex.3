@@ -1,0 +1,78 @@
+.TH "Mutex" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Mutex \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Mutex\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMutex\fP ()"
+.br
+.ti -1c
+.RI "\fB~Mutex\fP ()"
+.br
+.ti -1c
+.RI "int \fBtake\fP ()"
+.br
+.ti -1c
+.RI "int \fBrelease\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 7 of file Mutex\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBMutex\fP ()\fC [inline]\fP"
+
+.PP
+Definition at line 17 of file Mutex\&.hpp\&.
+.PP
+.nf
+17               {
+18          osMutex_new( &_mutex );
+19       }
+.fi
+.SS "~\fBMutex\fP ()\fC [inline]\fP"
+
+.PP
+Definition at line 21 of file Mutex\&.hpp\&.
+.PP
+.nf
+21                 {
+22          osMutex_delete( &_mutex );
+23       }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "int release ()\fC [inline]\fP"
+
+.PP
+Definition at line 31 of file Mutex\&.hpp\&.
+.PP
+.nf
+31                     {
+32          return osMutex_release( _mutex );
+33       }
+.fi
+.SS "int take ()\fC [inline]\fP"
+
+.PP
+Definition at line 27 of file Mutex\&.hpp\&.
+.PP
+.nf
+27                  {
+28          return osMutex_take( _mutex );
+29       }
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

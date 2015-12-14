@@ -108,13 +108,21 @@ $(document).ready(function(){initNavTree('db/d19/_check_sys_call_8h_source.html'
 </div><!--header-->
 <div class="contents">
 <a href="../../db/d19/_check_sys_call_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d9/d49/types_8h.html">util/types.h</a>&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="../../db/d19/_check_sys_call_8h.html#adcea1e4f3facf58d0eb657f79663841a">utilCheckSysCall</a>(</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;   <span class="keywordtype">bool</span>         ok,</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> * file,</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;   <span class="keywordtype">int</span>          line,</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> * format, ... );</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d9/d49/types_8h.html">util/types.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="../../db/d19/_check_sys_call_8h.html#adcea1e4f3facf58d0eb657f79663841a">utilCheckSysCall</a>(</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;   <span class="keywordtype">bool</span>         ok,</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> * file,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   <span class="keywordtype">int</span>          line,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> * format, ... );</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="_check_sys_call_8h_html_adcea1e4f3facf58d0eb657f79663841a"><div class="ttname"><a href="../../db/d19/_check_sys_call_8h.html#adcea1e4f3facf58d0eb657f79663841a">utilCheckSysCall</a></div><div class="ttdeci">bool utilCheckSysCall(bool ok, const char *file, int line, const char *format,...)</div></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="../../d9/d49/types_8h.html">types.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -123,7 +131,7 @@ $(document).ready(function(){initNavTree('db/d19/_check_sys_call_8h_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_c19b6a841abffe8b6321cb306a20e7b3.html">util</a></li><li class="navelem"><a class="el" href="../../db/d19/_check_sys_call_8h.html">CheckSysCall.h</a></li>
-    <li class="footer">Generated on Wed Dec 9 2015 01:54:54 for dcrud by
+    <li class="footer">Generated on Mon Dec 14 2015 22:44:31 for dcrud by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

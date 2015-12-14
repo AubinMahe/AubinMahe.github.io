@@ -1,0 +1,56 @@
+.TH "IParticipant" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IParticipant \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <IParticipant\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~IParticipant\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBregisterClass\fP (const \fBClassID\fP &id, \fBfactory_t\fP factory)=0"
+.br
+.ti -1c
+.RI "virtual \fBICache\fP & \fBcreateCache\fP ()=0"
+.br
+.ti -1c
+.RI "virtual \fBICache\fP & \fBgetCache\fP (byte ID)=0"
+.br
+.ti -1c
+.RI "virtual \fBIDispatcher\fP & \fBgetDispatcher\fP ()=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 15 of file IParticipant\&.hpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual ~\fBIParticipant\fP ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Definition at line 17 of file IParticipant\&.hpp\&.
+.PP
+.nf
+17 {}
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual \fBICache\fP& createCache ()\fC [pure virtual]\fP"
+
+.SS "virtual \fBICache\fP& getCache (byteID)\fC [pure virtual]\fP"
+
+.SS "virtual \fBIDispatcher\fP& getDispatcher ()\fC [pure virtual]\fP"
+
+.SS "virtual void registerClass (const \fBClassID\fP &id, \fBfactory_t\fPfactory)\fC [pure virtual]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

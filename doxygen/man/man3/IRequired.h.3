@@ -1,4 +1,4 @@
-.TH "inc/dcrud/IRequired.h" 3 "Wed Dec 9 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "inc/dcrud/IRequired.h" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -61,16 +61,16 @@ inc/dcrud/IRequired.h \-
 .TP
 \fB\fIDCRUD_ASYNCHRONOUS_IMMEDIATE \fP\fP
 .PP
-Definition at line 14 of file IRequired\&.h\&.
+Definition at line 18 of file IRequired\&.h\&.
 .PP
 .nf
-14                              {
-15 
-16    DCRUD_SYNCHRONOUS,
-17    DCRUD_ASYNCHRONOUS_DEFERRED,
-18    DCRUD_ASYNCHRONOUS_IMMEDIATE
+18                              {
 19 
-20 } dcrudCallMode;
+20    DCRUD_SYNCHRONOUS,
+21    DCRUD_ASYNCHRONOUS_DEFERRED,
+22    DCRUD_ASYNCHRONOUS_IMMEDIATE
+23 
+24 } dcrudCallMode;
 .fi
 .SS "enum \fBdcrudQueueIndex_e\fP"
 
@@ -86,17 +86,17 @@ Definition at line 14 of file IRequired\&.h\&.
 .TP
 \fB\fIDCRUD_NON_URGENT_QUEUE \fP\fP
 .PP
-Definition at line 5 of file IRequired\&.h\&.
+Definition at line 9 of file IRequired\&.h\&.
 .PP
 .nf
-5                                {
-6 
-7    DCRUD_VERY_URGENT_QUEUE =   0,
-8    DCRUD_URGENT_QUEUE      =  50,
-9    DCRUD_DEFAULT_QUEUE     = 100,
-10    DCRUD_NON_URGENT_QUEUE  = 255
-11 
-12 } dcrudQueueIndex;
+9                                {
+10 
+11    DCRUD_VERY_URGENT_QUEUE =   0,
+12    DCRUD_URGENT_QUEUE      =  50,
+13    DCRUD_DEFAULT_QUEUE     = 100,
+14    DCRUD_NON_URGENT_QUEUE  = 255
+15 
+16 } dcrudQueueIndex;
 .fi
 .SH "Function Documentation"
 .PP 
