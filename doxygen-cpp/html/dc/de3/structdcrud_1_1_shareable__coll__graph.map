@@ -1,4 +1,0 @@
-<map id="Shareable" name="Shareable">
-<area shape="rect" id="node2" href="$d4/df5/structdcrud_1_1_class_i_d.html" title="{ClassID\n|+ _p1\l+ _p2\l+ _p3\l+ _class\l+ SIZE\l|+ ClassID()\l+ ClassID()\l+ operator==()\l+ operator\&lt;()\l+ isPredefined()\l+ compareTo()\l+ getPredefined()\l+ serialize()\l+ toString()\l+ serializePredefined()\l+ unserialize()\l}" alt="" coords="5,5,157,288"/>
-<area shape="rect" id="node3" href="$d5/dd6/structdcrud_1_1_g_u_i_d.html" title="{GUID\n|+ _publisher\l+ _cache\l+ _instance\l+ SIZE\l|+ GUID()\l+ GUID()\l+ operator=()\l+ operator\&lt;()\l+ isShared()\l+ compareTo()\l+ set()\l+ serialize()\l+ toString()\l+ unserialize()\l}" alt="" coords="181,20,288,273"/>
-</map>
