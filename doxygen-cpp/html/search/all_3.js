@@ -1,14 +1,7 @@
 var searchData=
 [
-  ['call',['call',['../d9/d28/structdcrud_1_1_i_required.html#a88ede8fc862a67e2e5c48a84e37bd14b',1,'dcrud::IRequired::call(const char *opName)=0'],['../d9/d28/structdcrud_1_1_i_required.html#a1ed236570887f5d5636d3bccc044c9b4',1,'dcrud::IRequired::call(const char *opName, Arguments &amp;arguments)=0'],['../d9/d28/structdcrud_1_1_i_required.html#adf4d123c71f3317bd633e69a1bb3b53c',1,'dcrud::IRequired::call(const char *opName, Arguments &amp;arguments, ICallback &amp;callback)=0']]],
-  ['callback',['callback',['../d6/d6b/structdcrud_1_1_i_callback.html#aadf9cc5c43d96b01181350742eb55278',1,'dcrud::ICallback']]],
-  ['classid',['ClassID',['../d4/df5/structdcrud_1_1_class_i_d.html#ac8592fe076dec46918aa1657569c945c',1,'dcrud::ClassID::ClassID(byte p1, byte p2, byte p3, byte clazz)'],['../d4/df5/structdcrud_1_1_class_i_d.html#a13e224cb3608219d06c8af0fdeafbe5c',1,'dcrud::ClassID::ClassID(const ClassID &amp;right)']]],
-  ['classid',['ClassID',['../d4/df5/structdcrud_1_1_class_i_d.html',1,'dcrud']]],
-  ['classid_2ehpp',['ClassID.hpp',['../dc/d3d/_class_i_d_8hpp.html',1,'']]],
-  ['classidtype',['ClassIDType',['../d4/df5/structdcrud_1_1_class_i_d.html#ad3b4c86f67a2b823a1bed8a5609f0cdca1eaff16522d1ef85de54f143ed76a69f',1,'dcrud::ClassID']]],
-  ['clear',['clear',['../da/dda/structio_1_1_byte_buffer.html#ae683fe63c33c388e9ba1c6392dd477eb',1,'io::ByteBuffer']]],
-  ['compareto',['compareTo',['../d4/df5/structdcrud_1_1_class_i_d.html#aea9ab28b0aceed88420e8076b7443a22',1,'dcrud::ClassID::compareTo()'],['../d5/dd6/structdcrud_1_1_g_u_i_d.html#a53133b54a3b9cd85a8c45b47598768bb',1,'dcrud::GUID::compareTo()']]],
-  ['copy',['copy',['../da/dda/structio_1_1_byte_buffer.html#aa185ccfbaaaa419feb19747a648a7be8',1,'io::ByteBuffer']]],
-  ['create',['create',['../d3/dd9/structdcrud_1_1_i_cache.html#a4df09e9871e92a424dcdbd26d11a3c98',1,'dcrud::ICache']]],
-  ['createcache',['createCache',['../de/d95/structdcrud_1_1_i_participant.html#a2dc3ae2539d9ccf097129d19499ed4d6',1,'dcrud::IParticipant']]]
+  ['dcrud',['dcrud',['../d2/de2/namespacedcrud.html',1,'']]],
+  ['default_5fqueue',['DEFAULT_QUEUE',['../d6/d7b/classdcrud_1_1_i_required.html#a258c77e8e54169161e04e2bf0165500e',1,'dcrud::IRequired']]],
+  ['delete',['deleTe',['../d8/d86/classdcrud_1_1_i_cache.html#ab7d6f0b862b49b122a62b9a8d2ecd8af',1,'dcrud::ICache::deleTe()'],['../d9/d9a/classdcrud_1_1_i_c_r_u_d.html#a29a54f066e688b4cc4c3d40db6175ba7',1,'dcrud::ICRUD::deleTe()']]],
+  ['dump',['dump',['../dd/dd8/classio_1_1_byte_buffer.html#ac297a6019d8d0f13120a5c37aa9e393e',1,'io::ByteBuffer']]]
 ];

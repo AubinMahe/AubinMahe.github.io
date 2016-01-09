@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['network',['Network',['../df/d5b/structdcrud_1_1_network.html',1,'dcrud']]]
+  ['network',['Network',['../d7/df3/classdcrud_1_1_network.html',1,'dcrud']]]
 ];

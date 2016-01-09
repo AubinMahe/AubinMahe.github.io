@@ -1,4 +1,4 @@
-.TH "ClassID" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "ClassID" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -12,17 +12,20 @@ ClassID \-
 
 .in +1c
 .ti -1c
-.RI "enum \fBPredefined\fP { \fBNullType\fP, \fBByteType\fP, \fBBooleanType\fP, \fBShortType\fP, \fBIntegerType\fP, \fBLongType\fP, \fBFloatType\fP, \fBDoubleType\fP, \fBStringType\fP, \fBClassIDType\fP, \fBGUIDType\fP, \fBLAST_TYPE\fP }"
+.RI "enum \fBType\fP { \fBTYPE_NULL\fP, \fBTYPE_BYTE\fP, \fBTYPE_BOOLEAN\fP, \fBTYPE_SHORT\fP, \fBTYPE_INTEGER\fP, \fBTYPE_LONG\fP, \fBTYPE_FLOAT\fP, \fBTYPE_DOUBLE\fP, \fBTYPE_STRING\fP, \fBTYPE_CLASS_ID\fP, \fBTYPE_GUID\fP, \fBTYPE_CALL_MODE\fP, \fBTYPE_QUEUE_INDEX\fP, \fBTYPE_SHAREABLE\fP, \fBLAST_TYPE\fP }"
 .br
 .in -1c
 .SS "Public Member Functions"
 
 .in +1c
 .ti -1c
-.RI "\fBClassID\fP (byte p1, byte p2, byte p3, byte clazz)"
+.RI "\fBClassID\fP (byte p1=0, byte p2=0, byte p3=0, byte clazz=0)"
 .br
 .ti -1c
 .RI "\fBClassID\fP (const \fBClassID\fP &right)"
+.br
+.ti -1c
+.RI "\fBClassID\fP & \fBoperator=\fP (const \fBClassID\fP &right)"
 .br
 .ti -1c
 .RI "bool \fBoperator==\fP (const \fBClassID\fP &right) const "
@@ -31,13 +34,10 @@ ClassID \-
 .RI "bool \fBoperator<\fP (const \fBClassID\fP &right) const "
 .br
 .ti -1c
-.RI "bool \fBisPredefined\fP () const "
-.br
-.ti -1c
 .RI "int \fBcompareTo\fP (const \fBClassID\fP &right) const "
 .br
 .ti -1c
-.RI "\fBPredefined\fP \fBgetPredefined\fP () const "
+.RI "\fBType\fP \fBgetType\fP () const "
 .br
 .ti -1c
 .RI "void \fBserialize\fP (\fBio::ByteBuffer\fP &buffer) const "
@@ -50,26 +50,10 @@ ClassID \-
 
 .in +1c
 .ti -1c
-.RI "static void \fBserializePredefined\fP (\fBPredefined\fP predefined, \fBio::ByteBuffer\fP &buffer)"
+.RI "static void \fBserialize\fP (\fBType\fP type, \fBio::ByteBuffer\fP &buffer)"
 .br
 .ti -1c
 .RI "static \fBClassID\fP \fBunserialize\fP (\fBio::ByteBuffer\fP &buffer)"
-.br
-.in -1c
-.SS "Data Fields"
-
-.in +1c
-.ti -1c
-.RI "const byte \fB_p1\fP"
-.br
-.ti -1c
-.RI "const byte \fB_p2\fP"
-.br
-.ti -1c
-.RI "const byte \fB_p3\fP"
-.br
-.ti -1c
-.RI "const byte \fB_class\fP"
 .br
 .in -1c
 .SS "Static Public Attributes"
@@ -81,125 +65,139 @@ ClassID \-
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 12 of file ClassID\&.hpp\&.
+Definition at line 7 of file ClassID\&.hpp\&.
 .SH "Member Enumeration Documentation"
 .PP 
-.SS "enum \fBPredefined\fP"
+.SS "enum \fBType\fP"
 
 .PP
 \fBEnumerator\fP
 .in +1c
 .TP
-\fB\fINullType \fP\fP
+\fB\fITYPE_NULL \fP\fP
 .TP
-\fB\fIByteType \fP\fP
+\fB\fITYPE_BYTE \fP\fP
 .TP
-\fB\fIBooleanType \fP\fP
+\fB\fITYPE_BOOLEAN \fP\fP
 .TP
-\fB\fIShortType \fP\fP
+\fB\fITYPE_SHORT \fP\fP
 .TP
-\fB\fIIntegerType \fP\fP
+\fB\fITYPE_INTEGER \fP\fP
 .TP
-\fB\fILongType \fP\fP
+\fB\fITYPE_LONG \fP\fP
 .TP
-\fB\fIFloatType \fP\fP
+\fB\fITYPE_FLOAT \fP\fP
 .TP
-\fB\fIDoubleType \fP\fP
+\fB\fITYPE_DOUBLE \fP\fP
 .TP
-\fB\fIStringType \fP\fP
+\fB\fITYPE_STRING \fP\fP
 .TP
-\fB\fIClassIDType \fP\fP
+\fB\fITYPE_CLASS_ID \fP\fP
 .TP
-\fB\fIGUIDType \fP\fP
+\fB\fITYPE_GUID \fP\fP
+.TP
+\fB\fITYPE_CALL_MODE \fP\fP
+.TP
+\fB\fITYPE_QUEUE_INDEX \fP\fP
+.TP
+\fB\fITYPE_SHAREABLE \fP\fP
 .TP
 \fB\fILAST_TYPE \fP\fP
 .PP
-Definition at line 14 of file ClassID\&.hpp\&.
+Definition at line 10 of file ClassID\&.hpp\&.
 .PP
 .nf
-14                       {
-15          NullType,
-16          ByteType,
-17          BooleanType,
-18          ShortType,
-19          IntegerType,
-20          LongType,
-21          FloatType,
-22          DoubleType,
-23          StringType,
-24          ClassIDType,
-25          GUIDType,
+10                 {
+11 
+12          TYPE_NULL,
+13          TYPE_BYTE,
+14          TYPE_BOOLEAN,
+15          TYPE_SHORT,
+16          TYPE_INTEGER,
+17          TYPE_LONG,
+18          TYPE_FLOAT,
+19          TYPE_DOUBLE,
+20          TYPE_STRING,
+21          TYPE_CLASS_ID,
+22          TYPE_GUID,
+23          TYPE_CALL_MODE,
+24          TYPE_QUEUE_INDEX,
+25          TYPE_SHAREABLE,
 26 
 27          LAST_TYPE
 28       };
 .fi
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "\fBClassID\fP (bytep1, bytep2, bytep3, byteclazz)\fC [inline]\fP"
+.SS "\fBClassID\fP (bytep1 = \fC0\fP, bytep2 = \fC0\fP, bytep3 = \fC0\fP, byteclazz = \fC0\fP)\fC [inline]\fP"
 
 .PP
-Definition at line 37 of file ClassID\&.hpp\&.
+Definition at line 32 of file ClassID\&.hpp\&.
 .PP
 .nf
-37                                                        :
-38          _p1   ( p1    ),
-39          _p2   ( p2    ),
-40          _p3   ( p3    ),
-41          _class( clazz )
-42       {}
+32                                                                        :
+33          _p1   ( p1    ),
+34          _p2   ( p2    ),
+35          _p3   ( p3    ),
+36          _class( clazz )
+37       {}
 .fi
 .SS "\fBClassID\fP (const \fBClassID\fP &right)\fC [inline]\fP"
 
 .PP
-Definition at line 44 of file ClassID\&.hpp\&.
+Definition at line 39 of file ClassID\&.hpp\&.
 .PP
 .nf
-44                                        :
-45          _p1   ( right\&._p1    ),
-46          _p2   ( right\&._p2    ),
-47          _p3   ( right\&._p3    ),
-48          _class( right\&._class )
-49       {}
+39                                        :
+40          _p1   ( right\&._p1    ),
+41          _p2   ( right\&._p2    ),
+42          _p3   ( right\&._p3    ),
+43          _class( right\&._class )
+44       {}
 .fi
 .SH "Member Function Documentation"
 .PP 
 .SS "int compareTo (const \fBClassID\fP &right) const"
 
-.SS "\fBPredefined\fP getPredefined () const"
+.SS "\fBType\fP getType () const"
 
-.SS "bool isPredefined () const\fC [inline]\fP"
-
-.PP
-Definition at line 63 of file ClassID\&.hpp\&.
-.PP
-.nf
-63                                 {
-64          return ( _p1 == 0 ) && ( _p2 == 0 ) && ( _p3 == 0 );
-65       }
-.fi
 .SS "bool operator< (const \fBClassID\fP &right) const\fC [inline]\fP"
 
 .PP
-Definition at line 59 of file ClassID\&.hpp\&.
+Definition at line 62 of file ClassID\&.hpp\&.
 .PP
 .nf
-59                                                       {
-60          return compareTo( right ) < 0;
-61       }
+62                                                       {
+63          return compareTo( right ) < 0;
+64       }
+.fi
+.SS "\fBClassID\fP& operator= (const \fBClassID\fP &right)\fC [inline]\fP"
+
+.PP
+Definition at line 46 of file ClassID\&.hpp\&.
+.PP
+.nf
+46                                                      {
+47          _p1    = right\&._p1;
+48          _p2    = right\&._p2;
+49          _p3    = right\&._p3;
+50          _class = right\&._class;
+51          return *this;
+52       }
 .fi
 .SS "bool operator== (const \fBClassID\fP &right) const\fC [inline]\fP"
 
 .PP
-Definition at line 55 of file ClassID\&.hpp\&.
+Definition at line 58 of file ClassID\&.hpp\&.
 .PP
 .nf
-55                                                        {
-56          return compareTo( right ) == 0;
-57       }
+58                                                        {
+59          return compareTo( right ) == 0;
+60       }
 .fi
-.SS "void serialize (\fBio::ByteBuffer\fP &buffer) const"
+.SS "static void serialize (\fBType\fPtype, \fBio::ByteBuffer\fP &buffer)\fC [static]\fP"
 
-.SS "static void serializePredefined (\fBPredefined\fPpredefined, \fBio::ByteBuffer\fP &buffer)\fC [static]\fP"
+.SS "void serialize (\fBio::ByteBuffer\fP &buffer) const"
 
 .SS "std::string toString (void) const"
 
@@ -207,22 +205,6 @@ Definition at line 55 of file ClassID\&.hpp\&.
 
 .SH "Field Documentation"
 .PP 
-.SS "const byte _class"
-
-.PP
-Definition at line 35 of file ClassID\&.hpp\&.
-.SS "const byte _p1"
-
-.PP
-Definition at line 32 of file ClassID\&.hpp\&.
-.SS "const byte _p2"
-
-.PP
-Definition at line 33 of file ClassID\&.hpp\&.
-.SS "const byte _p3"
-
-.PP
-Definition at line 34 of file ClassID\&.hpp\&.
 .SS "const unsigned int SIZE = 4\fC [static]\fP"
 
 .PP

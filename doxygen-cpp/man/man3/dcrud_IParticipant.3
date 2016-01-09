@@ -1,4 +1,4 @@
-.TH "IParticipant" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "IParticipant" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -15,10 +15,19 @@ IParticipant \-
 .RI "virtual \fB~IParticipant\fP ()"
 .br
 .ti -1c
-.RI "virtual void \fBregisterClass\fP (const \fBClassID\fP &id, \fBfactory_t\fP factory)=0"
+.RI "virtual void \fBlisten\fP (const std::string &mcastAddr, unsigned short port, const std::string &networkInterface, bool dumpReceivedBuffer)=0"
 .br
 .ti -1c
-.RI "virtual \fBICache\fP & \fBcreateCache\fP ()=0"
+.RI "virtual void \fBregisterLocalFactory\fP (const \fBClassID\fP &id, \fBlocalFactory_t\fP factory)=0"
+.br
+.ti -1c
+.RI "virtual void \fBregisterRemoteFactory\fP (const \fBClassID\fP &id, \fBICRUD\fP *factory)=0"
+.br
+.ti -1c
+.RI "virtual \fBICache\fP & \fBgetDefaultCache\fP ()=0"
+.br
+.ti -1c
+.RI "virtual \fBICache\fP & \fBcreateCache\fP (byte &cacheIndex)=0"
 .br
 .ti -1c
 .RI "virtual \fBICache\fP & \fBgetCache\fP (byte ID)=0"
@@ -29,26 +38,32 @@ IParticipant \-
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 15 of file IParticipant\&.hpp\&.
+Definition at line 16 of file IParticipant\&.hpp\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "virtual ~\fBIParticipant\fP ()\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
-Definition at line 17 of file IParticipant\&.hpp\&.
+Definition at line 19 of file IParticipant\&.hpp\&.
 .PP
 .nf
-17 {}
+19 {}
 .fi
 .SH "Member Function Documentation"
 .PP 
-.SS "virtual \fBICache\fP& createCache ()\fC [pure virtual]\fP"
+.SS "virtual \fBICache\fP& createCache (byte &cacheIndex)\fC [pure virtual]\fP"
 
 .SS "virtual \fBICache\fP& getCache (byteID)\fC [pure virtual]\fP"
 
+.SS "virtual \fBICache\fP& getDefaultCache ()\fC [pure virtual]\fP"
+
 .SS "virtual \fBIDispatcher\fP& getDispatcher ()\fC [pure virtual]\fP"
 
-.SS "virtual void registerClass (const \fBClassID\fP &id, \fBfactory_t\fPfactory)\fC [pure virtual]\fP"
+.SS "virtual void listen (const std::string &mcastAddr, unsigned shortport, const std::string &networkInterface, booldumpReceivedBuffer)\fC [pure virtual]\fP"
+
+.SS "virtual void registerLocalFactory (const \fBClassID\fP &id, \fBlocalFactory_t\fPfactory)\fC [pure virtual]\fP"
+
+.SS "virtual void registerRemoteFactory (const \fBClassID\fP &id, \fBICRUD\fP *factory)\fC [pure virtual]\fP"
 
 
 .SH "Author"

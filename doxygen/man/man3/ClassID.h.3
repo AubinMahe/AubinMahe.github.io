@@ -1,4 +1,4 @@
-.TH "inc/dcrud/ClassID.h" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "inc/dcrud/ClassID.h" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -8,7 +8,23 @@ inc/dcrud/ClassID.h \-
 .PP
 \fC#include <io/ByteBuffer\&.h>\fP
 .br
+\fC#include <coll/ForeachFunction\&.h>\fP
+.br
 
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef enum \fBType_e\fP \fBdcrudType\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBType_e\fP { \fBdcrudTYPE_NULL\fP, \fBdcrudTYPE_BYTE\fP, \fBdcrudTYPE_BOOLEAN\fP, \fBdcrudTYPE_SHORT\fP, \fBdcrudTYPE_INTEGER\fP, \fBdcrudTYPE_LONG\fP, \fBdcrudTYPE_FLOAT\fP, \fBdcrudTYPE_DOUBLE\fP, \fBdcrudTYPE_STRING\fP, \fBdcrudTYPE_CLASS_ID\fP, \fBdcrudTYPE_GUID\fP, \fBdcrudTYPE_CALL_MODE\fP, \fBdcrudTYPE_QUEUE_INDEX\fP, \fBdcrudTYPE_SHAREABLE\fP, \fBdcrudLAST_TYPE\fP }"
+.br
+.in -1c
 .SS "Functions"
 
 .in +1c
@@ -31,12 +47,87 @@ inc/dcrud/ClassID.h \-
 .RI "\fBioStatus\fP \fBdcrudClassID_serialize\fP (const dcrudClassID This, ioByteBuffer target)"
 .br
 .ti -1c
+.RI "\fBioStatus\fP \fBdcrudClassID_serializeType\fP (\fBdcrudType\fP type, ioByteBuffer target)"
+.br
+.ti -1c
 .RI "\fBbool\fP \fBdcrudClassID_toString\fP (const dcrudClassID This, char *target, size_t targetSize)"
 .br
 .ti -1c
 .RI "int \fBdcrudClassID_compareTo\fP (const dcrudClassID *left, const dcrudClassID *right)"
 .br
+.ti -1c
+.RI "\fBdcrudType\fP \fBdcrudClassID_getType\fP (const dcrudClassID This)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudClassID_printMapPair\fP (\fBcollForeach\fP *context)"
+.br
 .in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef enum \fBType_e\fP  \fBdcrudType\fP"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBType_e\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIdcrudTYPE_NULL \fP\fP
+.TP
+\fB\fIdcrudTYPE_BYTE \fP\fP
+.TP
+\fB\fIdcrudTYPE_BOOLEAN \fP\fP
+.TP
+\fB\fIdcrudTYPE_SHORT \fP\fP
+.TP
+\fB\fIdcrudTYPE_INTEGER \fP\fP
+.TP
+\fB\fIdcrudTYPE_LONG \fP\fP
+.TP
+\fB\fIdcrudTYPE_FLOAT \fP\fP
+.TP
+\fB\fIdcrudTYPE_DOUBLE \fP\fP
+.TP
+\fB\fIdcrudTYPE_STRING \fP\fP
+.TP
+\fB\fIdcrudTYPE_CLASS_ID \fP\fP
+.TP
+\fB\fIdcrudTYPE_GUID \fP\fP
+.TP
+\fB\fIdcrudTYPE_CALL_MODE \fP\fP
+.TP
+\fB\fIdcrudTYPE_QUEUE_INDEX \fP\fP
+.TP
+\fB\fIdcrudTYPE_SHAREABLE \fP\fP
+.TP
+\fB\fIdcrudLAST_TYPE \fP\fP
+.PP
+Definition at line 11 of file ClassID\&.h\&.
+.PP
+.nf
+11                     {
+12 
+13    dcrudTYPE_NULL,
+14    dcrudTYPE_BYTE,
+15    dcrudTYPE_BOOLEAN,
+16    dcrudTYPE_SHORT,
+17    dcrudTYPE_INTEGER,
+18    dcrudTYPE_LONG,
+19    dcrudTYPE_FLOAT,
+20    dcrudTYPE_DOUBLE,
+21    dcrudTYPE_STRING,
+22    dcrudTYPE_CLASS_ID,
+23    dcrudTYPE_GUID,
+24    dcrudTYPE_CALL_MODE,
+25    dcrudTYPE_QUEUE_INDEX,
+26    dcrudTYPE_SHAREABLE,
+27 
+28    dcrudLAST_TYPE
+29 
+30 } dcrudType;
+.fi
 .SH "Function Documentation"
 .PP 
 .SS "int dcrudClassID_compareTo (const dcrudClassID *left, const dcrudClassID *right)"
@@ -45,9 +136,15 @@ inc/dcrud/ClassID.h \-
 
 .SS "void dcrudClassID_get (const dcrudClassIDThis, \fBbyte\fP *pckg1, \fBbyte\fP *pckg2, \fBbyte\fP *pckg3, \fBbyte\fP *clazz)"
 
+.SS "\fBdcrudType\fP dcrudClassID_getType (const dcrudClassIDThis)"
+
 .SS "dcrudClassID dcrudClassID_new (\fBbyte\fPpackage1, \fBbyte\fPpackage2, \fBbyte\fPpackage3, \fBbyte\fPclazz)"
 
+.SS "\fBbool\fP dcrudClassID_printMapPair (\fBcollForeach\fP *context)"
+
 .SS "\fBioStatus\fP dcrudClassID_serialize (const dcrudClassIDThis, ioByteBuffertarget)"
+
+.SS "\fBioStatus\fP dcrudClassID_serializeType (\fBdcrudType\fPtype, ioByteBuffertarget)"
 
 .SS "\fBbool\fP dcrudClassID_toString (const dcrudClassIDThis, char *target, size_ttargetSize)"
 

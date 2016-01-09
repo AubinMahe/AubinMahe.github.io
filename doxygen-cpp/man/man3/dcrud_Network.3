@@ -1,4 +1,4 @@
-.TH "Network" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "Network" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -12,20 +12,20 @@ Network \-
 
 .in +1c
 .ti -1c
-.RI "static \fBIParticipant\fP & \fBjoin\fP (const char *networkConfFile, const char *intrfcName, unsigned short id)"
+.RI "static \fBIParticipant\fP & \fBjoin\fP (unsigned int publisherId, const std::string &mcastAddr, unsigned short port, const std::string &intrfc)"
 .br
 .ti -1c
-.RI "static void \fBleave\fP (\fBIParticipant\fP &toDelete)"
+.RI "static void \fBleave\fP (\fBIParticipant\fP &participant)"
 .br
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 7 of file Network\&.hpp\&.
+Definition at line 9 of file Network\&.hpp\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "static \fBIParticipant\fP& join (const char *networkConfFile, const char *intrfcName, unsigned shortid)\fC [static]\fP"
+.SS "static \fBIParticipant\fP& join (unsigned intpublisherId, const std::string &mcastAddr, unsigned shortport, const std::string &intrfc)\fC [static]\fP"
 
-.SS "static void leave (\fBIParticipant\fP &toDelete)\fC [static]\fP"
+.SS "static void leave (\fBIParticipant\fP &participant)\fC [static]\fP"
 
 
 .SH "Author"

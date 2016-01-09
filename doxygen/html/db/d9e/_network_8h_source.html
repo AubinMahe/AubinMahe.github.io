@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../local.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dcrud
    &#160;<span id="projectnumber">0.0.0</span>
@@ -114,26 +113,28 @@ $(document).ready(function(){initNavTree('db/d9e/_network_8h_source.html','../..
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../de/dfa/_i_participant_8h.html">dcrud/IParticipant.h</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;dcrudIParticipant <a class="code" href="../../db/d9e/_network_8h.html#a705aa84c33262976bafd5b32d6d5028e">dcrudNetwork_join</a>(</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> *   networkConfFile,</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> *   intrfc,</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">id</span>       );</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d9e/_network_8h.html#a2a11fdfc785e13b03d66a350f685faea">dcrudNetwork_leave</a>( dcrudIParticipant * This );</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;dcrudIParticipant <a class="code" href="../../db/d9e/_network_8h.html#ab821f448428dd0009e62183713d8227d">dcrudNetwork_join</a>(</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>   publisherId,</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> *   mcastAddr,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> port,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> *   intrfc,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   <span class="keywordtype">bool</span>           dumpReceivedBuffer );</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="_network_8h_html_a2a11fdfc785e13b03d66a350f685faea"><div class="ttname"><a href="../../db/d9e/_network_8h.html#a2a11fdfc785e13b03d66a350f685faea">dcrudNetwork_leave</a></div><div class="ttdeci">void dcrudNetwork_leave(dcrudIParticipant *This)</div></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d9e/_network_8h.html#aef31692b1f9084eb94b19ecca1d52f9e">dcrudNetwork_leave</a>( dcrudIParticipant * participant );</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="_network_8h_html_ab821f448428dd0009e62183713d8227d"><div class="ttname"><a href="../../db/d9e/_network_8h.html#ab821f448428dd0009e62183713d8227d">dcrudNetwork_join</a></div><div class="ttdeci">dcrudIParticipant dcrudNetwork_join(unsigned int publisherId, const char *mcastAddr, unsigned short port, const char *intrfc, bool dumpReceivedBuffer)</div></div>
 <div class="ttc" id="_i_participant_8h_html"><div class="ttname"><a href="../../de/dfa/_i_participant_8h.html">IParticipant.h</a></div></div>
-<div class="ttc" id="_network_8h_html_a705aa84c33262976bafd5b32d6d5028e"><div class="ttname"><a href="../../db/d9e/_network_8h.html#a705aa84c33262976bafd5b32d6d5028e">dcrudNetwork_join</a></div><div class="ttdeci">dcrudIParticipant dcrudNetwork_join(const char *networkConfFile, const char *intrfc, unsigned short id)</div></div>
+<div class="ttc" id="_network_8h_html_aef31692b1f9084eb94b19ecca1d52f9e"><div class="ttname"><a href="../../db/d9e/_network_8h.html#aef31692b1f9084eb94b19ecca1d52f9e">dcrudNetwork_leave</a></div><div class="ttdeci">void dcrudNetwork_leave(dcrudIParticipant *participant)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_3a435a663220092428ebe5e98c15f11a.html">dcrud</a></li><li class="navelem"><a class="el" href="../../db/d9e/_network_8h.html">Network.h</a></li>
-    <li class="footer">Generated on Mon Dec 14 2015 22:44:31 for dcrud by
+    <li class="footer">Generated on Sat Jan 9 2016 14:54:16 for dcrud by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

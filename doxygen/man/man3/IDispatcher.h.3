@@ -1,4 +1,4 @@
-.TH "inc/dcrud/IDispatcher.h" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "inc/dcrud/IDispatcher.h" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -8,13 +8,15 @@ inc/dcrud/IDispatcher.h \-
 .PP
 \fC#include <coll/Map\&.h>\fP
 .br
-\fC#include <dcrud/Shareable\&.h>\fP
+\fC#include 'Shareable\&.h'\fP
 .br
-\fC#include <dcrud/Status\&.h>\fP
+\fC#include 'Status\&.h'\fP
 .br
-\fC#include <dcrud/IProvided\&.h>\fP
+\fC#include 'IProvided\&.h'\fP
 .br
-\fC#include <dcrud/IRequired\&.h>\fP
+\fC#include 'IRequired\&.h'\fP
+.br
+\fC#include 'ICRUD\&.h'\fP
 .br
 
 .SS "Functions"
@@ -30,6 +32,9 @@ inc/dcrud/IDispatcher.h \-
 .RI "dcrudIRequired \fBdcrudIDispatcher_require\fP (dcrudIDispatcher This, const char *name)"
 .br
 .ti -1c
+.RI "dcrudICRUD \fBdcrudIDispatcher_requireCRUD\fP (dcrudIDispatcher This, dcrudClassID classId)"
+.br
+.ti -1c
 .RI "void \fBdcrudIDispatcher_handleRequests\fP (dcrudIDispatcher This)"
 .br
 .in -1c
@@ -40,6 +45,8 @@ inc/dcrud/IDispatcher.h \-
 .SS "dcrudIProvided dcrudIDispatcher_provide (dcrudIDispatcherThis, const char *name)"
 
 .SS "dcrudIRequired dcrudIDispatcher_require (dcrudIDispatcherThis, const char *name)"
+
+.SS "dcrudICRUD dcrudIDispatcher_requireCRUD (dcrudIDispatcherThis, dcrudClassIDclassId)"
 
 .SS "UTIL_ADT (dcrudIDispatcher)"
 

@@ -1,4 +1,4 @@
-.TH "IDispatcher" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "IDispatcher" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -15,10 +15,13 @@ IDispatcher \-
 .RI "virtual \fB~IDispatcher\fP ()"
 .br
 .ti -1c
-.RI "virtual \fBIProvided\fP & \fBprovide\fP (const char *name)=0"
+.RI "virtual \fBIProvided\fP & \fBprovide\fP (const std::string &name)=0"
 .br
 .ti -1c
-.RI "virtual \fBIRequired\fP & \fBrequire\fP (const char *name)=0"
+.RI "virtual \fBIRequired\fP & \fBrequire\fP (const std::string &name)=0"
+.br
+.ti -1c
+.RI "virtual \fBICRUD\fP & \fBrequireCRUD\fP (const \fBClassID\fP &classId)=0"
 .br
 .ti -1c
 .RI "virtual void \fBhandleRequests\fP (void)=0"
@@ -26,24 +29,26 @@ IDispatcher \-
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 8 of file IDispatcher\&.hpp\&.
+Definition at line 11 of file IDispatcher\&.hpp\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "virtual ~\fBIDispatcher\fP ()\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
-Definition at line 10 of file IDispatcher\&.hpp\&.
+Definition at line 14 of file IDispatcher\&.hpp\&.
 .PP
 .nf
-10 {}
+14 {}
 .fi
 .SH "Member Function Documentation"
 .PP 
 .SS "virtual void handleRequests (void)\fC [pure virtual]\fP"
 
-.SS "virtual \fBIProvided\fP& provide (const char *name)\fC [pure virtual]\fP"
+.SS "virtual \fBIProvided\fP& provide (const std::string &name)\fC [pure virtual]\fP"
 
-.SS "virtual \fBIRequired\fP& require (const char *name)\fC [pure virtual]\fP"
+.SS "virtual \fBIRequired\fP& require (const std::string &name)\fC [pure virtual]\fP"
+
+.SS "virtual \fBICRUD\fP& requireCRUD (const \fBClassID\fP &classId)\fC [pure virtual]\fP"
 
 
 .SH "Author"

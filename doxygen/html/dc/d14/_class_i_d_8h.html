@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../local.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dcrud
    &#160;<span id="projectnumber">0.0.0</span>
@@ -104,29 +103,62 @@ $(document).ready(function(){initNavTree('dc/d14/_class_i_d_8h.html','../../');}
 
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ClassID.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="../../d6/d6c/_byte_buffer_8h_source.html">io/ByteBuffer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d2/d8e/_foreach_function_8h_source.html">coll/ForeachFunction.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ClassID.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d8/d51/_class_i_d_8h__incl.png" border="0" usemap="#inc_2dcrud_2_class_i_d_8h" alt=""/></div>
 <map name="inc_2dcrud_2_class_i_d_8h" id="inc_2dcrud_2_class_i_d_8h">
-<area shape="rect" id="node2" href="../../d6/d6c/_byte_buffer_8h.html" title="io/ByteBuffer.h" alt="" coords="192,80,301,107"/><area shape="rect" id="node3" href="../../d9/d49/types_8h.html" title="util/types.h" alt="" coords="38,155,124,181"/><area shape="rect" id="node6" href="../../da/ddd/socket_8h.html" title="io/socket.h" alt="" coords="149,155,235,181"/><area shape="rect" id="node7" href="../../d4/d85/io_2_status_8h.html" title="io/Status.h" alt="" coords="260,155,345,181"/></map>
+<area shape="rect" id="node2" href="../../d6/d6c/_byte_buffer_8h.html" title="io/ByteBuffer.h" alt="" coords="237,80,347,107"/><area shape="rect" id="node10" href="../../d2/d8e/_foreach_function_8h.html" title="coll/ForeachFunction.h" alt="" coords="371,80,524,107"/><area shape="rect" id="node3" href="../../d9/d49/types_8h.html" title="util/types.h" alt="" coords="83,155,169,181"/><area shape="rect" id="node7" href="../../da/ddd/socket_8h.html" title="io/socket.h" alt="" coords="194,155,280,181"/><area shape="rect" id="node8" href="../../d4/d85/io_2_status_8h.html" title="io/Status.h" alt="" coords="305,155,391,181"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../de/d84/_class_i_d_8h__dep__incl.png" border="0" usemap="#inc_2dcrud_2_class_i_d_8hdep" alt=""/></div>
 <map name="inc_2dcrud_2_class_i_d_8hdep" id="inc_2dcrud_2_class_i_d_8hdep">
-<area shape="rect" id="node2" href="../../dd/dfb/_shareable_8h.html" title="inc/dcrud/Shareable.h" alt="" coords="81,80,228,107"/><area shape="rect" id="node3" href="../../d8/d01/_i_cache_8h.html" title="inc/dcrud/ICache.h" alt="" coords="5,155,136,181"/><area shape="rect" id="node6" href="../../d0/d61/_i_dispatcher_8h.html" title="inc/dcrud/IDispatcher.h" alt="" coords="161,155,319,181"/><area shape="rect" id="node4" href="../../de/dfa/_i_participant_8h.html" title="inc/dcrud/IParticipant.h" alt="" coords="77,229,232,256"/><area shape="rect" id="node5" href="../../db/d9e/_network_8h.html" title="inc/dcrud/Network.h" alt="" coords="85,304,224,331"/></map>
+<area shape="rect" id="node2" href="../../dd/dfb/_shareable_8h.html" title="inc/dcrud/Shareable.h" alt="" coords="335,80,483,107"/><area shape="rect" id="node3" href="../../d3/da0/_arguments_8h.html" title="inc/dcrud/Arguments.h" alt="" coords="166,155,319,181"/><area shape="rect" id="node6" href="../../d0/d61/_i_dispatcher_8h.html" title="inc/dcrud/IDispatcher.h" alt="" coords="279,379,436,405"/><area shape="rect" id="node10" href="../../d8/d01/_i_cache_8h.html" title="inc/dcrud/ICache.h" alt="" coords="487,304,619,331"/><area shape="rect" id="node11" href="../../db/d3a/_i_c_r_u_d_8h.html" title="inc/dcrud/ICRUD.h" alt="" coords="395,155,529,181"/><area shape="rect" id="node4" href="../../d0/d79/_i_callback_8h.html" title="inc/dcrud/ICallback.h" alt="" coords="5,229,149,256"/><area shape="rect" id="node9" href="../../d3/d0c/_i_provided_8h.html" title="inc/dcrud/IProvided.h" alt="" coords="174,229,319,256"/><area shape="rect" id="node5" href="../../da/d81/_i_required_8h.html" title="inc/dcrud/IRequired.h" alt="" coords="35,304,181,331"/><area shape="rect" id="node7" href="../../de/dfa/_i_participant_8h.html" title="inc/dcrud/IParticipant.h" alt="" coords="357,453,512,480"/><area shape="rect" id="node8" href="../../db/d9e/_network_8h.html" title="inc/dcrud/Network.h" alt="" coords="365,528,504,555"/></map>
 </div>
 </div>
 <p><a href="../../dc/d14/_class_i_d_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a7297e87a1b0736d671ff9b29b7e0bb2c"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0b">Type_e</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/_class_i_d_8h.html#a7297e87a1b0736d671ff9b29b7e0bb2c">dcrudType</a></td></tr>
+<tr class="separator:a7297e87a1b0736d671ff9b29b7e0bb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a52fe9583fb1d702f7e0e065420c15f0b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0b">Type_e</a> { <br />
+&#160;&#160;<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba98f272261aa9bdce472860fb578509b0">dcrudTYPE_NULL</a>, 
+<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba825bdb31a72068eedeadbca4fd68d8d5">dcrudTYPE_BYTE</a>, 
+<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba166d60f31d42c5cad39cdfc58ee030a7">dcrudTYPE_BOOLEAN</a>, 
+<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba694248fa3be688e45bb189e20f810037">dcrudTYPE_SHORT</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba9ac0198224db596871c3469f488ff33c">dcrudTYPE_INTEGER</a>, 
+<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba58af342d6cdd0bc89b6882200be19adf">dcrudTYPE_LONG</a>, 
+<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba9e1bbf19f581afe57be7b0672bf38aae">dcrudTYPE_FLOAT</a>, 
+<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba39a142d750e54146777697787f238f01">dcrudTYPE_DOUBLE</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba9ef22b9172f408662432b4ad6fb0f312">dcrudTYPE_STRING</a>, 
+<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0baf3cfcb9550312a2463b952e97337c775">dcrudTYPE_CLASS_ID</a>, 
+<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba72981e260fe0519e7c5bc7520e633cc5">dcrudTYPE_GUID</a>, 
+<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0bab828810e20a6eb4dc15a9cf4b38aca99">dcrudTYPE_CALL_MODE</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba08b8e420c979ea8cd8c31277424ce910">dcrudTYPE_QUEUE_INDEX</a>, 
+<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba4d05deb9e94d31bcf194db7e6d250afa">dcrudTYPE_SHAREABLE</a>, 
+<a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba92c5d823211335aa42c198d5254fb10a">dcrudLAST_TYPE</a>
+<br />
+ }</td></tr>
+<tr class="separator:a52fe9583fb1d702f7e0e065420c15f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a5ff2fdc0497793462d01041478daffb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/_class_i_d_8h.html#a5ff2fdc0497793462d01041478daffb2">UTIL_ADT</a> (dcrudClassID)</td></tr>
@@ -141,11 +173,113 @@ Functions</h2></td></tr>
 <tr class="separator:a95f9276abc1f8ad8c3bdc92d6fe5ff72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1f2c8ba5a813cb72781b68ddb334728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d85/io_2_status_8h.html#ae4299e55562a35537603a2d56c4e1b80">ioStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/_class_i_d_8h.html#ab1f2c8ba5a813cb72781b68ddb334728">dcrudClassID_serialize</a> (const dcrudClassID This, ioByteBuffer target)</td></tr>
 <tr class="separator:ab1f2c8ba5a813cb72781b68ddb334728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade433317807c0ba15af9a42b69d4951d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d85/io_2_status_8h.html#ae4299e55562a35537603a2d56c4e1b80">ioStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/_class_i_d_8h.html#ade433317807c0ba15af9a42b69d4951d">dcrudClassID_serializeType</a> (<a class="el" href="../../dc/d14/_class_i_d_8h.html#a7297e87a1b0736d671ff9b29b7e0bb2c">dcrudType</a> type, ioByteBuffer target)</td></tr>
+<tr class="separator:ade433317807c0ba15af9a42b69d4951d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae91cccb603002927d5d7c7cb0cc34a9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d49/types_8h.html#a1062901a7428fdd9c7f180f5e01ea056">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/_class_i_d_8h.html#ae91cccb603002927d5d7c7cb0cc34a9f">dcrudClassID_toString</a> (const dcrudClassID This, char *target, size_t targetSize)</td></tr>
 <tr class="separator:ae91cccb603002927d5d7c7cb0cc34a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0faa304530112c8c9d9f933a97d034dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/_class_i_d_8h.html#a0faa304530112c8c9d9f933a97d034dc">dcrudClassID_compareTo</a> (const dcrudClassID *left, const dcrudClassID *right)</td></tr>
 <tr class="separator:a0faa304530112c8c9d9f933a97d034dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa24b8cd9fc19baecde81cf2dd5cfed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d14/_class_i_d_8h.html#a7297e87a1b0736d671ff9b29b7e0bb2c">dcrudType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/_class_i_d_8h.html#a6fa24b8cd9fc19baecde81cf2dd5cfed">dcrudClassID_getType</a> (const dcrudClassID This)</td></tr>
+<tr class="separator:a6fa24b8cd9fc19baecde81cf2dd5cfed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7589a165b48d372ee5ccaaabb8789a0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d49/types_8h.html#a1062901a7428fdd9c7f180f5e01ea056">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d14/_class_i_d_8h.html#a7589a165b48d372ee5ccaaabb8789a0d">dcrudClassID_printMapPair</a> (<a class="el" href="../../d2/d8e/_foreach_function_8h.html#ac57a70f36b92e14e609510a6f54b4192">collForeach</a> *context)</td></tr>
+<tr class="separator:a7589a165b48d372ee5ccaaabb8789a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a7297e87a1b0736d671ff9b29b7e0bb2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0b">Type_e</a>  <a class="el" href="../../dc/d14/_class_i_d_8h.html#a7297e87a1b0736d671ff9b29b7e0bb2c">dcrudType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0b">Type_e</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0ba98f272261aa9bdce472860fb578509b0"></a>dcrudTYPE_NULL&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0ba825bdb31a72068eedeadbca4fd68d8d5"></a>dcrudTYPE_BYTE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0ba166d60f31d42c5cad39cdfc58ee030a7"></a>dcrudTYPE_BOOLEAN&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0ba694248fa3be688e45bb189e20f810037"></a>dcrudTYPE_SHORT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0ba9ac0198224db596871c3469f488ff33c"></a>dcrudTYPE_INTEGER&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0ba58af342d6cdd0bc89b6882200be19adf"></a>dcrudTYPE_LONG&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0ba9e1bbf19f581afe57be7b0672bf38aae"></a>dcrudTYPE_FLOAT&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0ba39a142d750e54146777697787f238f01"></a>dcrudTYPE_DOUBLE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0ba9ef22b9172f408662432b4ad6fb0f312"></a>dcrudTYPE_STRING&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0baf3cfcb9550312a2463b952e97337c775"></a>dcrudTYPE_CLASS_ID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0ba72981e260fe0519e7c5bc7520e633cc5"></a>dcrudTYPE_GUID&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0bab828810e20a6eb4dc15a9cf4b38aca99"></a>dcrudTYPE_CALL_MODE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0ba08b8e420c979ea8cd8c31277424ce910"></a>dcrudTYPE_QUEUE_INDEX&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0ba4d05deb9e94d31bcf194db7e6d250afa"></a>dcrudTYPE_SHAREABLE&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a52fe9583fb1d702f7e0e065420c15f0ba92c5d823211335aa42c198d5254fb10a"></a>dcrudLAST_TYPE&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="../../dc/d14/_class_i_d_8h_source.html#l00011">11</a> of file <a class="el" href="../../dc/d14/_class_i_d_8h_source.html">ClassID.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                    {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba98f272261aa9bdce472860fb578509b0">dcrudTYPE_NULL</a>,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba825bdb31a72068eedeadbca4fd68d8d5">dcrudTYPE_BYTE</a>,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba166d60f31d42c5cad39cdfc58ee030a7">dcrudTYPE_BOOLEAN</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba694248fa3be688e45bb189e20f810037">dcrudTYPE_SHORT</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba9ac0198224db596871c3469f488ff33c">dcrudTYPE_INTEGER</a>,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba58af342d6cdd0bc89b6882200be19adf">dcrudTYPE_LONG</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba9e1bbf19f581afe57be7b0672bf38aae">dcrudTYPE_FLOAT</a>,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba39a142d750e54146777697787f238f01">dcrudTYPE_DOUBLE</a>,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba9ef22b9172f408662432b4ad6fb0f312">dcrudTYPE_STRING</a>,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0baf3cfcb9550312a2463b952e97337c775">dcrudTYPE_CLASS_ID</a>,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba72981e260fe0519e7c5bc7520e633cc5">dcrudTYPE_GUID</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0bab828810e20a6eb4dc15a9cf4b38aca99">dcrudTYPE_CALL_MODE</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba08b8e420c979ea8cd8c31277424ce910">dcrudTYPE_QUEUE_INDEX</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba4d05deb9e94d31bcf194db7e6d250afa">dcrudTYPE_SHAREABLE</a>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;   <a class="code" href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba92c5d823211335aa42c198d5254fb10a">dcrudLAST_TYPE</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} <a class="code" href="../../dc/d14/_class_i_d_8h.html#a7297e87a1b0736d671ff9b29b7e0bb2c">dcrudType</a>;</div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0ba9ac0198224db596871c3469f488ff33c"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba9ac0198224db596871c3469f488ff33c">dcrudTYPE_INTEGER</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00017">ClassID.h:17</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0bab828810e20a6eb4dc15a9cf4b38aca99"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0bab828810e20a6eb4dc15a9cf4b38aca99">dcrudTYPE_CALL_MODE</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00024">ClassID.h:24</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a7297e87a1b0736d671ff9b29b7e0bb2c"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a7297e87a1b0736d671ff9b29b7e0bb2c">dcrudType</a></div><div class="ttdeci">enum Type_e dcrudType</div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0baf3cfcb9550312a2463b952e97337c775"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0baf3cfcb9550312a2463b952e97337c775">dcrudTYPE_CLASS_ID</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00022">ClassID.h:22</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0ba694248fa3be688e45bb189e20f810037"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba694248fa3be688e45bb189e20f810037">dcrudTYPE_SHORT</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00016">ClassID.h:16</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0ba98f272261aa9bdce472860fb578509b0"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba98f272261aa9bdce472860fb578509b0">dcrudTYPE_NULL</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00013">ClassID.h:13</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0ba58af342d6cdd0bc89b6882200be19adf"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba58af342d6cdd0bc89b6882200be19adf">dcrudTYPE_LONG</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00018">ClassID.h:18</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0ba08b8e420c979ea8cd8c31277424ce910"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba08b8e420c979ea8cd8c31277424ce910">dcrudTYPE_QUEUE_INDEX</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00025">ClassID.h:25</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0ba4d05deb9e94d31bcf194db7e6d250afa"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba4d05deb9e94d31bcf194db7e6d250afa">dcrudTYPE_SHAREABLE</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00026">ClassID.h:26</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0ba9e1bbf19f581afe57be7b0672bf38aae"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba9e1bbf19f581afe57be7b0672bf38aae">dcrudTYPE_FLOAT</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00019">ClassID.h:19</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0ba72981e260fe0519e7c5bc7520e633cc5"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba72981e260fe0519e7c5bc7520e633cc5">dcrudTYPE_GUID</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00023">ClassID.h:23</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0ba92c5d823211335aa42c198d5254fb10a"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba92c5d823211335aa42c198d5254fb10a">dcrudLAST_TYPE</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00028">ClassID.h:28</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0ba9ef22b9172f408662432b4ad6fb0f312"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba9ef22b9172f408662432b4ad6fb0f312">dcrudTYPE_STRING</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00021">ClassID.h:21</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0ba825bdb31a72068eedeadbca4fd68d8d5"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba825bdb31a72068eedeadbca4fd68d8d5">dcrudTYPE_BYTE</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00014">ClassID.h:14</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0ba39a142d750e54146777697787f238f01"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba39a142d750e54146777697787f238f01">dcrudTYPE_DOUBLE</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00020">ClassID.h:20</a></div></div>
+<div class="ttc" id="_class_i_d_8h_html_a52fe9583fb1d702f7e0e065420c15f0ba166d60f31d42c5cad39cdfc58ee030a7"><div class="ttname"><a href="../../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba166d60f31d42c5cad39cdfc58ee030a7">dcrudTYPE_BOOLEAN</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d14/_class_i_d_8h_source.html#l00015">ClassID.h:15</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a0faa304530112c8c9d9f933a97d034dc"></a>
 <div class="memitem">
@@ -233,6 +367,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6fa24b8cd9fc19baecde81cf2dd5cfed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d14/_class_i_d_8h.html#a7297e87a1b0736d671ff9b29b7e0bb2c">dcrudType</a> dcrudClassID_getType </td>
+          <td>(</td>
+          <td class="paramtype">const dcrudClassID&#160;</td>
+          <td class="paramname"><em>This</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a81d57f54f9bbc7e3d0fff4064610c716"></a>
 <div class="memitem">
 <div class="memproto">
@@ -271,6 +421,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a7589a165b48d372ee5ccaaabb8789a0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d49/types_8h.html#a1062901a7428fdd9c7f180f5e01ea056">bool</a> dcrudClassID_printMapPair </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d8e/_foreach_function_8h.html#ac57a70f36b92e14e609510a6f54b4192">collForeach</a> *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab1f2c8ba5a813cb72781b68ddb334728"></a>
 <div class="memitem">
 <div class="memproto">
@@ -280,6 +446,32 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const dcrudClassID&#160;</td>
           <td class="paramname"><em>This</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ioByteBuffer&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade433317807c0ba15af9a42b69d4951d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d85/io_2_status_8h.html#ae4299e55562a35537603a2d56c4e1b80">ioStatus</a> dcrudClassID_serializeType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d14/_class_i_d_8h.html#a7297e87a1b0736d671ff9b29b7e0bb2c">dcrudType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -377,7 +569,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_3a435a663220092428ebe5e98c15f11a.html">dcrud</a></li><li class="navelem"><a class="el" href="../../dc/d14/_class_i_d_8h.html">ClassID.h</a></li>
-    <li class="footer">Generated on Mon Dec 14 2015 22:44:31 for dcrud by
+    <li class="footer">Generated on Sat Jan 9 2016 14:54:16 for dcrud by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

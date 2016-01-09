@@ -1,4 +1,4 @@
-.TH "inc/dcrud/Arguments.hpp" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "inc/dcrud/Arguments.hpp" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,6 +6,10 @@ inc/dcrud/Arguments.hpp \-
 .SH SYNOPSIS
 .br
 .PP
+\fC#include <dcrud/ClassID\&.hpp>\fP
+.br
+\fC#include <dcrud/GUID\&.hpp>\fP
+.br
 \fC#include <map>\fP
 .br
 \fC#include <string>\fP
@@ -17,7 +21,7 @@ inc/dcrud/Arguments.hpp \-
 
 .in +1c
 .ti -1c
-.RI "struct \fBArguments\fP"
+.RI "class \fBArguments\fP"
 .br
 .in -1c
 .SS "Namespaces"
@@ -25,21 +29,6 @@ inc/dcrud/Arguments.hpp \-
 .in +1c
 .ti -1c
 .RI " \fBdcrud\fP"
-.br
-.in -1c
-.SS "Typedefs"
-
-.in +1c
-.ti -1c
-.RI "typedef std::map< std::string, 
-.br
-const void * > \fBargs_t\fP"
-.br
-.ti -1c
-.RI "typedef args_t::iterator \fBargsIter_t\fP"
-.br
-.ti -1c
-.RI "typedef args_t::const_iterator \fBargsCstIter_t\fP"
 .br
 .in -1c
 .SH "Author"

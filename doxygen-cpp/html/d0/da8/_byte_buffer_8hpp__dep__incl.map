@@ -1,4 +1,9 @@
 <map id="inc/io/ByteBuffer.hpp" name="inc/io/ByteBuffer.hpp">
-<area shape="rect" id="node2" href="$da/d73/_g_u_i_d_8hpp.html" title="inc/dcrud/GUID.hpp" alt="" coords="17,80,156,107"/>
-<area shape="rect" id="node3" href="$d2/dca/_shareable_8hpp.html" title="inc/dcrud/Shareable.hpp" alt="" coords="5,155,168,181"/>
+<area shape="rect" id="node2" href="$dc/d3d/_class_i_d_8hpp.html" title="inc/dcrud/ClassID.hpp" alt="" coords="363,80,515,107"/>
+<area shape="rect" id="node7" href="$d2/dca/_shareable_8hpp.html" title="inc/dcrud/Shareable.hpp" alt="" coords="377,155,540,181"/>
+<area shape="rect" id="node8" href="$da/d73/_g_u_i_d_8hpp.html" title="inc/dcrud/GUID.hpp" alt="" coords="200,80,339,107"/>
+<area shape="rect" id="node3" href="$d5/d87/_arguments_8hpp.html" title="inc/dcrud/Arguments.hpp" alt="" coords="186,155,352,181"/>
+<area shape="rect" id="node4" href="$d4/d0f/_i_callback_8hpp.html" title="inc/dcrud/ICallback.hpp" alt="" coords="5,229,163,256"/>
+<area shape="rect" id="node5" href="$d8/d4a/_i_operation_8hpp.html" title="inc/dcrud/IOperation.hpp" alt="" coords="187,229,351,256"/>
+<area shape="rect" id="node6" href="$db/dac/_i_required_8hpp.html" title="inc/dcrud/IRequired.hpp" alt="" coords="376,229,535,256"/>
 </map>

@@ -1,0 +1,37 @@
+.TH "inc/util/Trace.h" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+inc/util/Trace.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fButilTrace_open\fP (const char *filename)"
+.br
+.ti -1c
+.RI "void \fButilTrace_entry\fP (const char *functionName, const char *format,\&.\&.\&.)"
+.br
+.ti -1c
+.RI "void \fButilTrace_exit\fP (const char *functionName, const char *format,\&.\&.\&.)"
+.br
+.ti -1c
+.RI "void \fButilTrace_error\fP (const char *functionName, const char *format,\&.\&.\&.)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void utilTrace_entry (const char *functionName, const char *format, \&.\&.\&.)"
+
+.SS "void utilTrace_error (const char *functionName, const char *format, \&.\&.\&.)"
+
+.SS "void utilTrace_exit (const char *functionName, const char *format, \&.\&.\&.)"
+
+.SS "void utilTrace_open (const char *filename)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

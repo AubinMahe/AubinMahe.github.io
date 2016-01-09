@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['classidtype',['ClassIDType',['../d4/df5/structdcrud_1_1_class_i_d.html#ad3b4c86f67a2b823a1bed8a5609f0cdca1eaff16522d1ef85de54f143ed76a69f',1,'dcrud::ClassID']]]
+  ['last_5ftype',['LAST_TYPE',['../d2/d51/classdcrud_1_1_class_i_d.html#a1d1cfd8ffb84e947f82999c682b666a7a30ec7db0fdce66b2fd0c1af4bbb6714a',1,'dcrud::ClassID']]]
 ];

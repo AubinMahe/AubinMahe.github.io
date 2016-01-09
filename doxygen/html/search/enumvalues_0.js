@@ -14,5 +14,20 @@ var searchData=
   ['dcrud_5fsynchronous',['DCRUD_SYNCHRONOUS',['../da/d81/_i_required_8h.html#a9a65fde6a617f5ebf314254a0c0800f9a2e90b303cd159681efcf57543036a1cc',1,'IRequired.h']]],
   ['dcrud_5ftoo_5fmany_5fcaches',['DCRUD_TOO_MANY_CACHES',['../d5/dd8/dcrud_2_status_8h.html#a0a7b141930e124d550c5358972c4298ca569c0fb90f1e077e536118dc25f2a1bc',1,'Status.h']]],
   ['dcrud_5furgent_5fqueue',['DCRUD_URGENT_QUEUE',['../da/d81/_i_required_8h.html#a98424b019765d5b1269e9a8629e91dcca8ddc8f683607ede43c8ea1acb8daa031',1,'IRequired.h']]],
-  ['dcrud_5fvery_5furgent_5fqueue',['DCRUD_VERY_URGENT_QUEUE',['../da/d81/_i_required_8h.html#a98424b019765d5b1269e9a8629e91dcca9551077edd89b1f084664eeb093c0b5e',1,'IRequired.h']]]
+  ['dcrud_5fvery_5furgent_5fqueue',['DCRUD_VERY_URGENT_QUEUE',['../da/d81/_i_required_8h.html#a98424b019765d5b1269e9a8629e91dcca9551077edd89b1f084664eeb093c0b5e',1,'IRequired.h']]],
+  ['dcrudlast_5ftype',['dcrudLAST_TYPE',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba92c5d823211335aa42c198d5254fb10a',1,'ClassID.h']]],
+  ['dcrudtype_5fboolean',['dcrudTYPE_BOOLEAN',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba166d60f31d42c5cad39cdfc58ee030a7',1,'ClassID.h']]],
+  ['dcrudtype_5fbyte',['dcrudTYPE_BYTE',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba825bdb31a72068eedeadbca4fd68d8d5',1,'ClassID.h']]],
+  ['dcrudtype_5fcall_5fmode',['dcrudTYPE_CALL_MODE',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0bab828810e20a6eb4dc15a9cf4b38aca99',1,'ClassID.h']]],
+  ['dcrudtype_5fclass_5fid',['dcrudTYPE_CLASS_ID',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0baf3cfcb9550312a2463b952e97337c775',1,'ClassID.h']]],
+  ['dcrudtype_5fdouble',['dcrudTYPE_DOUBLE',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba39a142d750e54146777697787f238f01',1,'ClassID.h']]],
+  ['dcrudtype_5ffloat',['dcrudTYPE_FLOAT',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba9e1bbf19f581afe57be7b0672bf38aae',1,'ClassID.h']]],
+  ['dcrudtype_5fguid',['dcrudTYPE_GUID',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba72981e260fe0519e7c5bc7520e633cc5',1,'ClassID.h']]],
+  ['dcrudtype_5finteger',['dcrudTYPE_INTEGER',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba9ac0198224db596871c3469f488ff33c',1,'ClassID.h']]],
+  ['dcrudtype_5flong',['dcrudTYPE_LONG',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba58af342d6cdd0bc89b6882200be19adf',1,'ClassID.h']]],
+  ['dcrudtype_5fnull',['dcrudTYPE_NULL',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba98f272261aa9bdce472860fb578509b0',1,'ClassID.h']]],
+  ['dcrudtype_5fqueue_5findex',['dcrudTYPE_QUEUE_INDEX',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba08b8e420c979ea8cd8c31277424ce910',1,'ClassID.h']]],
+  ['dcrudtype_5fshareable',['dcrudTYPE_SHAREABLE',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba4d05deb9e94d31bcf194db7e6d250afa',1,'ClassID.h']]],
+  ['dcrudtype_5fshort',['dcrudTYPE_SHORT',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba694248fa3be688e45bb189e20f810037',1,'ClassID.h']]],
+  ['dcrudtype_5fstring',['dcrudTYPE_STRING',['../dc/d14/_class_i_d_8h.html#a52fe9583fb1d702f7e0e065420c15f0ba9ef22b9172f408662432b4ad6fb0f312',1,'ClassID.h']]]
 ];

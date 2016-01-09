@@ -1,23 +1,4 @@
 var searchData=
 [
-  ['icache',['ICache',['../d3/dd9/structdcrud_1_1_i_cache.html',1,'dcrud']]],
-  ['icache_2ehpp',['ICache.hpp',['../da/dcb/_i_cache_8hpp.html',1,'']]],
-  ['icallback',['ICallback',['../d6/d6b/structdcrud_1_1_i_callback.html',1,'dcrud']]],
-  ['icallback_2ehpp',['ICallback.hpp',['../d4/d0f/_i_callback_8hpp.html',1,'']]],
-  ['idispatcher',['IDispatcher',['../d0/d2d/structdcrud_1_1_i_dispatcher.html',1,'dcrud']]],
-  ['idispatcher_2ehpp',['IDispatcher.hpp',['../df/df2/_i_dispatcher_8hpp.html',1,'']]],
-  ['integertype',['IntegerType',['../d4/df5/structdcrud_1_1_class_i_d.html#ad3b4c86f67a2b823a1bed8a5609f0cdca90453dde1506c63dbaaa7a1a363a06a9',1,'dcrud::ClassID']]],
-  ['io',['io',['../d1/d96/namespaceio.html',1,'']]],
-  ['iobyteorder_5fbig_5fendian',['ioByteOrder_BIG_ENDIAN',['../d1/d96/namespaceio.html#aaeb92d42f5a6e27b8ba19f18d69d142baa09604fdc96e93783a67ad04d8a9452e',1,'io']]],
-  ['iobyteorder_5flittle_5fendian',['ioByteOrder_LITTLE_ENDIAN',['../d1/d96/namespaceio.html#aaeb92d42f5a6e27b8ba19f18d69d142baa5493f8d595b6a5773a236abd0ddaae3',1,'io']]],
-  ['ioperation',['IOperation',['../d4/dcc/structdcrud_1_1_i_operation.html',1,'dcrud']]],
-  ['ioperation_2ehpp',['IOperation.hpp',['../d8/d4a/_i_operation_8hpp.html',1,'']]],
-  ['iparticipant',['IParticipant',['../de/d95/structdcrud_1_1_i_participant.html',1,'dcrud']]],
-  ['iparticipant_2ehpp',['IParticipant.hpp',['../d5/d83/_i_participant_8hpp.html',1,'']]],
-  ['iprovided',['IProvided',['../d0/dae/structdcrud_1_1_i_provided.html',1,'dcrud']]],
-  ['iprovided_2ehpp',['IProvided.hpp',['../d2/d01/_i_provided_8hpp.html',1,'']]],
-  ['irequired',['IRequired',['../d9/d28/structdcrud_1_1_i_required.html',1,'dcrud']]],
-  ['irequired_2ehpp',['IRequired.hpp',['../db/dac/_i_required_8hpp.html',1,'']]],
-  ['ispredefined',['isPredefined',['../d4/df5/structdcrud_1_1_class_i_d.html#a73722c79bee142db23c0abde145f9716',1,'dcrud::ClassID']]],
-  ['isshared',['isShared',['../d5/dd6/structdcrud_1_1_g_u_i_d.html#aa31ac0774e257c67267ee166f7d66d05',1,'dcrud::GUID']]]
+  ['join',['join',['../d7/df3/classdcrud_1_1_network.html#a1d1811b15fcfec6e0bbf2c304fa7cd92',1,'dcrud::Network']]]
 ];

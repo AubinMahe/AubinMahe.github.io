@@ -1,4 +1,4 @@
-.TH "inc/dcrud/IParticipant.h" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "inc/dcrud/IParticipant.h" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,11 +6,21 @@ inc/dcrud/IParticipant.h \-
 .SH SYNOPSIS
 .br
 .PP
-\fC#include <dcrud/ICache\&.h>\fP
+\fC#include 'ICache\&.h'\fP
 .br
-\fC#include <dcrud/IDispatcher\&.h>\fP
+\fC#include 'IDispatcher\&.h'\fP
 .br
 
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBdcrudLocalFactory_s\fP"
+.br
+.ti -1c
+.RI "struct \fBdcrudRemoteFactory_s\fP"
+.br
+.in -1c
 .SS "Typedefs"
 
 .in +1c
@@ -18,16 +28,31 @@ inc/dcrud/IParticipant.h \-
 .RI "typedef dcrudShareable(* \fBdcrudShareableFactory\fP )()"
 .br
 .ti -1c
-.RI "typedef void(* \fBdcrudShareable_Set\fP )(\fBdcrudShareableData\fP This, const \fBdcrudShareableData\fP source)"
+.RI "typedef void(* \fBdcrudLocalFactory_Set\fP )(\fBdcrudShareableData\fP This, const \fBdcrudShareableData\fP source)"
 .br
 .ti -1c
-.RI "typedef \fBioStatus\fP(* \fBdcrudShareable_Serialize\fP )(\fBdcrudShareableData\fP This, ioByteBuffer target)"
+.RI "typedef \fBioStatus\fP(* \fBdcrudLocalFactory_Serialize\fP )(\fBdcrudShareableData\fP This, ioByteBuffer target)"
 .br
 .ti -1c
-.RI "typedef \fBioStatus\fP(* \fBdcrudShareable_Unserialize\fP )(\fBdcrudShareableData\fP This, ioByteBuffer source)"
+.RI "typedef \fBioStatus\fP(* \fBdcrudLocalFactory_Unserialize\fP )(\fBdcrudShareableData\fP This, ioByteBuffer source)"
 .br
 .ti -1c
-.RI "typedef \fBbool\fP(* \fBdcrudShareable_Initialize\fP )(\fBdcrudShareableData\fP This)"
+.RI "typedef \fBbool\fP(* \fBdcrudLocalFactory_Initialize\fP )(\fBdcrudShareableData\fP This)"
+.br
+.ti -1c
+.RI "typedef void(* \fBdcrudRemoteFactory_create\fP )(struct \fBdcrudRemoteFactory_s\fP *This, dcrudArguments how)"
+.br
+.ti -1c
+.RI "typedef void(* \fBdcrudRemoteFactory_update\fP )(struct \fBdcrudRemoteFactory_s\fP *This, dcrudShareable what, dcrudArguments how)"
+.br
+.ti -1c
+.RI "typedef void(* \fBdcrudRemoteFactory_delete\fP )(struct \fBdcrudRemoteFactory_s\fP *This, dcrudShareable what)"
+.br
+.ti -1c
+.RI "typedef struct \fBdcrudLocalFactory_s\fP \fBdcrudLocalFactory\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBdcrudRemoteFactory_s\fP \fBdcrudRemoteFactory\fP"
 .br
 .in -1c
 .SS "Functions"
@@ -37,10 +62,19 @@ inc/dcrud/IParticipant.h \-
 .RI "\fBUTIL_ADT\fP (dcrudIParticipant)"
 .br
 .ti -1c
-.RI "\fBbool\fP \fBdcrudIParticipant_registerClass\fP (dcrudIParticipant This, dcrudClassID id, size_t size, \fBdcrudShareable_Initialize\fP initialize, \fBdcrudShareable_Set\fP set, \fBdcrudShareable_Serialize\fP serialize, \fBdcrudShareable_Unserialize\fP unserialize)"
+.RI "void \fBdcrudIParticipant_listen\fP (dcrudIParticipant This, const char *mcastAddr, unsigned short port, const char *networkInterface)"
 .br
 .ti -1c
-.RI "\fBdcrudStatus\fP \fBdcrudIParticipant_createCache\fP (dcrudIParticipant This, dcrudICache *target)"
+.RI "\fBbool\fP \fBdcrudIParticipant_registerLocalFactory\fP (dcrudIParticipant This, \fBdcrudLocalFactory\fP *local)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudIParticipant_registerRemoteFactory\fP (dcrudIParticipant This, \fBdcrudRemoteFactory\fP *remote)"
+.br
+.ti -1c
+.RI "dcrudICache \fBdcrudIParticipant_getDefaultCache\fP (dcrudIParticipant This)"
+.br
+.ti -1c
+.RI "\fBdcrudStatus\fP \fBdcrudIParticipant_createCache\fP (dcrudIParticipant This, dcrudICache *target, \fBbyte\fP *cacheId)"
 .br
 .ti -1c
 .RI "dcrudICache \fBdcrudIParticipant_getCache\fP (dcrudIParticipant This, \fBbyte\fP ID)"
@@ -57,37 +91,59 @@ inc/dcrud/IParticipant.h \-
 .in -1c
 .SH "Typedef Documentation"
 .PP 
-.SS "typedef \fBbool\fP(*  dcrudShareable_Initialize)(\fBdcrudShareableData\fP This)"
+.SS "typedef struct \fBdcrudLocalFactory_s\fP  \fBdcrudLocalFactory\fP"
+
+.SS "typedef \fBbool\fP(*  dcrudLocalFactory_Initialize)(\fBdcrudShareableData\fP This)"
 
 .PP
 Definition at line 16 of file IParticipant\&.h\&.
-.SS "typedef \fBioStatus\fP(*  dcrudShareable_Serialize)(\fBdcrudShareableData\fP This, ioByteBuffer target)"
+.SS "typedef \fBioStatus\fP(*  dcrudLocalFactory_Serialize)(\fBdcrudShareableData\fP This, ioByteBuffer target)"
 
 .PP
 Definition at line 14 of file IParticipant\&.h\&.
-.SS "typedef void(*  dcrudShareable_Set)(\fBdcrudShareableData\fP This, const \fBdcrudShareableData\fP source)"
+.SS "typedef void(*  dcrudLocalFactory_Set)(\fBdcrudShareableData\fP This, const \fBdcrudShareableData\fP source)"
 
 .PP
 Definition at line 13 of file IParticipant\&.h\&.
-.SS "typedef \fBioStatus\fP(*  dcrudShareable_Unserialize)(\fBdcrudShareableData\fP This, ioByteBuffer source)"
+.SS "typedef \fBioStatus\fP(*  dcrudLocalFactory_Unserialize)(\fBdcrudShareableData\fP This, ioByteBuffer source)"
 
 .PP
 Definition at line 15 of file IParticipant\&.h\&.
+.SS "typedef struct \fBdcrudRemoteFactory_s\fP  \fBdcrudRemoteFactory\fP"
+
+.SS "typedef void(*  dcrudRemoteFactory_create)(struct \fBdcrudRemoteFactory_s\fP *This, dcrudArguments how)"
+
+.PP
+Definition at line 18 of file IParticipant\&.h\&.
+.SS "typedef void(*  dcrudRemoteFactory_delete)(struct \fBdcrudRemoteFactory_s\fP *This, dcrudShareable what)"
+
+.PP
+Definition at line 20 of file IParticipant\&.h\&.
+.SS "typedef void(*  dcrudRemoteFactory_update)(struct \fBdcrudRemoteFactory_s\fP *This, dcrudShareable what, dcrudArguments how)"
+
+.PP
+Definition at line 19 of file IParticipant\&.h\&.
 .SS "typedef dcrudShareable(*  dcrudShareableFactory)()"
 
 .PP
 Definition at line 9 of file IParticipant\&.h\&.
 .SH "Function Documentation"
 .PP 
-.SS "\fBdcrudStatus\fP dcrudIParticipant_createCache (dcrudIParticipantThis, dcrudICache *target)"
+.SS "\fBdcrudStatus\fP dcrudIParticipant_createCache (dcrudIParticipantThis, dcrudICache *target, \fBbyte\fP *cacheId)"
 
 .SS "dcrudShareable dcrudIParticipant_createShareable (dcrudIParticipantThis, dcrudClassIDclassID)"
 
 .SS "dcrudICache dcrudIParticipant_getCache (dcrudIParticipantThis, \fBbyte\fPID)"
 
+.SS "dcrudICache dcrudIParticipant_getDefaultCache (dcrudIParticipantThis)"
+
 .SS "dcrudIDispatcher dcrudIParticipant_getDispatcher (dcrudIParticipantThis)"
 
-.SS "\fBbool\fP dcrudIParticipant_registerClass (dcrudIParticipantThis, dcrudClassIDid, size_tsize, \fBdcrudShareable_Initialize\fPinitialize, \fBdcrudShareable_Set\fPset, \fBdcrudShareable_Serialize\fPserialize, \fBdcrudShareable_Unserialize\fPunserialize)"
+.SS "void dcrudIParticipant_listen (dcrudIParticipantThis, const char *mcastAddr, unsigned shortport, const char *networkInterface)"
+
+.SS "\fBbool\fP dcrudIParticipant_registerLocalFactory (dcrudIParticipantThis, \fBdcrudLocalFactory\fP *local)"
+
+.SS "\fBbool\fP dcrudIParticipant_registerRemoteFactory (dcrudIParticipantThis, \fBdcrudRemoteFactory\fP *remote)"
 
 .SS "void dcrudIParticipant_run (dcrudIParticipantThis)"
 

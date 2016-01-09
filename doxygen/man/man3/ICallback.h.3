@@ -1,4 +1,4 @@
-.TH "inc/dcrud/ICallback.h" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "inc/dcrud/ICallback.h" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,14 +6,14 @@ inc/dcrud/ICallback.h \-
 .SH SYNOPSIS
 .br
 .PP
-\fC#include <coll/Map\&.h>\fP
+\fC#include <dcrud/Arguments\&.h>\fP
 .br
 
 .SS "Typedefs"
 
 .in +1c
 .ti -1c
-.RI "typedef void(* \fBdcrudICallback_function\fP )(dcrudICallback This, const char *intrfc, const char *operation, collMap results)"
+.RI "typedef void(* \fBdcrudICallback_function\fP )(dcrudICallback This, const char *intrfc, const char *operation, dcrudArguments results)"
 .br
 .in -1c
 .SS "Functions"
@@ -29,7 +29,7 @@ inc/dcrud/ICallback.h \-
 .RI "void \fBdcrudICallback_delete\fP (dcrudICallback *This)"
 .br
 .ti -1c
-.RI "void \fBdcrudICallback_callback\fP (dcrudICallback This, const char *intrfc, const char *operation, collMap results)"
+.RI "void \fBdcrudICallback_callback\fP (dcrudICallback This, const char *intrfc, const char *operation, dcrudArguments results)"
 .br
 .ti -1c
 .RI "void * \fBdcrudICallback_getUserData\fP (dcrudICallback This)"
@@ -37,13 +37,13 @@ inc/dcrud/ICallback.h \-
 .in -1c
 .SH "Typedef Documentation"
 .PP 
-.SS "typedef void(*  dcrudICallback_function)(dcrudICallback This, const char *intrfc, const char *operation, collMap results)"
+.SS "typedef void(*  dcrudICallback_function)(dcrudICallback This, const char *intrfc, const char *operation, dcrudArguments results)"
 
 .PP
 Definition at line 10 of file ICallback\&.h\&.
 .SH "Function Documentation"
 .PP 
-.SS "void dcrudICallback_callback (dcrudICallbackThis, const char *intrfc, const char *operation, collMapresults)"
+.SS "void dcrudICallback_callback (dcrudICallbackThis, const char *intrfc, const char *operation, dcrudArgumentsresults)"
 
 .SS "void dcrudICallback_delete (dcrudICallback *This)"
 

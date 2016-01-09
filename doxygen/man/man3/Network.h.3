@@ -1,4 +1,4 @@
-.TH "inc/dcrud/Network.h" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "inc/dcrud/Network.h" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -13,17 +13,17 @@ inc/dcrud/Network.h \-
 
 .in +1c
 .ti -1c
-.RI "dcrudIParticipant \fBdcrudNetwork_join\fP (const char *networkConfFile, const char *intrfc, unsigned short id)"
+.RI "dcrudIParticipant \fBdcrudNetwork_join\fP (unsigned int publisherId, const char *mcastAddr, unsigned short port, const char *intrfc, \fBbool\fP dumpReceivedBuffer)"
 .br
 .ti -1c
-.RI "void \fBdcrudNetwork_leave\fP (dcrudIParticipant *This)"
+.RI "void \fBdcrudNetwork_leave\fP (dcrudIParticipant *participant)"
 .br
 .in -1c
 .SH "Function Documentation"
 .PP 
-.SS "dcrudIParticipant dcrudNetwork_join (const char *networkConfFile, const char *intrfc, unsigned shortid)"
+.SS "dcrudIParticipant dcrudNetwork_join (unsigned intpublisherId, const char *mcastAddr, unsigned shortport, const char *intrfc, \fBbool\fPdumpReceivedBuffer)"
 
-.SS "void dcrudNetwork_leave (dcrudIParticipant *This)"
+.SS "void dcrudNetwork_leave (dcrudIParticipant *participant)"
 
 .SH "Author"
 .PP 

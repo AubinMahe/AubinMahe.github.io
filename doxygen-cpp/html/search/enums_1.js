@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['predefined',['Predefined',['../d4/df5/structdcrud_1_1_class_i_d.html#ad3b4c86f67a2b823a1bed8a5609f0cdc',1,'dcrud::ClassID']]]
+  ['status',['Status',['../d2/de2/namespacedcrud.html#a67a0db04d321a74b7e7fcfd3f1a3f70b',1,'dcrud']]]
 ];

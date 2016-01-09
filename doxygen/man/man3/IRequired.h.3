@@ -1,4 +1,4 @@
-.TH "inc/dcrud/IRequired.h" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "inc/dcrud/IRequired.h" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -38,7 +38,7 @@ inc/dcrud/IRequired.h \-
 .RI "\fBUTIL_ADT\fP (dcrudIRequired)"
 .br
 .ti -1c
-.RI "\fBdcrudStatus\fP \fBdcrudIRequired_call\fP (dcrudIRequired This, const char *opName, collMap arguments, dcrudICallback callback, int *callId)"
+.RI "void \fBdcrudIRequired_call\fP (dcrudIRequired This, const char *op, dcrudArguments args, dcrudICallback callback)"
 .br
 .in -1c
 .SH "Typedef Documentation"
@@ -100,7 +100,7 @@ Definition at line 9 of file IRequired\&.h\&.
 .fi
 .SH "Function Documentation"
 .PP 
-.SS "\fBdcrudStatus\fP dcrudIRequired_call (dcrudIRequiredThis, const char *opName, collMaparguments, dcrudICallbackcallback, int *callId)"
+.SS "void dcrudIRequired_call (dcrudIRequiredThis, const char *op, dcrudArgumentsargs, dcrudICallbackcallback)"
 
 .SS "UTIL_ADT (dcrudIRequired)"
 

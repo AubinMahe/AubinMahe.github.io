@@ -1,4 +1,4 @@
-.TH "Arguments" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "Arguments" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -12,103 +12,194 @@ Arguments \-
 
 .in +1c
 .ti -1c
-.RI "\fBArguments\fP ()"
+.RI "\fBArguments\fP (void)"
 .br
 .ti -1c
-.RI "\fBArguments\fP (const \fBargs_t\fP &args)"
+.RI "\fB~Arguments\fP ()"
 .br
 .ti -1c
-.RI "template<class T > void \fBput\fP (const std::string &key, const T &value)"
+.RI "void \fBclear\fP ()"
 .br
 .ti -1c
-.RI "template<class T > bool \fBget\fP (const std::string &name, const T *&target) const "
+.RI "bool \fBisEmpty\fP () const "
 .br
 .ti -1c
-.RI "template<class T > bool \fBget\fP (const std::string &name, T &target) const "
+.RI "size_t \fBgetCount\fP () const "
 .br
-.in -1c
-.SS "Data Fields"
-
-.in +1c
 .ti -1c
-.RI "\fBargs_t\fP \fB_args\fP"
+.RI "void \fBputNull\fP (const std::string &key)"
+.br
+.ti -1c
+.RI "void \fBput\fP (const std::string &key, const byte &value)"
+.br
+.ti -1c
+.RI "void \fBput\fP (const std::string &key, const bool &value)"
+.br
+.ti -1c
+.RI "void \fBput\fP (const std::string &key, const unsigned short &value)"
+.br
+.ti -1c
+.RI "void \fBput\fP (const std::string &key, const unsigned int &value)"
+.br
+.ti -1c
+.RI "void \fBput\fP (const std::string &key, const uint64_t &value)"
+.br
+.ti -1c
+.RI "void \fBput\fP (const std::string &key, const float &value)"
+.br
+.ti -1c
+.RI "void \fBput\fP (const std::string &key, const double &value)"
+.br
+.ti -1c
+.RI "void \fBput\fP (const std::string &key, const std::string &value)"
+.br
+.ti -1c
+.RI "void \fBput\fP (const std::string &key, const \fBClassID\fP &value)"
+.br
+.ti -1c
+.RI "void \fBput\fP (const std::string &key, const \fBGUID\fP &value)"
+.br
+.ti -1c
+.RI "void \fBput\fP (const std::string &key, const \fBShareable\fP *value)"
+.br
+.ti -1c
+.RI "bool \fBisNull\fP (const std::string &key) const "
+.br
+.ti -1c
+.RI "bool \fBget\fP (const std::string &key, byte &value) const "
+.br
+.ti -1c
+.RI "bool \fBget\fP (const std::string &key, bool &value) const "
+.br
+.ti -1c
+.RI "bool \fBget\fP (const std::string &key, unsigned short &value) const "
+.br
+.ti -1c
+.RI "bool \fBget\fP (const std::string &key, unsigned int &value) const "
+.br
+.ti -1c
+.RI "bool \fBget\fP (const std::string &key, uint64_t &value) const "
+.br
+.ti -1c
+.RI "bool \fBget\fP (const std::string &key, float &value) const "
+.br
+.ti -1c
+.RI "bool \fBget\fP (const std::string &key, double &value) const "
+.br
+.ti -1c
+.RI "bool \fBget\fP (const std::string &key, std::string &value) const "
+.br
+.ti -1c
+.RI "bool \fBget\fP (const std::string &key, \fBClassID\fP &value) const "
+.br
+.ti -1c
+.RI "bool \fBget\fP (const std::string &key, \fBGUID\fP &value) const "
+.br
+.ti -1c
+.RI "bool \fBget\fP (const std::string &key, \fBShareable\fP *&value) const "
+.br
+.ti -1c
+.RI "void \fBsetMode\fP (byte mode)"
+.br
+.ti -1c
+.RI "void \fBsetQueue\fP (byte queue)"
+.br
+.ti -1c
+.RI "\fBClassID::Type\fP \fBgetType\fP (const std::string &key) const "
+.br
+.ti -1c
+.RI "void \fBserialize\fP (\fBio::ByteBuffer\fP &message) const "
 .br
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 13 of file Arguments\&.hpp\&.
+Definition at line 15 of file Arguments\&.hpp\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "\fBArguments\fP ()\fC [inline]\fP"
+.SS "\fBArguments\fP (void)"
 
-.PP
-Definition at line 17 of file Arguments\&.hpp\&.
-.PP
-.nf
-17 {}
-.fi
-.SS "\fBArguments\fP (const \fBargs_t\fP &args)\fC [inline]\fP"
+.SS "~\fBArguments\fP ()"
 
-.PP
-Definition at line 19 of file Arguments\&.hpp\&.
-.PP
-.nf
-19                                        :
-20          _args( args )
-21       {}
-.fi
 .SH "Member Function Documentation"
 .PP 
-.SS "bool get (const std::string &name, const T *&target) const\fC [inline]\fP"
+.SS "void clear ()"
+
+.SS "bool get (const std::string &key, byte &value) const"
+
+.SS "bool get (const std::string &key, bool &value) const"
+
+.SS "bool get (const std::string &key, unsigned short &value) const"
+
+.SS "bool get (const std::string &key, unsigned int &value) const"
+
+.SS "bool get (const std::string &key, uint64_t &value) const"
+
+.SS "bool get (const std::string &key, float &value) const"
+
+.SS "bool get (const std::string &key, double &value) const"
+
+.SS "bool get (const std::string &key, std::string &value) const"
+
+.SS "bool get (const std::string &key, \fBClassID\fP &value) const"
+
+.SS "bool get (const std::string &key, \fBGUID\fP &value) const"
+
+.SS "bool get (const std::string &key, \fBShareable\fP *&value) const"
+
+.SS "size_t getCount () const\fC [inline]\fP"
 
 .PP
-Definition at line 27 of file Arguments\&.hpp\&.
+Definition at line 28 of file Arguments\&.hpp\&.
 .PP
 .nf
-27                                                                                      {
-28          argsCstIter_t it = _args\&.find( name );
-29          if( it == _args\&.end()) {
-30             return false;
-31          }
-32          target = static_cast<const T *>( it->second );
-33          return true;
-34       }
+28                               {
+29          return _args\&.size();
+30       }
 .fi
-.SS "bool get (const std::string &name, T &target) const\fC [inline]\fP"
+.SS "\fBClassID::Type\fP getType (const std::string &key) const"
+
+.SS "bool isEmpty () const\fC [inline]\fP"
 
 .PP
-Definition at line 36 of file Arguments\&.hpp\&.
+Definition at line 24 of file Arguments\&.hpp\&.
 .PP
 .nf
-36                                                                              {
-37          argsCstIter_t it = _args\&.find( name );
-38          if( it == _args\&.end()) {
-39             return false;
-40          }
-41          const T * ptr = static_cast<const T *>( it->second );
-42          if( ! ptr ) {
-43             return false;
-44          }
-45          target = *ptr;
-46          return true;
-47       }
+24                            {
+25          return _args\&.empty();
+26       }
 .fi
-.SS "void put (const std::string &key, const T &value)\fC [inline]\fP"
+.SS "bool isNull (const std::string &key) const"
 
-.PP
-Definition at line 23 of file Arguments\&.hpp\&.
-.PP
-.nf
-23                                                                            {
-24          _args[key] = new T( value );
-25       }
-.fi
-.SH "Field Documentation"
-.PP 
-.SS "\fBargs_t\fP _args"
+.SS "void put (const std::string &key, const byte &value)"
 
-.PP
-Definition at line 15 of file Arguments\&.hpp\&.
+.SS "void put (const std::string &key, const bool &value)"
+
+.SS "void put (const std::string &key, const unsigned short &value)"
+
+.SS "void put (const std::string &key, const unsigned int &value)"
+
+.SS "void put (const std::string &key, const uint64_t &value)"
+
+.SS "void put (const std::string &key, const float &value)"
+
+.SS "void put (const std::string &key, const double &value)"
+
+.SS "void put (const std::string &key, const std::string &value)"
+
+.SS "void put (const std::string &key, const \fBClassID\fP &value)"
+
+.SS "void put (const std::string &key, const \fBGUID\fP &value)"
+
+.SS "void put (const std::string &key, const \fBShareable\fP *value)"
+
+.SS "void putNull (const std::string &key)"
+
+.SS "void serialize (\fBio::ByteBuffer\fP &message) const"
+
+.SS "void setMode (bytemode)"
+
+.SS "void setQueue (bytequeue)"
+
 
 .SH "Author"
 .PP 

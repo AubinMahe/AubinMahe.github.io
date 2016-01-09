@@ -1,4 +1,4 @@
-.TH "inc/dcrud/IProvided.h" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "inc/dcrud/IProvided.h" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,11 +6,14 @@ inc/dcrud/IProvided.h \-
 .SH SYNOPSIS
 .br
 .PP
+\fC#include <dcrud/Arguments\&.h>\fP
+.br
+
 .SS "Typedefs"
 
 .in +1c
 .ti -1c
-.RI "typedef void(* \fBdcrudIOperation\fP )(void *context, collMap in, collMap out)"
+.RI "typedef dcrudArguments(* \fBdcrudIOperation\fP )(void *context, dcrudArguments args)"
 .br
 .in -1c
 .SS "Functions"
@@ -25,10 +28,10 @@ inc/dcrud/IProvided.h \-
 .in -1c
 .SH "Typedef Documentation"
 .PP 
-.SS "typedef void(*  dcrudIOperation)(void *context, collMap in, collMap out)"
+.SS "typedef dcrudArguments(*  dcrudIOperation)(void *context, dcrudArguments args)"
 
 .PP
-Definition at line 8 of file IProvided\&.h\&.
+Definition at line 10 of file IProvided\&.h\&.
 .SH "Function Documentation"
 .PP 
 .SS "\fBbool\fP dcrudIProvided_addOperation (dcrudIProvidedprovided, const char *name, void *context, \fBdcrudIOperation\fPoperation)"

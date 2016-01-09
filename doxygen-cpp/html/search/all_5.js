@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['execute',['execute',['../d4/dcc/structdcrud_1_1_i_operation.html#aa914ebfd50209cb8e3fb08370201dd43',1,'dcrud::IOperation']]]
+  ['flip',['flip',['../dd/dd8/classio_1_1_byte_buffer.html#abb58aa24ad972172526008b95457d86c',1,'io::ByteBuffer']]]
 ];

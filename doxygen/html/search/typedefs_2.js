@@ -1,15 +1,21 @@
 var searchData=
 [
   ['dcrudcallmode',['dcrudCallMode',['../da/d81/_i_required_8h.html#a9704b656f2ff16b778305227c6f69d57',1,'IRequired.h']]],
-  ['dcrudicallback_5ffunction',['dcrudICallback_function',['../d0/d79/_i_callback_8h.html#a28486c4c1bccece4973d7274b7e64349',1,'ICallback.h']]],
-  ['dcrudioperation',['dcrudIOperation',['../d3/d0c/_i_provided_8h.html#a5d1db86535f5e7f85d9eb5410da1d203',1,'IProvided.h']]],
+  ['dcrudicallback_5ffunction',['dcrudICallback_function',['../d0/d79/_i_callback_8h.html#a8263bda3c78e4be8b6abeeb9a312cd29',1,'ICallback.h']]],
+  ['dcrudioperation',['dcrudIOperation',['../d3/d0c/_i_provided_8h.html#a305a4ed8347d849de8a3b8d203a50989',1,'IProvided.h']]],
+  ['dcrudlocalfactory',['dcrudLocalFactory',['../de/dfa/_i_participant_8h.html#a80e4d3e73e7f524dc6dd6422e6266e0a',1,'IParticipant.h']]],
+  ['dcrudlocalfactory_5finitialize',['dcrudLocalFactory_Initialize',['../de/dfa/_i_participant_8h.html#aa82c9bf30ab8a9390c6720282a421d99',1,'IParticipant.h']]],
+  ['dcrudlocalfactory_5fserialize',['dcrudLocalFactory_Serialize',['../de/dfa/_i_participant_8h.html#af15a46a23e08e33b86e1fad096e1a688',1,'IParticipant.h']]],
+  ['dcrudlocalfactory_5fset',['dcrudLocalFactory_Set',['../de/dfa/_i_participant_8h.html#a2813fef608b19e41609cfe16dae451c8',1,'IParticipant.h']]],
+  ['dcrudlocalfactory_5funserialize',['dcrudLocalFactory_Unserialize',['../de/dfa/_i_participant_8h.html#a3389fa33308733c16720390f4c8417c8',1,'IParticipant.h']]],
   ['dcrudpredicate',['dcrudPredicate',['../d8/d01/_i_cache_8h.html#aa45be3e38de6c73c609ad807775a3140',1,'ICache.h']]],
   ['dcrudqueueindex',['dcrudQueueIndex',['../da/d81/_i_required_8h.html#a635490d1d077fc3029a2ca0dcff34313',1,'IRequired.h']]],
-  ['dcrudshareable_5finitialize',['dcrudShareable_Initialize',['../de/dfa/_i_participant_8h.html#a93635a3c6ba4431f907ee943a39f8187',1,'IParticipant.h']]],
-  ['dcrudshareable_5fserialize',['dcrudShareable_Serialize',['../de/dfa/_i_participant_8h.html#adbac6ef2762a4c4a2cc1fb801d2cb571',1,'IParticipant.h']]],
-  ['dcrudshareable_5fset',['dcrudShareable_Set',['../de/dfa/_i_participant_8h.html#a3561d130e47d46fcd59d7648350aa72b',1,'IParticipant.h']]],
-  ['dcrudshareable_5funserialize',['dcrudShareable_Unserialize',['../de/dfa/_i_participant_8h.html#a0ed633cf272548f296872a480413cb74',1,'IParticipant.h']]],
+  ['dcrudremotefactory',['dcrudRemoteFactory',['../de/dfa/_i_participant_8h.html#a3a0cbca9c288f519424fa07a4e8c2448',1,'IParticipant.h']]],
+  ['dcrudremotefactory_5fcreate',['dcrudRemoteFactory_create',['../de/dfa/_i_participant_8h.html#a18d8e02f658860d2891ba61a5e6072d9',1,'IParticipant.h']]],
+  ['dcrudremotefactory_5fdelete',['dcrudRemoteFactory_delete',['../de/dfa/_i_participant_8h.html#ae395c0f13ca5f6ec5caee906f2a87b0b',1,'IParticipant.h']]],
+  ['dcrudremotefactory_5fupdate',['dcrudRemoteFactory_update',['../de/dfa/_i_participant_8h.html#a96ebc7cb8e6035de13dddbc6c8f6677a',1,'IParticipant.h']]],
   ['dcrudshareabledata',['dcrudShareableData',['../dd/dfb/_shareable_8h.html#ac79a92ca11ed77a65ffdf4a6a9e31b62',1,'Shareable.h']]],
   ['dcrudshareablefactory',['dcrudShareableFactory',['../de/dfa/_i_participant_8h.html#aae1d67cfbc24a8e29b58725577180d9c',1,'IParticipant.h']]],
-  ['dcrudstatus',['dcrudStatus',['../d5/dd8/dcrud_2_status_8h.html#accf4e6e03c7bbc15e40b2f62f8352225',1,'Status.h']]]
+  ['dcrudstatus',['dcrudStatus',['../d5/dd8/dcrud_2_status_8h.html#accf4e6e03c7bbc15e40b2f62f8352225',1,'Status.h']]],
+  ['dcrudtype',['dcrudType',['../dc/d14/_class_i_d_8h.html#a7297e87a1b0736d671ff9b29b7e0bb2c',1,'ClassID.h']]]
 ];

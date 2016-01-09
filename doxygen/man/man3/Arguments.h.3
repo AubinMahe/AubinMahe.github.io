@@ -1,0 +1,195 @@
+.TH "inc/dcrud/Arguments.h" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+inc/dcrud/Arguments.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <dcrud/Shareable\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUTIL_ADT\fP (dcrudArguments)"
+.br
+.ti -1c
+.RI "dcrudArguments \fBdcrudArguments_new\fP (void)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_delete\fP (dcrudArguments *This)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_clear\fP (dcrudArguments This)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_isEmpty\fP (dcrudArguments This)"
+.br
+.ti -1c
+.RI "unsigned int \fBdcrudArguments_getCount\fP (dcrudArguments This)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_setMode\fP (dcrudArguments This, \fBbyte\fP mode)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_setQueue\fP (dcrudArguments This, \fBbyte\fP queue)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_putNull\fP (dcrudArguments This, const char *key)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_putByte\fP (dcrudArguments This, const char *key, \fBbyte\fP value)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_putBoolean\fP (dcrudArguments This, const char *key, \fBbool\fP value)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_putShort\fP (dcrudArguments This, const char *key, unsigned short value)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_putInt\fP (dcrudArguments This, const char *key, unsigned int value)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_putLong\fP (dcrudArguments This, const char *key, uint64_t value)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_putFloat\fP (dcrudArguments This, const char *key, float value)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_putDouble\fP (dcrudArguments This, const char *key, double value)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_putString\fP (dcrudArguments This, const char *key, const char *value)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_putClassID\fP (dcrudArguments This, const char *key, dcrudClassID value)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_putGUID\fP (dcrudArguments This, const char *key, dcrudGUID value)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_putShareable\fP (dcrudArguments This, const char *key, dcrudShareable value)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_isNull\fP (dcrudArguments This, const char *key)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_getByte\fP (dcrudArguments This, const char *key, \fBbyte\fP *value)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_getBoolean\fP (dcrudArguments This, const char *key, \fBbool\fP *value)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_getShort\fP (dcrudArguments This, const char *key, unsigned short *value)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_getInt\fP (dcrudArguments This, const char *key, unsigned int *value)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_getLong\fP (dcrudArguments This, const char *key, uint64_t *value)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_getFloat\fP (dcrudArguments This, const char *key, float *value)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_getDouble\fP (dcrudArguments This, const char *key, double *value)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_getString\fP (dcrudArguments This, const char *key, char *buffer, unsigned int capacity)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_getClassID\fP (dcrudArguments This, const char *key, dcrudClassID *value)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_getGUID\fP (dcrudArguments This, const char *key, dcrudGUID *value)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_getShareable\fP (dcrudArguments This, const char *key, dcrudShareable *value)"
+.br
+.ti -1c
+.RI "\fBdcrudType\fP \fBdcrudArguments_getType\fP (dcrudArguments This, const char *key)"
+.br
+.ti -1c
+.RI "\fBbool\fP \fBdcrudArguments_serialize\fP (dcrudArguments This, ioByteBuffer target)"
+.br
+.ti -1c
+.RI "void \fBdcrudArguments_dump\fP (dcrudArguments This, FILE *target)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void dcrudArguments_clear (dcrudArgumentsThis)"
+
+.SS "void dcrudArguments_delete (dcrudArguments *This)"
+
+.SS "void dcrudArguments_dump (dcrudArgumentsThis, FILE *target)"
+
+.SS "\fBbool\fP dcrudArguments_getBoolean (dcrudArgumentsThis, const char *key, \fBbool\fP *value)"
+
+.SS "\fBbool\fP dcrudArguments_getByte (dcrudArgumentsThis, const char *key, \fBbyte\fP *value)"
+
+.SS "\fBbool\fP dcrudArguments_getClassID (dcrudArgumentsThis, const char *key, dcrudClassID *value)"
+
+.SS "unsigned int dcrudArguments_getCount (dcrudArgumentsThis)"
+
+.SS "\fBbool\fP dcrudArguments_getDouble (dcrudArgumentsThis, const char *key, double *value)"
+
+.SS "\fBbool\fP dcrudArguments_getFloat (dcrudArgumentsThis, const char *key, float *value)"
+
+.SS "\fBbool\fP dcrudArguments_getGUID (dcrudArgumentsThis, const char *key, dcrudGUID *value)"
+
+.SS "\fBbool\fP dcrudArguments_getInt (dcrudArgumentsThis, const char *key, unsigned int *value)"
+
+.SS "\fBbool\fP dcrudArguments_getLong (dcrudArgumentsThis, const char *key, uint64_t *value)"
+
+.SS "\fBbool\fP dcrudArguments_getShareable (dcrudArgumentsThis, const char *key, dcrudShareable *value)"
+
+.SS "\fBbool\fP dcrudArguments_getShort (dcrudArgumentsThis, const char *key, unsigned short *value)"
+
+.SS "\fBbool\fP dcrudArguments_getString (dcrudArgumentsThis, const char *key, char *buffer, unsigned intcapacity)"
+
+.SS "\fBdcrudType\fP dcrudArguments_getType (dcrudArgumentsThis, const char *key)"
+
+.SS "\fBbool\fP dcrudArguments_isEmpty (dcrudArgumentsThis)"
+
+.SS "\fBbool\fP dcrudArguments_isNull (dcrudArgumentsThis, const char *key)"
+
+.SS "dcrudArguments dcrudArguments_new (void)"
+
+.SS "void dcrudArguments_putBoolean (dcrudArgumentsThis, const char *key, \fBbool\fPvalue)"
+
+.SS "void dcrudArguments_putByte (dcrudArgumentsThis, const char *key, \fBbyte\fPvalue)"
+
+.SS "void dcrudArguments_putClassID (dcrudArgumentsThis, const char *key, dcrudClassIDvalue)"
+
+.SS "void dcrudArguments_putDouble (dcrudArgumentsThis, const char *key, doublevalue)"
+
+.SS "void dcrudArguments_putFloat (dcrudArgumentsThis, const char *key, floatvalue)"
+
+.SS "void dcrudArguments_putGUID (dcrudArgumentsThis, const char *key, dcrudGUIDvalue)"
+
+.SS "void dcrudArguments_putInt (dcrudArgumentsThis, const char *key, unsigned intvalue)"
+
+.SS "void dcrudArguments_putLong (dcrudArgumentsThis, const char *key, uint64_tvalue)"
+
+.SS "void dcrudArguments_putNull (dcrudArgumentsThis, const char *key)"
+
+.SS "void dcrudArguments_putShareable (dcrudArgumentsThis, const char *key, dcrudShareablevalue)"
+
+.SS "void dcrudArguments_putShort (dcrudArgumentsThis, const char *key, unsigned shortvalue)"
+
+.SS "void dcrudArguments_putString (dcrudArgumentsThis, const char *key, const char *value)"
+
+.SS "\fBbool\fP dcrudArguments_serialize (dcrudArgumentsThis, ioByteBuffertarget)"
+
+.SS "void dcrudArguments_setMode (dcrudArgumentsThis, \fBbyte\fPmode)"
+
+.SS "void dcrudArguments_setQueue (dcrudArgumentsThis, \fBbyte\fPqueue)"
+
+.SS "UTIL_ADT (dcrudArguments)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

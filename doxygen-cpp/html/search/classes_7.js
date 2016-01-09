@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['shareable',['Shareable',['../df/dfb/structdcrud_1_1_shareable.html',1,'dcrud']]],
-  ['synchronized',['Synchronized',['../de/d90/structos_1_1_synchronized.html',1,'os']]]
+  ['shareable',['Shareable',['../d6/d8a/classdcrud_1_1_shareable.html',1,'dcrud']]],
+  ['synchronized',['Synchronized',['../db/d0e/classos_1_1_synchronized.html',1,'os']]]
 ];

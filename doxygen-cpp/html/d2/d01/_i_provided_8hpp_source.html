@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../local.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dcrud
    &#160;<span id="projectnumber">0.0.0</span>
@@ -93,7 +92,7 @@ $(document).ready(function(){initNavTree('d2/d01/_i_provided_8hpp_source.html','
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,30 +108,33 @@ $(document).ready(function(){initNavTree('d2/d01/_i_provided_8hpp_source.html','
 <div class="contents">
 <a href="../../d2/d01/_i_provided_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span>dcrud {</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;   <span class="keyword">struct </span>IOperation;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>dcrud {</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d0/dae/structdcrud_1_1_i_provided.html">    7</a></span>&#160;   <span class="keyword">struct </span><a class="code" href="../../d0/dae/structdcrud_1_1_i_provided.html">IProvided</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;   <span class="keyword">class </span>IOperation;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d0/dae/structdcrud_1_1_i_provided.html#a935c678504f75d643362283bcb031600">    9</a></span>&#160;      <span class="keyword">virtual</span> <a class="code" href="../../d0/dae/structdcrud_1_1_i_provided.html#a935c678504f75d643362283bcb031600">~ IProvided</a>() {}</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;      <span class="keyword">virtual</span> <a class="code" href="../../d0/dae/structdcrud_1_1_i_provided.html">IProvided</a> &amp; <a class="code" href="../../d0/dae/structdcrud_1_1_i_provided.html#a8b89a9f4fca3abd14dfd311b23851b67">addOperation</a>(</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;         <span class="keyword">const</span> <span class="keywordtype">char</span> * operationName,</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;         <a class="code" href="../../d4/dcc/structdcrud_1_1_i_operation.html">IOperation</a> &amp; executor      ) = 0;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;   };</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
-<div class="ttc" id="structdcrud_1_1_i_provided_html_a8b89a9f4fca3abd14dfd311b23851b67"><div class="ttname"><a href="../../d0/dae/structdcrud_1_1_i_provided.html#a8b89a9f4fca3abd14dfd311b23851b67">dcrud::IProvided::addOperation</a></div><div class="ttdeci">virtual IProvided &amp; addOperation(const char *operationName, IOperation &amp;executor)=0</div></div>
-<div class="ttc" id="structdcrud_1_1_i_operation_html"><div class="ttname"><a href="../../d4/dcc/structdcrud_1_1_i_operation.html">dcrud::IOperation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d4a/_i_operation_8hpp_source.html#l00008">IOperation.hpp:8</a></div></div>
-<div class="ttc" id="structdcrud_1_1_i_provided_html_a935c678504f75d643362283bcb031600"><div class="ttname"><a href="../../d0/dae/structdcrud_1_1_i_provided.html#a935c678504f75d643362283bcb031600">dcrud::IProvided::~IProvided</a></div><div class="ttdeci">virtual ~IProvided()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d01/_i_provided_8hpp_source.html#l00009">IProvided.hpp:9</a></div></div>
-<div class="ttc" id="structdcrud_1_1_i_provided_html"><div class="ttname"><a href="../../d0/dae/structdcrud_1_1_i_provided.html">dcrud::IProvided</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d01/_i_provided_8hpp_source.html#l00007">IProvided.hpp:7</a></div></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d9/d4f/classdcrud_1_1_i_provided.html">    9</a></span>&#160;   <span class="keyword">class </span><a class="code" href="../../d9/d4f/classdcrud_1_1_i_provided.html">IProvided</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;   <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d9/d4f/classdcrud_1_1_i_provided.html#a935c678504f75d643362283bcb031600">   12</a></span>&#160;      <span class="keyword">virtual</span> <a class="code" href="../../d9/d4f/classdcrud_1_1_i_provided.html#a935c678504f75d643362283bcb031600">~ IProvided</a>() {}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      <span class="keyword">virtual</span> <a class="code" href="../../d9/d4f/classdcrud_1_1_i_provided.html">IProvided</a> &amp; <a class="code" href="../../d9/d4f/classdcrud_1_1_i_provided.html#a4efb8762f4883389e03b638e4721b1e9">addOperation</a>(</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;         <span class="keyword">const</span> std::string &amp; operationName,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;         <a class="code" href="../../db/d8b/classdcrud_1_1_i_operation.html">IOperation</a> &amp;        executor      ) = 0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   };</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="ttc" id="classdcrud_1_1_i_operation_html"><div class="ttname"><a href="../../db/d8b/classdcrud_1_1_i_operation.html">dcrud::IOperation</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d4a/_i_operation_8hpp_source.html#l00009">IOperation.hpp:9</a></div></div>
+<div class="ttc" id="classdcrud_1_1_i_provided_html_a935c678504f75d643362283bcb031600"><div class="ttname"><a href="../../d9/d4f/classdcrud_1_1_i_provided.html#a935c678504f75d643362283bcb031600">dcrud::IProvided::~IProvided</a></div><div class="ttdeci">virtual ~IProvided()</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d01/_i_provided_8hpp_source.html#l00012">IProvided.hpp:12</a></div></div>
+<div class="ttc" id="classdcrud_1_1_i_provided_html_a4efb8762f4883389e03b638e4721b1e9"><div class="ttname"><a href="../../d9/d4f/classdcrud_1_1_i_provided.html#a4efb8762f4883389e03b638e4721b1e9">dcrud::IProvided::addOperation</a></div><div class="ttdeci">virtual IProvided &amp; addOperation(const std::string &amp;operationName, IOperation &amp;executor)=0</div></div>
+<div class="ttc" id="classdcrud_1_1_i_provided_html"><div class="ttname"><a href="../../d9/d4f/classdcrud_1_1_i_provided.html">dcrud::IProvided</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d01/_i_provided_8hpp_source.html#l00009">IProvided.hpp:9</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_3a435a663220092428ebe5e98c15f11a.html">dcrud</a></li><li class="navelem"><a class="el" href="../../d2/d01/_i_provided_8hpp.html">IProvided.hpp</a></li>
-    <li class="footer">Generated on Mon Dec 14 2015 22:44:32 for dcrud by
+    <li class="footer">Generated on Sat Jan 9 2016 14:54:18 for dcrud by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

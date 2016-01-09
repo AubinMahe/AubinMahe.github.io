@@ -1,3 +1,7 @@
 <map id="inc/dcrud/GUID.hpp" name="inc/dcrud/GUID.hpp">
-<area shape="rect" id="node2" href="$d2/dca/_shareable_8hpp.html" title="inc/dcrud/Shareable.hpp" alt="" coords="5,80,168,107"/>
+<area shape="rect" id="node2" href="$d5/d87/_arguments_8hpp.html" title="inc/dcrud/Arguments.hpp" alt="" coords="186,80,352,107"/>
+<area shape="rect" id="node6" href="$d2/dca/_shareable_8hpp.html" title="inc/dcrud/Shareable.hpp" alt="" coords="377,80,540,107"/>
+<area shape="rect" id="node3" href="$d4/d0f/_i_callback_8hpp.html" title="inc/dcrud/ICallback.hpp" alt="" coords="5,155,163,181"/>
+<area shape="rect" id="node4" href="$d8/d4a/_i_operation_8hpp.html" title="inc/dcrud/IOperation.hpp" alt="" coords="187,155,351,181"/>
+<area shape="rect" id="node5" href="$db/dac/_i_required_8hpp.html" title="inc/dcrud/IRequired.hpp" alt="" coords="376,155,535,181"/>
 </map>

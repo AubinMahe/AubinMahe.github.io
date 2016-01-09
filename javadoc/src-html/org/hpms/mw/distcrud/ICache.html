@@ -15,19 +15,18 @@
 <span class="sourceLineNo">007</span><a name="line.7"></a>
 <span class="sourceLineNo">008</span>public interface ICache {<a name="line.8"></a>
 <span class="sourceLineNo">009</span><a name="line.9"></a>
-<span class="sourceLineNo">010</span>   void                  setOwnership( boolean enabled );<a name="line.10"></a>
-<span class="sourceLineNo">011</span>   boolean               owns        ( GUID id );<a name="line.11"></a>
-<span class="sourceLineNo">012</span>   Status                create      ( Shareable item );<a name="line.12"></a>
-<span class="sourceLineNo">013</span>   &lt;T extends Shareable&gt;<a name="line.13"></a>
-<span class="sourceLineNo">014</span>   T                     read        ( GUID id );<a name="line.14"></a>
-<span class="sourceLineNo">015</span>   Status                update      ( Shareable item );<a name="line.15"></a>
-<span class="sourceLineNo">016</span>   Status                delete      ( Shareable item );<a name="line.16"></a>
-<span class="sourceLineNo">017</span>   Collection&lt;Shareable&gt; values      ();<a name="line.17"></a>
-<span class="sourceLineNo">018</span>   Set&lt;Shareable&gt;        select      ( Predicate&lt;Shareable&gt; query );<a name="line.18"></a>
-<span class="sourceLineNo">019</span>   void                  publish     () throws IOException;<a name="line.19"></a>
-<span class="sourceLineNo">020</span>   void                  subscribe   ( ClassID id );<a name="line.20"></a>
-<span class="sourceLineNo">021</span>   void                  refresh     ();<a name="line.21"></a>
-<span class="sourceLineNo">022</span>}<a name="line.22"></a>
+<span class="sourceLineNo">010</span>   void                    setOwnership( boolean enabled );<a name="line.10"></a>
+<span class="sourceLineNo">011</span>   boolean                 owns        ( GUID id );<a name="line.11"></a>
+<span class="sourceLineNo">012</span>   Status                  create      ( Shareable item );<a name="line.12"></a>
+<span class="sourceLineNo">013</span>   &lt;T extends Shareable&gt; T read        ( GUID id );<a name="line.13"></a>
+<span class="sourceLineNo">014</span>   Status                  update      ( Shareable item );<a name="line.14"></a>
+<span class="sourceLineNo">015</span>   Status                  delete      ( Shareable item );<a name="line.15"></a>
+<span class="sourceLineNo">016</span>   Collection&lt;Shareable&gt;   values      ();<a name="line.16"></a>
+<span class="sourceLineNo">017</span>   Set&lt;Shareable&gt;          select      ( Predicate&lt;Shareable&gt; query );<a name="line.17"></a>
+<span class="sourceLineNo">018</span>   void                    publish     () throws IOException;<a name="line.18"></a>
+<span class="sourceLineNo">019</span>   void                    subscribe   ( ClassID id );<a name="line.19"></a>
+<span class="sourceLineNo">020</span>   void                    refresh     ();<a name="line.20"></a>
+<span class="sourceLineNo">021</span>}<a name="line.21"></a>
 
 
 

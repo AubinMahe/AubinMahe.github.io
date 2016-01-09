@@ -1,5 +1,5 @@
 var _network_8h =
 [
-    [ "dcrudNetwork_join", "db/d9e/_network_8h.html#a705aa84c33262976bafd5b32d6d5028e", null ],
-    [ "dcrudNetwork_leave", "db/d9e/_network_8h.html#a2a11fdfc785e13b03d66a350f685faea", null ]
+    [ "dcrudNetwork_join", "db/d9e/_network_8h.html#ab821f448428dd0009e62183713d8227d", null ],
+    [ "dcrudNetwork_leave", "db/d9e/_network_8h.html#aef31692b1f9084eb94b19ecca1d52f9e", null ]
 ];

@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../local.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dcrud
    &#160;<span id="projectnumber">0.0.0</span>
@@ -113,26 +112,30 @@ $(document).ready(function(){initNavTree('d0/d61/_i_dispatcher_8h_source.html','
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d3/d63/_map_8h.html">coll/Map.h</a>&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../dd/dfb/_shareable_8h.html">dcrud/Shareable.h</a>&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d5/dd8/dcrud_2_status_8h.html">dcrud/Status.h</a>&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d3/d0c/_i_provided_8h.html">dcrud/IProvided.h</a>&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../da/d81/_i_required_8h.html">dcrud/IRequired.h</a>&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<a class="code" href="../../d0/d61/_i_dispatcher_8h.html#abc527640891712a2f441863b750b8baf">UTIL_ADT</a>( dcrudIDispatcher );</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;dcrudIProvided <a class="code" href="../../d0/d61/_i_dispatcher_8h.html#a6e0bf72563cbe36993d5ef9e5dc0998e">dcrudIDispatcher_provide</a>       ( dcrudIDispatcher   This, <span class="keyword">const</span> <span class="keywordtype">char</span> * name );</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;dcrudIRequired <a class="code" href="../../d0/d61/_i_dispatcher_8h.html#a8ec1ba77d70f4d060efa35d705f59980">dcrudIDispatcher_require</a>       ( dcrudIDispatcher   This, <span class="keyword">const</span> <span class="keywordtype">char</span> * name );</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="../../d0/d61/_i_dispatcher_8h.html#ad59629daa26122e9e98a58e0e1394bf7">dcrudIDispatcher_handleRequests</a>( dcrudIDispatcher   This );</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/dfb/_shareable_8h.html">Shareable.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/dd8/dcrud_2_status_8h.html">Status.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d0c/_i_provided_8h.html">IProvided.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../da/d81/_i_required_8h.html">IRequired.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d3a/_i_c_r_u_d_8h.html">ICRUD.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<a class="code" href="../../d0/d61/_i_dispatcher_8h.html#abc527640891712a2f441863b750b8baf">UTIL_ADT</a>( dcrudIDispatcher );</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;dcrudIProvided <a class="code" href="../../d0/d61/_i_dispatcher_8h.html#a6e0bf72563cbe36993d5ef9e5dc0998e">dcrudIDispatcher_provide</a>       ( dcrudIDispatcher   This, <span class="keyword">const</span> <span class="keywordtype">char</span> * name );</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;dcrudIRequired <a class="code" href="../../d0/d61/_i_dispatcher_8h.html#a8ec1ba77d70f4d060efa35d705f59980">dcrudIDispatcher_require</a>       ( dcrudIDispatcher   This, <span class="keyword">const</span> <span class="keywordtype">char</span> * name );</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;dcrudICRUD     <a class="code" href="../../d0/d61/_i_dispatcher_8h.html#a341f57e4b3cb52a2121a6f3f184e8d4c">dcrudIDispatcher_requireCRUD</a>   ( dcrudIDispatcher   This, dcrudClassID classId );</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span>           <a class="code" href="../../d0/d61/_i_dispatcher_8h.html#ad59629daa26122e9e98a58e0e1394bf7">dcrudIDispatcher_handleRequests</a>( dcrudIDispatcher   This );</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="_i_dispatcher_8h_html_a341f57e4b3cb52a2121a6f3f184e8d4c"><div class="ttname"><a href="../../d0/d61/_i_dispatcher_8h.html#a341f57e4b3cb52a2121a6f3f184e8d4c">dcrudIDispatcher_requireCRUD</a></div><div class="ttdeci">dcrudICRUD dcrudIDispatcher_requireCRUD(dcrudIDispatcher This, dcrudClassID classId)</div></div>
 <div class="ttc" id="_i_dispatcher_8h_html_a6e0bf72563cbe36993d5ef9e5dc0998e"><div class="ttname"><a href="../../d0/d61/_i_dispatcher_8h.html#a6e0bf72563cbe36993d5ef9e5dc0998e">dcrudIDispatcher_provide</a></div><div class="ttdeci">dcrudIProvided dcrudIDispatcher_provide(dcrudIDispatcher This, const char *name)</div></div>
 <div class="ttc" id="_shareable_8h_html"><div class="ttname"><a href="../../dd/dfb/_shareable_8h.html">Shareable.h</a></div></div>
 <div class="ttc" id="_i_required_8h_html"><div class="ttname"><a href="../../da/d81/_i_required_8h.html">IRequired.h</a></div></div>
 <div class="ttc" id="dcrud_2_status_8h_html"><div class="ttname"><a href="../../d5/dd8/dcrud_2_status_8h.html">Status.h</a></div></div>
 <div class="ttc" id="_map_8h_html"><div class="ttname"><a href="../../d3/d63/_map_8h.html">Map.h</a></div></div>
 <div class="ttc" id="_i_provided_8h_html"><div class="ttname"><a href="../../d3/d0c/_i_provided_8h.html">IProvided.h</a></div></div>
+<div class="ttc" id="_i_c_r_u_d_8h_html"><div class="ttname"><a href="../../db/d3a/_i_c_r_u_d_8h.html">ICRUD.h</a></div></div>
 <div class="ttc" id="_i_dispatcher_8h_html_abc527640891712a2f441863b750b8baf"><div class="ttname"><a href="../../d0/d61/_i_dispatcher_8h.html#abc527640891712a2f441863b750b8baf">UTIL_ADT</a></div><div class="ttdeci">UTIL_ADT(dcrudIDispatcher)</div></div>
 <div class="ttc" id="_i_dispatcher_8h_html_a8ec1ba77d70f4d060efa35d705f59980"><div class="ttname"><a href="../../d0/d61/_i_dispatcher_8h.html#a8ec1ba77d70f4d060efa35d705f59980">dcrudIDispatcher_require</a></div><div class="ttdeci">dcrudIRequired dcrudIDispatcher_require(dcrudIDispatcher This, const char *name)</div></div>
 <div class="ttc" id="_i_dispatcher_8h_html_ad59629daa26122e9e98a58e0e1394bf7"><div class="ttname"><a href="../../d0/d61/_i_dispatcher_8h.html#ad59629daa26122e9e98a58e0e1394bf7">dcrudIDispatcher_handleRequests</a></div><div class="ttdeci">void dcrudIDispatcher_handleRequests(dcrudIDispatcher This)</div></div>
@@ -142,7 +145,7 @@ $(document).ready(function(){initNavTree('d0/d61/_i_dispatcher_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_3a435a663220092428ebe5e98c15f11a.html">dcrud</a></li><li class="navelem"><a class="el" href="../../d0/d61/_i_dispatcher_8h.html">IDispatcher.h</a></li>
-    <li class="footer">Generated on Mon Dec 14 2015 22:44:31 for dcrud by
+    <li class="footer">Generated on Sat Jan 9 2016 14:54:15 for dcrud by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

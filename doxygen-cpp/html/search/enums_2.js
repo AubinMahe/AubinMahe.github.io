@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['status',['Status',['../d2/de2/namespacedcrud.html#a67a0db04d321a74b7e7fcfd3f1a3f70b',1,'dcrud']]]
+  ['type',['Type',['../d2/d51/classdcrud_1_1_class_i_d.html#a1d1cfd8ffb84e947f82999c682b666a7',1,'dcrud::ClassID']]]
 ];

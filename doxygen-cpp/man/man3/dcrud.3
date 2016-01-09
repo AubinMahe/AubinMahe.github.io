@@ -1,4 +1,4 @@
-.TH "dcrud" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "dcrud" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -10,56 +10,48 @@ dcrud \-
 
 .in +1c
 .ti -1c
-.RI "struct \fBArguments\fP"
+.RI "class \fBArguments\fP"
 .br
 .ti -1c
-.RI "struct \fBClassID\fP"
+.RI "class \fBClassID\fP"
 .br
 .ti -1c
-.RI "struct \fBGUID\fP"
+.RI "class \fBGUID\fP"
 .br
 .ti -1c
-.RI "struct \fBICache\fP"
+.RI "class \fBICache\fP"
 .br
 .ti -1c
-.RI "struct \fBICallback\fP"
+.RI "class \fBICallback\fP"
 .br
 .ti -1c
-.RI "struct \fBIDispatcher\fP"
+.RI "class \fBICRUD\fP"
 .br
 .ti -1c
-.RI "struct \fBIOperation\fP"
+.RI "class \fBIDispatcher\fP"
 .br
 .ti -1c
-.RI "struct \fBIParticipant\fP"
+.RI "class \fBIOperation\fP"
 .br
 .ti -1c
-.RI "struct \fBIProvided\fP"
+.RI "class \fBIParticipant\fP"
 .br
 .ti -1c
-.RI "struct \fBIRequired\fP"
+.RI "class \fBIProvided\fP"
 .br
 .ti -1c
-.RI "struct \fBNetwork\fP"
+.RI "class \fBIRequired\fP"
 .br
 .ti -1c
-.RI "struct \fBShareable\fP"
+.RI "class \fBNetwork\fP"
+.br
+.ti -1c
+.RI "class \fBShareable\fP"
 .br
 .in -1c
 .SS "Typedefs"
 
 .in +1c
-.ti -1c
-.RI "typedef std::map< std::string, 
-.br
-const void * > \fBargs_t\fP"
-.br
-.ti -1c
-.RI "typedef args_t::iterator \fBargsIter_t\fP"
-.br
-.ti -1c
-.RI "typedef args_t::const_iterator \fBargsCstIter_t\fP"
-.br
 .ti -1c
 .RI "typedef bool(* \fBshareablePredicate_t\fP )(const \fBShareable\fP &shareable)"
 .br
@@ -70,7 +62,7 @@ const void * > \fBargs_t\fP"
 .RI "typedef shareables_t::iterator \fBshareablesIter_t\fP"
 .br
 .ti -1c
-.RI "typedef \fBShareable\fP *(* \fBfactory_t\fP )(void)"
+.RI "typedef \fBShareable\fP *(* \fBlocalFactory_t\fP )(void)"
 .br
 .in -1c
 .SS "Enumerations"
@@ -82,22 +74,10 @@ const void * > \fBargs_t\fP"
 .in -1c
 .SH "Typedef Documentation"
 .PP 
-.SS "typedef std::map<std::string, const void *> \fBargs_t\fP"
+.SS "typedef \fBShareable\fP*(*  localFactory_t)(void)"
 
 .PP
-Definition at line 9 of file Arguments\&.hpp\&.
-.SS "typedef args_t::const_iterator \fBargsCstIter_t\fP"
-
-.PP
-Definition at line 11 of file Arguments\&.hpp\&.
-.SS "typedef args_t::iterator \fBargsIter_t\fP"
-
-.PP
-Definition at line 10 of file Arguments\&.hpp\&.
-.SS "typedef \fBShareable\fP*(*  factory_t)(void)"
-
-.PP
-Definition at line 13 of file IParticipant\&.hpp\&.
+Definition at line 14 of file IParticipant\&.hpp\&.
 .SS "typedef bool( *  shareablePredicate_t)(const \fBShareable\fP &shareable)"
 
 .PP
@@ -128,17 +108,17 @@ Definition at line 17 of file ICache\&.hpp\&.
 .TP
 \fB\fINOT_IN_THIS_CACHE \fP\fP
 .PP
-Definition at line 5 of file Status\&.hpp\&.
+Definition at line 9 of file Status\&.hpp\&.
 .PP
 .nf
-5                {
-6 
-7       NO_ERROR,
-8       ALREADY_CREATED,
-9       NOT_OWNER,
-10       NOT_CREATED,
-11       NOT_IN_THIS_CACHE
-12    };
+9                {
+10 
+11       NO_ERROR,
+12       ALREADY_CREATED,
+13       NOT_OWNER,
+14       NOT_CREATED,
+15       NOT_IN_THIS_CACHE
+16    };
 .fi
 .SH "Author"
 .PP 

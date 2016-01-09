@@ -1,4 +1,4 @@
-.TH "GUID" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "GUID" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -46,54 +46,46 @@ GUID \-
 .RI "static \fBGUID\fP \fBunserialize\fP (\fBio::ByteBuffer\fP &buffer)"
 .br
 .in -1c
-.SS "Data Fields"
-
-.in +1c
-.ti -1c
-.RI "short \fB_publisher\fP"
-.br
-.ti -1c
-.RI "byte \fB_cache\fP"
-.br
-.ti -1c
-.RI "int \fB_instance\fP"
-.br
-.in -1c
 .SS "Static Public Attributes"
 
 .in +1c
 .ti -1c
-.RI "static const unsigned int \fBSIZE\fP = 2 + 1 + 4"
+.RI "static const unsigned int \fBSIZE\fP = 4 + 4"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBCache\fP"
 .br
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 9 of file GUID\&.hpp\&.
+Definition at line 11 of file GUID\&.hpp\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "\fBGUID\fP ()\fC [inline]\fP"
 
 .PP
-Definition at line 19 of file GUID\&.hpp\&.
+Definition at line 18 of file GUID\&.hpp\&.
 .PP
 .nf
-19              :
-20          _publisher( 0 ),
-21          _cache    ( 0 ),
-22          _instance ( 0 )
-23       {}
+18              :
+19          _publisher( 0 ),
+20          _instance ( 0 )
+21       {}
 .fi
 .SS "\fBGUID\fP (const \fBGUID\fP &right)\fC [inline]\fP"
 
 .PP
-Definition at line 25 of file GUID\&.hpp\&.
+Definition at line 23 of file GUID\&.hpp\&.
 .PP
 .nf
-25                                  :
-26          _publisher( right\&._publisher ),
-27          _cache    ( right\&._cache     ),
-28          _instance ( right\&._instance  )
-29       {}
+23                                  :
+24          _publisher( right\&._publisher ),
+25          _instance ( right\&._instance  )
+26       {}
 .fi
 .SH "Member Function Documentation"
 .PP 
@@ -102,35 +94,34 @@ Definition at line 25 of file GUID\&.hpp\&.
 .SS "bool isShared () const\fC [inline]\fP"
 
 .PP
-Definition at line 42 of file GUID\&.hpp\&.
+Definition at line 38 of file GUID\&.hpp\&.
 .PP
 .nf
-42                             {
-43          return _instance != 0;
-44       }
+38                             {
+39          return _instance != 0;
+40       }
 .fi
 .SS "bool operator< (const \fBGUID\fP &right) const\fC [inline]\fP"
 
 .PP
-Definition at line 38 of file GUID\&.hpp\&.
+Definition at line 34 of file GUID\&.hpp\&.
 .PP
 .nf
-38                                                    {
-39          return compareTo( right ) < 0;
-40       }
+34                                                    {
+35          return compareTo( right ) < 0;
+36       }
 .fi
 .SS "\fBGUID\fP& operator= (const \fBGUID\fP &right)\fC [inline]\fP"
 
 .PP
-Definition at line 31 of file GUID\&.hpp\&.
+Definition at line 28 of file GUID\&.hpp\&.
 .PP
 .nf
-31                                                {
-32          _publisher = right\&._publisher;
-33          _cache     = right\&._cache;
-34          _instance  = right\&._instance;
-35          return *this;
-36       }
+28                                                {
+29          _publisher = right\&._publisher;
+30          _instance  = right\&._instance;
+31          return *this;
+32       }
 .fi
 .SS "void serialize (\fBio::ByteBuffer\fP &buffer) const"
 
@@ -140,24 +131,18 @@ Definition at line 31 of file GUID\&.hpp\&.
 
 .SS "static \fBGUID\fP unserialize (\fBio::ByteBuffer\fP &buffer)\fC [static]\fP"
 
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class Cache\fC [friend]\fP"
+
+.PP
+Definition at line 55 of file GUID\&.hpp\&.
 .SH "Field Documentation"
 .PP 
-.SS "byte _cache"
+.SS "const unsigned int SIZE = 4 + 4\fC [static]\fP"
 
 .PP
 Definition at line 14 of file GUID\&.hpp\&.
-.SS "int _instance"
-
-.PP
-Definition at line 15 of file GUID\&.hpp\&.
-.SS "short _publisher"
-
-.PP
-Definition at line 13 of file GUID\&.hpp\&.
-.SS "const unsigned int SIZE = 2 + 1 + 4\fC [static]\fP"
-
-.PP
-Definition at line 11 of file GUID\&.hpp\&.
 
 .SH "Author"
 .PP 

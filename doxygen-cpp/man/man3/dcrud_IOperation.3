@@ -1,4 +1,4 @@
-.TH "IOperation" 3 "Mon Dec 14 2015" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.TH "IOperation" 3 "Sat Jan 9 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -15,25 +15,25 @@ IOperation \-
 .RI "virtual \fB~IOperation\fP ()"
 .br
 .ti -1c
-.RI "virtual void \fBexecute\fP (\fBIParticipant\fP &participant, const \fBArguments\fP &in, \fBargs_t\fP &out)=0"
+.RI "virtual \fBArguments\fP * \fBexecute\fP (\fBIParticipant\fP &participant, const \fBArguments\fP &args)=0"
 .br
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 8 of file IOperation\&.hpp\&.
+Definition at line 9 of file IOperation\&.hpp\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "virtual ~\fBIOperation\fP ()\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
-Definition at line 10 of file IOperation\&.hpp\&.
+Definition at line 12 of file IOperation\&.hpp\&.
 .PP
 .nf
-10 {}
+12 {}
 .fi
 .SH "Member Function Documentation"
 .PP 
-.SS "virtual void execute (\fBIParticipant\fP &participant, const \fBArguments\fP &in, \fBargs_t\fP &out)\fC [pure virtual]\fP"
+.SS "virtual \fBArguments\fP* execute (\fBIParticipant\fP &participant, const \fBArguments\fP &args)\fC [pure virtual]\fP"
 
 
 .SH "Author"

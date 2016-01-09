@@ -28,7 +28,6 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="../../local.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">dcrud
    &#160;<span id="projectnumber">0.0.0</span>
@@ -112,29 +111,32 @@ $(document).ready(function(){initNavTree('d3/d0c/_i_provided_8h_source.html','..
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="../../d3/d0c/_i_provided_8h.html#ade58f2fc19cd6abb60dcade19f66b1c1">UTIL_ADT</a>( dcrudIProvided );</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d3/da0/_arguments_8h.html">dcrud/Arguments.h</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../d3/d0c/_i_provided_8h.html#a5d1db86535f5e7f85d9eb5410da1d203">    8</a></span>&#160;<span class="keyword">typedef</span> void (* <a class="code" href="../../d3/d0c/_i_provided_8h.html#a5d1db86535f5e7f85d9eb5410da1d203">dcrudIOperation</a>)( <span class="keywordtype">void</span> * context, collMap in, collMap out );</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<a class="code" href="../../d3/d0c/_i_provided_8h.html#ade58f2fc19cd6abb60dcade19f66b1c1">UTIL_ADT</a>( dcrudIProvided );</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d3/d0c/_i_provided_8h.html#a569c1478d44ad66b7a8c5bb76862b22a">dcrudIProvided_addOperation</a>(</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   dcrudIProvided  provided,</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> *    name,</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   <span class="keywordtype">void</span> *          context,</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;   <a class="code" href="../../d3/d0c/_i_provided_8h.html#a5d1db86535f5e7f85d9eb5410da1d203">dcrudIOperation</a> operation );</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../d3/d0c/_i_provided_8h.html#a305a4ed8347d849de8a3b8d203a50989">   10</a></span>&#160;<span class="keyword">typedef</span> dcrudArguments (* <a class="code" href="../../d3/d0c/_i_provided_8h.html#a305a4ed8347d849de8a3b8d203a50989">dcrudIOperation</a>)( <span class="keywordtype">void</span> * context, dcrudArguments args );</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d3/d0c/_i_provided_8h.html#a569c1478d44ad66b7a8c5bb76862b22a">dcrudIProvided_addOperation</a>(</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   dcrudIProvided  provided,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> *    name,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;   <span class="keywordtype">void</span> *          context,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;   <a class="code" href="../../d3/d0c/_i_provided_8h.html#a305a4ed8347d849de8a3b8d203a50989">dcrudIOperation</a> operation );</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="_i_provided_8h_html_ade58f2fc19cd6abb60dcade19f66b1c1"><div class="ttname"><a href="../../d3/d0c/_i_provided_8h.html#ade58f2fc19cd6abb60dcade19f66b1c1">UTIL_ADT</a></div><div class="ttdeci">UTIL_ADT(dcrudIProvided)</div></div>
-<div class="ttc" id="_i_provided_8h_html_a5d1db86535f5e7f85d9eb5410da1d203"><div class="ttname"><a href="../../d3/d0c/_i_provided_8h.html#a5d1db86535f5e7f85d9eb5410da1d203">dcrudIOperation</a></div><div class="ttdeci">void(* dcrudIOperation)(void *context, collMap in, collMap out)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d0c/_i_provided_8h_source.html#l00008">IProvided.h:8</a></div></div>
+<div class="ttc" id="_arguments_8h_html"><div class="ttname"><a href="../../d3/da0/_arguments_8h.html">Arguments.h</a></div></div>
 <div class="ttc" id="_i_provided_8h_html_a569c1478d44ad66b7a8c5bb76862b22a"><div class="ttname"><a href="../../d3/d0c/_i_provided_8h.html#a569c1478d44ad66b7a8c5bb76862b22a">dcrudIProvided_addOperation</a></div><div class="ttdeci">bool dcrudIProvided_addOperation(dcrudIProvided provided, const char *name, void *context, dcrudIOperation operation)</div></div>
+<div class="ttc" id="_i_provided_8h_html_a305a4ed8347d849de8a3b8d203a50989"><div class="ttname"><a href="../../d3/d0c/_i_provided_8h.html#a305a4ed8347d849de8a3b8d203a50989">dcrudIOperation</a></div><div class="ttdeci">dcrudArguments(* dcrudIOperation)(void *context, dcrudArguments args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d0c/_i_provided_8h_source.html#l00010">IProvided.h:10</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_3a435a663220092428ebe5e98c15f11a.html">dcrud</a></li><li class="navelem"><a class="el" href="../../d3/d0c/_i_provided_8h.html">IProvided.h</a></li>
-    <li class="footer">Generated on Mon Dec 14 2015 22:44:31 for dcrud by
+    <li class="footer">Generated on Sat Jan 9 2016 14:54:16 for dcrud by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
