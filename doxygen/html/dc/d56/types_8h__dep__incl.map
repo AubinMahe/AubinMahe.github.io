@@ -8,8 +8,7 @@
 <area shape="rect" id="node20" href="$df/d78/_system_8h.html" title="inc/os/System.h" alt="" coords="691,80,807,107"/>
 <area shape="rect" id="node21" href="$db/d19/_check_sys_call_8h.html" title="inc/util/CheckSysCall.h" alt="" coords="833,80,991,107"/>
 <area shape="rect" id="node22" href="$d3/d81/_dump_8h.html" title="inc/util/Dump.h" alt="" coords="1015,80,1125,107"/>
-<area shape="rect" id="node23" href="$d6/d8f/_perf_8h.html" title="inc/util/Perf.h" alt="" coords="1151,80,1249,107"/>
-<area shape="rect" id="node24" href="$d2/d8e/_performance_8h.html" title="inc/util/Performance.h" alt="" coords="1273,80,1421,107"/>
+<area shape="rect" id="node23" href="$d2/d8e/_performance_8h.html" title="inc/util/Performance.h" alt="" coords="1151,80,1299,107"/>
 <area shape="rect" id="node4" href="$d0/d61/_i_dispatcher_8h.html" title="inc/dcrud/IDispatcher.h" alt="" coords="243,528,400,555"/>
 <area shape="rect" id="node5" href="$de/dfa/_i_participant_8h.html" title="inc/dcrud/IParticipant.h" alt="" coords="110,603,265,629"/>
 <area shape="rect" id="node6" href="$db/d9e/_network_8h.html" title="inc/dcrud/Network.h" alt="" coords="119,677,257,704"/>
