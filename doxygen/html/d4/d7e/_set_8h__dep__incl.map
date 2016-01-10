@@ -1,5 +1,6 @@
 <map id="inc/coll/Set.h" name="inc/coll/Set.h">
-<area shape="rect" id="node2" href="$d8/d01/_i_cache_8h.html" title="inc/dcrud/ICache.h" alt="" coords="17,80,148,107"/>
-<area shape="rect" id="node3" href="$de/dfa/_i_participant_8h.html" title="inc/dcrud/IParticipant.h" alt="" coords="5,155,160,181"/>
-<area shape="rect" id="node4" href="$db/d9e/_network_8h.html" title="inc/dcrud/Network.h" alt="" coords="13,229,152,256"/>
+<area shape="rect" id="node2" href="$d8/d01/_i_cache_8h.html" title="inc/dcrud/ICache.h" alt="" coords="5,80,136,107"/>
+<area shape="rect" id="node5" href="$d0/de3/_i_registry_8h.html" title="inc/dcrud/IRegistry.h" alt="" coords="161,80,303,107"/>
+<area shape="rect" id="node3" href="$de/dfa/_i_participant_8h.html" title="inc/dcrud/IParticipant.h" alt="" coords="73,155,228,181"/>
+<area shape="rect" id="node4" href="$db/d9e/_network_8h.html" title="inc/dcrud/Network.h" alt="" coords="81,229,220,256"/>
 </map>

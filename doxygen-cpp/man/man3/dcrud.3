@@ -40,6 +40,9 @@ dcrud \-
 .RI "class \fBIProvided\fP"
 .br
 .ti -1c
+.RI "class \fBIRegistry\fP"
+.br
+.ti -1c
 .RI "class \fBIRequired\fP"
 .br
 .ti -1c
@@ -64,6 +67,16 @@ dcrud \-
 .ti -1c
 .RI "typedef \fBShareable\fP *(* \fBlocalFactory_t\fP )(void)"
 .br
+.ti -1c
+.RI "typedef std::set
+.br
+< \fBio::InetSocketAddress\fP > \fBsocketAddresses_t\fP"
+.br
+.ti -1c
+.RI "typedef 
+.br
+socketAddresses_t::const_iterator \fBsocketAddressesCstIter_t\fP"
+.br
 .in -1c
 .SS "Enumerations"
 
@@ -77,7 +90,7 @@ dcrud \-
 .SS "typedef \fBShareable\fP*(*  localFactory_t)(void)"
 
 .PP
-Definition at line 14 of file IParticipant\&.hpp\&.
+Definition at line 15 of file IParticipant\&.hpp\&.
 .SS "typedef bool( *  shareablePredicate_t)(const \fBShareable\fP &shareable)"
 
 .PP
@@ -90,6 +103,14 @@ Definition at line 16 of file ICache\&.hpp\&.
 
 .PP
 Definition at line 17 of file ICache\&.hpp\&.
+.SS "typedef std::set<\fBio::InetSocketAddress\fP> \fBsocketAddresses_t\fP"
+
+.PP
+Definition at line 7 of file IRegistry\&.hpp\&.
+.SS "typedef socketAddresses_t::const_iterator \fBsocketAddressesCstIter_t\fP"
+
+.PP
+Definition at line 8 of file IRegistry\&.hpp\&.
 .SH "Enumeration Type Documentation"
 .PP 
 .SS "enum \fBStatus\fP"

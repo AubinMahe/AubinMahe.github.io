@@ -9,6 +9,7 @@ var dir_3a435a663220092428ebe5e98c15f11a =
     [ "IDispatcher.h", "d0/d61/_i_dispatcher_8h.html", "d0/d61/_i_dispatcher_8h" ],
     [ "IParticipant.h", "de/dfa/_i_participant_8h.html", "de/dfa/_i_participant_8h" ],
     [ "IProvided.h", "d3/d0c/_i_provided_8h.html", "d3/d0c/_i_provided_8h" ],
+    [ "IRegistry.h", "d0/de3/_i_registry_8h.html", "d0/de3/_i_registry_8h" ],
     [ "IRequired.h", "da/d81/_i_required_8h.html", "da/d81/_i_required_8h" ],
     [ "Network.h", "db/d9e/_network_8h.html", "db/d9e/_network_8h" ],
     [ "Shareable.h", "dd/dfb/_shareable_8h.html", "dd/dfb/_shareable_8h" ],

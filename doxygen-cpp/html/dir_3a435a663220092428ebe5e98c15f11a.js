@@ -26,6 +26,7 @@ var dir_3a435a663220092428ebe5e98c15f11a =
     [ "IProvided.hpp", "d2/d01/_i_provided_8hpp.html", [
       [ "IProvided", "d9/d4f/classdcrud_1_1_i_provided.html", "d9/d4f/classdcrud_1_1_i_provided" ]
     ] ],
+    [ "IRegistry.hpp", "db/d8f/_i_registry_8hpp.html", "db/d8f/_i_registry_8hpp" ],
     [ "IRequired.hpp", "db/dac/_i_required_8hpp.html", [
       [ "IRequired", "d6/d7b/classdcrud_1_1_i_required.html", "d6/d7b/classdcrud_1_1_i_required" ]
     ] ],

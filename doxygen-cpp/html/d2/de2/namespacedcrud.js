@@ -10,6 +10,7 @@ var namespacedcrud =
     [ "IOperation", "db/d8b/classdcrud_1_1_i_operation.html", "db/d8b/classdcrud_1_1_i_operation" ],
     [ "IParticipant", "d4/d0f/classdcrud_1_1_i_participant.html", "d4/d0f/classdcrud_1_1_i_participant" ],
     [ "IProvided", "d9/d4f/classdcrud_1_1_i_provided.html", "d9/d4f/classdcrud_1_1_i_provided" ],
+    [ "IRegistry", "d7/dad/classdcrud_1_1_i_registry.html", "d7/dad/classdcrud_1_1_i_registry" ],
     [ "IRequired", "d6/d7b/classdcrud_1_1_i_required.html", "d6/d7b/classdcrud_1_1_i_required" ],
     [ "Network", "d7/df3/classdcrud_1_1_network.html", null ],
     [ "Shareable", "d6/d8a/classdcrud_1_1_shareable.html", "d6/d8a/classdcrud_1_1_shareable" ]

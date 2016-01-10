@@ -113,28 +113,27 @@ $(document).ready(function(){initNavTree('db/d9e/_network_8h_source.html','../..
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../de/dfa/_i_participant_8h.html">dcrud/IParticipant.h</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;dcrudIParticipant <a class="code" href="../../db/d9e/_network_8h.html#ab821f448428dd0009e62183713d8227d">dcrudNetwork_join</a>(</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>   publisherId,</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> *   mcastAddr,</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> port,</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> *   intrfc,</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   <span class="keywordtype">bool</span>           dumpReceivedBuffer );</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d9e/_network_8h.html#aef31692b1f9084eb94b19ecca1d52f9e">dcrudNetwork_leave</a>( dcrudIParticipant * participant );</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="_network_8h_html_ab821f448428dd0009e62183713d8227d"><div class="ttname"><a href="../../db/d9e/_network_8h.html#ab821f448428dd0009e62183713d8227d">dcrudNetwork_join</a></div><div class="ttdeci">dcrudIParticipant dcrudNetwork_join(unsigned int publisherId, const char *mcastAddr, unsigned short port, const char *intrfc, bool dumpReceivedBuffer)</div></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;dcrudIParticipant <a class="code" href="../../db/d9e/_network_8h.html#ab9ab929c18a5ad13f189054f1aed0a85">dcrudNetwork_join</a>(</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                <span class="keywordtype">id</span>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   <span class="keyword">const</span> <a class="code" href="../../da/dae/structio_inet_socket_address__s.html">ioInetSocketAddress</a> * addr,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   <span class="keyword">const</span> <span class="keywordtype">char</span> *                intrfc );</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d9e/_network_8h.html#aef31692b1f9084eb94b19ecca1d52f9e">dcrudNetwork_leave</a>( dcrudIParticipant * participant );</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="_i_participant_8h_html"><div class="ttname"><a href="../../de/dfa/_i_participant_8h.html">IParticipant.h</a></div></div>
+<div class="ttc" id="structio_inet_socket_address__s_html"><div class="ttname"><a href="../../da/dae/structio_inet_socket_address__s.html">ioInetSocketAddress_s</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dfc/_inet_socket_address_8h_source.html#l00006">InetSocketAddress.h:6</a></div></div>
 <div class="ttc" id="_network_8h_html_aef31692b1f9084eb94b19ecca1d52f9e"><div class="ttname"><a href="../../db/d9e/_network_8h.html#aef31692b1f9084eb94b19ecca1d52f9e">dcrudNetwork_leave</a></div><div class="ttdeci">void dcrudNetwork_leave(dcrudIParticipant *participant)</div></div>
+<div class="ttc" id="_network_8h_html_ab9ab929c18a5ad13f189054f1aed0a85"><div class="ttname"><a href="../../db/d9e/_network_8h.html#ab9ab929c18a5ad13f189054f1aed0a85">dcrudNetwork_join</a></div><div class="ttdeci">dcrudIParticipant dcrudNetwork_join(unsigned int id, const ioInetSocketAddress *addr, const char *intrfc)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../dir_3a435a663220092428ebe5e98c15f11a.html">dcrud</a></li><li class="navelem"><a class="el" href="../../db/d9e/_network_8h.html">Network.h</a></li>
-    <li class="footer">Generated on Sun Jan 10 2016 01:45:34 for dcrud by
+    <li class="footer">Generated on Sun Jan 10 2016 19:24:07 for dcrud by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

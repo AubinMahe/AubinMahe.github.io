@@ -33,5 +33,9 @@ var searchData=
   ['iobytebuffer_5freset',['ioByteBuffer_reset',['../d6/d6c/_byte_buffer_8h.html#ac490803a0b7b00857216a5c80f3aadc1',1,'ByteBuffer.h']]],
   ['iobytebuffer_5fsend',['ioByteBuffer_send',['../d6/d6c/_byte_buffer_8h.html#adb5a8ecee518a1a0039c11f613a3b400',1,'ByteBuffer.h']]],
   ['iobytebuffer_5fsetposition',['ioByteBuffer_setPosition',['../d6/d6c/_byte_buffer_8h.html#ad21a314182f8915de38aff70c33326f9',1,'ByteBuffer.h']]],
-  ['iobytebuffer_5fwrap',['ioByteBuffer_wrap',['../d6/d6c/_byte_buffer_8h.html#a76706c3f072687c07ba739449f05066c',1,'ByteBuffer.h']]]
+  ['iobytebuffer_5fwrap',['ioByteBuffer_wrap',['../d6/d6c/_byte_buffer_8h.html#a76706c3f072687c07ba739449f05066c',1,'ByteBuffer.h']]],
+  ['ioinetsocketaddress_5fcomparator',['ioInetSocketAddress_comparator',['../d9/dfc/_inet_socket_address_8h.html#a25e9d50c787cd01dce47bbe9a4668224',1,'InetSocketAddress.h']]],
+  ['ioinetsocketaddress_5finit',['ioInetSocketAddress_init',['../d9/dfc/_inet_socket_address_8h.html#a17ee11d415baabf5f4edb1cf7a374232',1,'InetSocketAddress.h']]],
+  ['ioinetsocketaddress_5fnew',['ioInetSocketAddress_new',['../d9/dfc/_inet_socket_address_8h.html#a9372a8a45621825cb222f77efd7471be',1,'InetSocketAddress.h']]],
+  ['ionetworkinterfaces_5fgetfirst',['ioNetworkInterfaces_getFirst',['../d1/dc9/_network_interfaces_8h.html#a878b632e02369d97f3da34b567080dcd',1,'NetworkInterfaces.h']]]
 ];

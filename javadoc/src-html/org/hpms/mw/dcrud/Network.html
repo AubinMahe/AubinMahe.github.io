@@ -11,20 +11,37 @@
 <span class="sourceLineNo">003</span>import java.io.IOException;<a name="line.3"></a>
 <span class="sourceLineNo">004</span>import java.net.InetSocketAddress;<a name="line.4"></a>
 <span class="sourceLineNo">005</span>import java.net.NetworkInterface;<a name="line.5"></a>
-<span class="sourceLineNo">006</span><a name="line.6"></a>
-<span class="sourceLineNo">007</span>public class Network {<a name="line.7"></a>
-<span class="sourceLineNo">008</span><a name="line.8"></a>
-<span class="sourceLineNo">009</span>   public static IParticipant join( int id, InetSocketAddress addr, NetworkInterface intrfc ) throws IOException {<a name="line.9"></a>
-<span class="sourceLineNo">010</span>      return new MulticastParticipant( id, addr, intrfc );<a name="line.10"></a>
-<span class="sourceLineNo">011</span>   }<a name="line.11"></a>
-<span class="sourceLineNo">012</span><a name="line.12"></a>
-<span class="sourceLineNo">013</span>   public static IParticipant join( int id, InetSocketAddress addr ) throws IOException {<a name="line.13"></a>
-<span class="sourceLineNo">014</span>      if( addr.getAddress().isMulticastAddress()) {<a name="line.14"></a>
-<span class="sourceLineNo">015</span>         return new MulticastParticipant( id, addr, NetworkInterface.getByIndex( 0 ));<a name="line.15"></a>
-<span class="sourceLineNo">016</span>      }<a name="line.16"></a>
-<span class="sourceLineNo">017</span>      return new UDPParticipant( id, addr );<a name="line.17"></a>
-<span class="sourceLineNo">018</span>   }<a name="line.18"></a>
-<span class="sourceLineNo">019</span>}<a name="line.19"></a>
+<span class="sourceLineNo">006</span>import java.util.Enumeration;<a name="line.6"></a>
+<span class="sourceLineNo">007</span><a name="line.7"></a>
+<span class="sourceLineNo">008</span>public class Network {<a name="line.8"></a>
+<span class="sourceLineNo">009</span><a name="line.9"></a>
+<span class="sourceLineNo">010</span>   public static IParticipant join( int id, InetSocketAddress addr, NetworkInterface intrfc ) throws IOException {<a name="line.10"></a>
+<span class="sourceLineNo">011</span>      return new MulticastParticipant( id, addr, intrfc );<a name="line.11"></a>
+<span class="sourceLineNo">012</span>   }<a name="line.12"></a>
+<span class="sourceLineNo">013</span><a name="line.13"></a>
+<span class="sourceLineNo">014</span>   public static IParticipant join( int id, InetSocketAddress addr ) throws IOException {<a name="line.14"></a>
+<span class="sourceLineNo">015</span>      if( addr.getAddress().isMulticastAddress()) {<a name="line.15"></a>
+<span class="sourceLineNo">016</span>         NetworkInterface intrfc = null;<a name="line.16"></a>
+<span class="sourceLineNo">017</span>         for( final Enumeration&lt;NetworkInterface&gt; e = NetworkInterface.getNetworkInterfaces();<a name="line.17"></a>
+<span class="sourceLineNo">018</span>              e.hasMoreElements(); )<a name="line.18"></a>
+<span class="sourceLineNo">019</span>         {<a name="line.19"></a>
+<span class="sourceLineNo">020</span>            final NetworkInterface candidate = e.nextElement();<a name="line.20"></a>
+<span class="sourceLineNo">021</span>            if(   !candidate.isLoopback()<a name="line.21"></a>
+<span class="sourceLineNo">022</span>               &amp;&amp; candidate.isUp()<a name="line.22"></a>
+<span class="sourceLineNo">023</span>               &amp;&amp; candidate.supportsMulticast())<a name="line.23"></a>
+<span class="sourceLineNo">024</span>            {<a name="line.24"></a>
+<span class="sourceLineNo">025</span>               intrfc = candidate;<a name="line.25"></a>
+<span class="sourceLineNo">026</span>            }<a name="line.26"></a>
+<span class="sourceLineNo">027</span>         }<a name="line.27"></a>
+<span class="sourceLineNo">028</span>         if( intrfc == null ) {<a name="line.28"></a>
+<span class="sourceLineNo">029</span>            throw new IllegalStateException(<a name="line.29"></a>
+<span class="sourceLineNo">030</span>               "No network up, non loopback, multicast capable interface found" );<a name="line.30"></a>
+<span class="sourceLineNo">031</span>         }<a name="line.31"></a>
+<span class="sourceLineNo">032</span>         return new MulticastParticipant( id, addr, intrfc );<a name="line.32"></a>
+<span class="sourceLineNo">033</span>      }<a name="line.33"></a>
+<span class="sourceLineNo">034</span>      return new UDPParticipant( id, addr );<a name="line.34"></a>
+<span class="sourceLineNo">035</span>   }<a name="line.35"></a>
+<span class="sourceLineNo">036</span>}<a name="line.36"></a>
 
 
 

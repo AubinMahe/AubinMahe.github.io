@@ -13,7 +13,7 @@ inc/dcrud/Network.h \-
 
 .in +1c
 .ti -1c
-.RI "dcrudIParticipant \fBdcrudNetwork_join\fP (unsigned int publisherId, const char *mcastAddr, unsigned short port, const char *intrfc, \fBbool\fP dumpReceivedBuffer)"
+.RI "dcrudIParticipant \fBdcrudNetwork_join\fP (unsigned int id, const \fBioInetSocketAddress\fP *addr, const char *intrfc)"
 .br
 .ti -1c
 .RI "void \fBdcrudNetwork_leave\fP (dcrudIParticipant *participant)"
@@ -21,7 +21,18 @@ inc/dcrud/Network.h \-
 .in -1c
 .SH "Function Documentation"
 .PP 
-.SS "dcrudIParticipant dcrudNetwork_join (unsigned intpublisherId, const char *mcastAddr, unsigned shortport, const char *intrfc, \fBbool\fPdumpReceivedBuffer)"
+.SS "dcrudIParticipant dcrudNetwork_join (unsigned intid, const \fBioInetSocketAddress\fP *addr, const char *intrfc)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP participant id 
+.br
+\fIaddr\fP IP address:port pair 
+.br
+\fIintrfc\fP the network interface to use, identified by its IP address, may be null in such case the first up, non loopback, multicast capable interface will be used) 
+.RE
+.PP
 
 .SS "void dcrudNetwork_leave (dcrudIParticipant *participant)"
 

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['asynchronous_5fdeferred',['ASYNCHRONOUS_DEFERRED',['../d6/d7b/classdcrud_1_1_i_required.html#af979c327c01e6b739ce90d1109602850',1,'dcrud::IRequired']]],
-  ['asynchronous_5fimmediate',['ASYNCHRONOUS_IMMEDIATE',['../d6/d7b/classdcrud_1_1_i_required.html#a794c644226aba7088a366ca82ac9e9e1',1,'dcrud::IRequired']]]
+  ['_5finetaddress',['_inetAddress',['../df/dcd/structio_1_1_inet_socket_address.html#ae29278cd78b4c54a949101deff4fef8d',1,'io::InetSocketAddress']]],
+  ['_5fport',['_port',['../df/dcd/structio_1_1_inet_socket_address.html#a4c4f4deb906808fb34147da2d6043135',1,'io::InetSocketAddress']]]
 ];

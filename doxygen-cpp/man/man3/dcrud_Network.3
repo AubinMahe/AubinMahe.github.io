@@ -12,7 +12,10 @@ Network \-
 
 .in +1c
 .ti -1c
-.RI "static \fBIParticipant\fP & \fBjoin\fP (unsigned int publisherId, const std::string &mcastAddr, unsigned short port, const std::string &intrfc)"
+.RI "static \fBIParticipant\fP & \fBjoin\fP (unsigned int id, const \fBio::InetSocketAddress\fP &addr, const std::string &intrfc)"
+.br
+.ti -1c
+.RI "static \fBIParticipant\fP & \fBjoin\fP (unsigned int id, const \fBio::InetSocketAddress\fP &addr)"
 .br
 .ti -1c
 .RI "static void \fBleave\fP (\fBIParticipant\fP &participant)"
@@ -23,7 +26,29 @@ Network \-
 Definition at line 9 of file Network\&.hpp\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "static \fBIParticipant\fP& join (unsigned intpublisherId, const std::string &mcastAddr, unsigned shortport, const std::string &intrfc)\fC [static]\fP"
+.SS "static \fBIParticipant\fP& join (unsigned intid, const \fBio::InetSocketAddress\fP &addr, const std::string &intrfc)\fC [static]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP participant id 
+.br
+\fIaddr\fP IP address:port pair 
+.br
+\fIintrfc\fP the network interface to use, identified by its IP address 
+.RE
+.PP
+
+.SS "static \fBIParticipant\fP& join (unsigned intid, const \fBio::InetSocketAddress\fP &addr)\fC [static]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP participant id 
+.br
+\fIaddr\fP IP address:port pair \fINote\fP: The first up, non loopback, multicast capable interface will be used 
+.RE
+.PP
 
 .SS "static void leave (\fBIParticipant\fP &participant)\fC [static]\fP"
 

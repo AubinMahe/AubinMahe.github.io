@@ -1,0 +1,52 @@
+.TH "inc/io/InetSocketAddress.h" 3 "Sun Jan 10 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+inc/io/InetSocketAddress.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBioInetSocketAddress_s\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct 
+.br
+\fBioInetSocketAddress_s\fP \fBioInetSocketAddress\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBioInetSocketAddress_init\fP (\fBioInetSocketAddress\fP *This, const char *host, unsigned short port)"
+.br
+.ti -1c
+.RI "\fBioInetSocketAddress\fP * \fBioInetSocketAddress_new\fP (const char *host, unsigned short port)"
+.br
+.ti -1c
+.RI "int \fBioInetSocketAddress_comparator\fP (const \fBioInetSocketAddress\fP *left, const \fBioInetSocketAddress\fP *right)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBioInetSocketAddress_s\fP  \fBioInetSocketAddress\fP"
+
+.SH "Function Documentation"
+.PP 
+.SS "int ioInetSocketAddress_comparator (const \fBioInetSocketAddress\fP *left, const \fBioInetSocketAddress\fP *right)"
+
+.SS "void ioInetSocketAddress_init (\fBioInetSocketAddress\fP *This, const char *host, unsigned shortport)"
+
+.SS "\fBioInetSocketAddress\fP* ioInetSocketAddress_new (const char *host, unsigned shortport)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

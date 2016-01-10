@@ -124,8 +124,10 @@ Collaboration diagram for IParticipant:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afc278b379c7cc1e59caddee5f82dcb84"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d0f/classdcrud_1_1_i_participant.html#afc278b379c7cc1e59caddee5f82dcb84">~IParticipant</a> ()</td></tr>
 <tr class="separator:afc278b379c7cc1e59caddee5f82dcb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c406ce1c5cb1d5f242ab560139ab2e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d0f/classdcrud_1_1_i_participant.html#a0c406ce1c5cb1d5f242ab560139ab2e0">listen</a> (const std::string &amp;mcastAddr, unsigned short port, const std::string &amp;networkInterface, bool dumpReceivedBuffer)=0</td></tr>
-<tr class="separator:a0c406ce1c5cb1d5f242ab560139ab2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9aa4b5c247f99cd1cba348499bff28"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d0f/classdcrud_1_1_i_participant.html#abd9aa4b5c247f99cd1cba348499bff28">listen</a> (const <a class="el" href="../../d7/dad/classdcrud_1_1_i_registry.html">IRegistry</a> &amp;registry, const std::string &amp;networkInterface, bool dumpReceivedBuffer=false)=0</td></tr>
+<tr class="separator:abd9aa4b5c247f99cd1cba348499bff28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa713012e1f464b6f74ebf339225ec7a1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d0f/classdcrud_1_1_i_participant.html#aa713012e1f464b6f74ebf339225ec7a1">listen</a> (const <a class="el" href="../../d7/dad/classdcrud_1_1_i_registry.html">IRegistry</a> &amp;registry, bool dumpReceivedBuffer=false)=0</td></tr>
+<tr class="separator:aa713012e1f464b6f74ebf339225ec7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a704dd914a2986e69cc73273ff3d8268f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d0f/classdcrud_1_1_i_participant.html#a704dd914a2986e69cc73273ff3d8268f">registerLocalFactory</a> (const <a class="el" href="../../d2/d51/classdcrud_1_1_class_i_d.html">ClassID</a> &amp;id, <a class="el" href="../../d2/de2/namespacedcrud.html#a346d28aa1815b52acde099cc6cf80805">localFactory_t</a> factory)=0</td></tr>
 <tr class="separator:a704dd914a2986e69cc73273ff3d8268f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62f8ee6f6ffdd22b697550d358159f5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d0f/classdcrud_1_1_i_participant.html#a62f8ee6f6ffdd22b697550d358159f5a">registerRemoteFactory</a> (const <a class="el" href="../../d2/d51/classdcrud_1_1_class_i_d.html">ClassID</a> &amp;id, <a class="el" href="../../d9/d9a/classdcrud_1_1_i_c_r_u_d.html">ICRUD</a> *factory)=0</td></tr>
@@ -141,7 +143,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="../../d5/d83/_i_participant_8hpp_source.html#l00016">16</a> of file <a class="el" href="../../d5/d83/_i_participant_8hpp_source.html">IParticipant.hpp</a>.</p>
+<p>Definition at line <a class="el" href="../../d5/d83/_i_participant_8hpp_source.html#l00017">17</a> of file <a class="el" href="../../d5/d83/_i_participant_8hpp_source.html">IParticipant.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afc278b379c7cc1e59caddee5f82dcb84"></a>
 <div class="memitem">
@@ -164,8 +166,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d5/d83/_i_participant_8hpp_source.html#l00019">19</a> of file <a class="el" href="../../d5/d83/_i_participant_8hpp_source.html">IParticipant.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="../../d5/d83/_i_participant_8hpp_source.html#l00020">20</a> of file <a class="el" href="../../d5/d83/_i_participant_8hpp_source.html">IParticipant.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -264,7 +266,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0c406ce1c5cb1d5f242ab560139ab2e0"></a>
+<a class="anchor" id="abd9aa4b5c247f99cd1cba348499bff28"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -274,14 +276,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void listen </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>mcastAddr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned short&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramtype">const <a class="el" href="../../d7/dad/classdcrud_1_1_i_registry.html">IRegistry</a> &amp;&#160;</td>
+          <td class="paramname"><em>registry</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -293,7 +289,41 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>dumpReceivedBuffer</em>&#160;</td>
+          <td class="paramname"><em>dumpReceivedBuffer</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa713012e1f464b6f74ebf339225ec7a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void listen </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/dad/classdcrud_1_1_i_registry.html">IRegistry</a> &amp;&#160;</td>
+          <td class="paramname"><em>registry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dumpReceivedBuffer</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -387,7 +417,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/de2/namespacedcrud.html">dcrud</a></li><li class="navelem"><a class="el" href="../../d4/d0f/classdcrud_1_1_i_participant.html">IParticipant</a></li>
-    <li class="footer">Generated on Sun Jan 10 2016 01:45:36 for dcrud by
+    <li class="footer">Generated on Sun Jan 10 2016 19:24:09 for dcrud by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

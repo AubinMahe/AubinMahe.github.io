@@ -14,9 +14,9 @@
 <span class="sourceLineNo">006</span><a name="line.6"></a>
 <span class="sourceLineNo">007</span>public interface IParticipant {<a name="line.7"></a>
 <span class="sourceLineNo">008</span><a name="line.8"></a>
-<span class="sourceLineNo">009</span>   void listen( NetworkInterface via, IRegistry registry ) throws IOException;<a name="line.9"></a>
+<span class="sourceLineNo">009</span>   void listen( NetworkInterface via, IRegistry registry, boolean dumpReceivedBuffer ) throws IOException;<a name="line.9"></a>
 <span class="sourceLineNo">010</span><a name="line.10"></a>
-<span class="sourceLineNo">011</span>   void listen( IRegistry registry ) throws IOException;<a name="line.11"></a>
+<span class="sourceLineNo">011</span>   void listen( IRegistry registry, boolean dumpReceivedBuffer ) throws IOException;<a name="line.11"></a>
 <span class="sourceLineNo">012</span><a name="line.12"></a>
 <span class="sourceLineNo">013</span>   void registerLocalFactory ( ClassID id, Supplier&lt;Shareable&gt; factory );<a name="line.13"></a>
 <span class="sourceLineNo">014</span><a name="line.14"></a>

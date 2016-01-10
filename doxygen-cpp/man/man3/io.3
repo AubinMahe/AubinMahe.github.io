@@ -12,12 +12,22 @@ io \-
 .ti -1c
 .RI "class \fBByteBuffer\fP"
 .br
+.ti -1c
+.RI "struct \fBInetSocketAddress\fP"
+.br
 .in -1c
 .SS "Enumerations"
 
 .in +1c
 .ti -1c
 .RI "enum \fBByteOrder\fP { \fBioByteOrder_BIG_ENDIAN\fP, \fBioByteOrder_LITTLE_ENDIAN\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBio::InetSocketAddress\fP &left, const \fBio::InetSocketAddress\fP &right)"
 .br
 .in -1c
 .SH "Enumeration Type Documentation"
@@ -40,6 +50,27 @@ Definition at line 14 of file ByteBuffer\&.hpp\&.
 16       ioByteOrder_BIG_ENDIAN,
 17       ioByteOrder_LITTLE_ENDIAN
 18    };
+.fi
+.SH "Function Documentation"
+.PP 
+.SS "bool io::operator< (const \fBio::InetSocketAddress\fP &left, const \fBio::InetSocketAddress\fP &right)\fC [inline]\fP"
+
+.PP
+Definition at line 18 of file InetSocketAddress\&.hpp\&.
+.PP
+.nf
+18                                                                                                   {
+19       bool lt = left\&._inetAddress < right\&._inetAddress;
+20       if( lt ) {
+21          return true;
+22       }
+23       bool gt = left\&._inetAddress > right\&._inetAddress;
+24       if( gt ) {
+25          return false;
+26       }
+27       lt = left\&._port < right\&._port;
+28       return lt;
+29    }
 .fi
 .SH "Author"
 .PP 

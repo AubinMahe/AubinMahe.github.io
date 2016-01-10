@@ -6,9 +6,13 @@ inc/dcrud/IParticipant.h \-
 .SH SYNOPSIS
 .br
 .PP
+\fC#include <io/InetSocketAddress\&.h>\fP
+.br
 \fC#include 'ICache\&.h'\fP
 .br
 \fC#include 'IDispatcher\&.h'\fP
+.br
+\fC#include 'IRegistry\&.h'\fP
 .br
 
 .SS "Data Structures"
@@ -62,7 +66,7 @@ inc/dcrud/IParticipant.h \-
 .RI "\fBUTIL_ADT\fP (dcrudIParticipant)"
 .br
 .ti -1c
-.RI "void \fBdcrudIParticipant_listen\fP (dcrudIParticipant This, const char *mcastAddr, unsigned short port, const char *networkInterface)"
+.RI "void \fBdcrudIParticipant_listen\fP (dcrudIParticipant This, dcrudIRegistry registry, const char *intrfc, \fBbool\fP dumpReceivedBuffer)"
 .br
 .ti -1c
 .RI "\fBbool\fP \fBdcrudIParticipant_registerLocalFactory\fP (dcrudIParticipant This, \fBdcrudLocalFactory\fP *local)"
@@ -96,37 +100,37 @@ inc/dcrud/IParticipant.h \-
 .SS "typedef \fBbool\fP(*  dcrudLocalFactory_Initialize)(\fBdcrudShareableData\fP This)"
 
 .PP
-Definition at line 16 of file IParticipant\&.h\&.
+Definition at line 18 of file IParticipant\&.h\&.
 .SS "typedef \fBioStatus\fP(*  dcrudLocalFactory_Serialize)(\fBdcrudShareableData\fP This, ioByteBuffer target)"
 
 .PP
-Definition at line 14 of file IParticipant\&.h\&.
+Definition at line 16 of file IParticipant\&.h\&.
 .SS "typedef void(*  dcrudLocalFactory_Set)(\fBdcrudShareableData\fP This, const \fBdcrudShareableData\fP source)"
 
 .PP
-Definition at line 13 of file IParticipant\&.h\&.
+Definition at line 15 of file IParticipant\&.h\&.
 .SS "typedef \fBioStatus\fP(*  dcrudLocalFactory_Unserialize)(\fBdcrudShareableData\fP This, ioByteBuffer source)"
 
 .PP
-Definition at line 15 of file IParticipant\&.h\&.
+Definition at line 17 of file IParticipant\&.h\&.
 .SS "typedef struct \fBdcrudRemoteFactory_s\fP  \fBdcrudRemoteFactory\fP"
 
 .SS "typedef void(*  dcrudRemoteFactory_create)(struct \fBdcrudRemoteFactory_s\fP *This, dcrudArguments how)"
 
 .PP
-Definition at line 18 of file IParticipant\&.h\&.
+Definition at line 20 of file IParticipant\&.h\&.
 .SS "typedef void(*  dcrudRemoteFactory_delete)(struct \fBdcrudRemoteFactory_s\fP *This, dcrudShareable what)"
 
 .PP
-Definition at line 20 of file IParticipant\&.h\&.
+Definition at line 22 of file IParticipant\&.h\&.
 .SS "typedef void(*  dcrudRemoteFactory_update)(struct \fBdcrudRemoteFactory_s\fP *This, dcrudShareable what, dcrudArguments how)"
 
 .PP
-Definition at line 19 of file IParticipant\&.h\&.
+Definition at line 21 of file IParticipant\&.h\&.
 .SS "typedef dcrudShareable(*  dcrudShareableFactory)()"
 
 .PP
-Definition at line 9 of file IParticipant\&.h\&.
+Definition at line 11 of file IParticipant\&.h\&.
 .SH "Function Documentation"
 .PP 
 .SS "\fBdcrudStatus\fP dcrudIParticipant_createCache (dcrudIParticipantThis, dcrudICache *target, \fBbyte\fP *cacheId)"
@@ -139,7 +143,20 @@ Definition at line 9 of file IParticipant\&.h\&.
 
 .SS "dcrudIDispatcher dcrudIParticipant_getDispatcher (dcrudIParticipantThis)"
 
-.SS "void dcrudIParticipant_listen (dcrudIParticipantThis, const char *mcastAddr, unsigned shortport, const char *networkInterface)"
+.SS "void dcrudIParticipant_listen (dcrudIParticipantThis, dcrudIRegistryregistry, const char *intrfc, \fBbool\fPdumpReceivedBuffer)"
+Use the registry to instanciate and listen to other participants\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIThis\fP this participant 
+.br
+\fIregistry\fP the registry to use 
+.br
+\fIintrfc\fP the network interface to use, identified by its IP address, may be null, in such case the first up, non loopback, multicast capable interface will be used 
+.br
+\fIdumpReceivedBuffer\fP if true, dump the received frames on stderr 
+.RE
+.PP
 
 .SS "\fBbool\fP dcrudIParticipant_registerLocalFactory (dcrudIParticipantThis, \fBdcrudLocalFactory\fP *local)"
 

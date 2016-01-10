@@ -1,0 +1,79 @@
+.TH "inc/dcrud/IRegistry.h" 3 "Sun Jan 10 2016" "Version 0.0.0" "dcrud" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+inc/dcrud/IRegistry.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <io/InetSocketAddress\&.h>\fP
+.br
+\fC#include <coll/Set\&.h>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef collSet(* \fBdcrudIRegistry_getParticipants_t\fP )(void *userContext)"
+.br
+.ti -1c
+.RI "typedef collSet(* \fBdcrudIRegistry_getClients_t\fP )(void *userContext, const char *interfaceName)"
+.br
+.ti -1c
+.RI "typedef collSet(* \fBdcrudIRegistry_getConsumers_t\fP )(void *userContext, const char *dataName)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUTIL_ADT\fP (dcrudIRegistry)"
+.br
+.ti -1c
+.RI "dcrudIRegistry \fBdcrudIRegistry_new\fP (void *userContext, \fBdcrudIRegistry_getParticipants_t\fP getParticipants, \fBdcrudIRegistry_getClients_t\fP getClients, \fBdcrudIRegistry_getConsumers_t\fP getConsumers)"
+.br
+.ti -1c
+.RI "void \fBdcrudIRegistry_delete\fP (dcrudIRegistry *This)"
+.br
+.ti -1c
+.RI "collSet \fBdcrudIRegistry_getParticipants\fP (dcrudIRegistry This)"
+.br
+.ti -1c
+.RI "collSet \fBdcrudIRegistry_getClients\fP (dcrudIRegistry This, const char *interfaceName)"
+.br
+.ti -1c
+.RI "collSet \fBdcrudIRegistry_getConsumers\fP (dcrudIRegistry This, const char *dataName)"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef collSet( *  dcrudIRegistry_getClients_t)(void *userContext, const char *interfaceName)"
+
+.PP
+Definition at line 12 of file IRegistry\&.h\&.
+.SS "typedef collSet( *  dcrudIRegistry_getConsumers_t)(void *userContext, const char *dataName)"
+
+.PP
+Definition at line 13 of file IRegistry\&.h\&.
+.SS "typedef collSet( *  dcrudIRegistry_getParticipants_t)(void *userContext)"
+
+.PP
+Definition at line 11 of file IRegistry\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "void dcrudIRegistry_delete (dcrudIRegistry *This)"
+
+.SS "collSet dcrudIRegistry_getClients (dcrudIRegistryThis, const char *interfaceName)"
+
+.SS "collSet dcrudIRegistry_getConsumers (dcrudIRegistryThis, const char *dataName)"
+
+.SS "collSet dcrudIRegistry_getParticipants (dcrudIRegistryThis)"
+
+.SS "dcrudIRegistry dcrudIRegistry_new (void *userContext, \fBdcrudIRegistry_getParticipants_t\fPgetParticipants, \fBdcrudIRegistry_getClients_t\fPgetClients, \fBdcrudIRegistry_getConsumers_t\fPgetConsumers)"
+
+.SS "UTIL_ADT (dcrudIRegistry)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for dcrud from the source code\&.

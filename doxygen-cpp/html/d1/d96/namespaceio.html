@@ -105,7 +105,8 @@ $(document).ready(function(){initNavTree('d1/d96/namespaceio.html','../../');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">io Namespace Reference</div>  </div>
 </div><!--header-->
@@ -115,6 +116,8 @@ $(document).ready(function(){initNavTree('d1/d96/namespaceio.html','../../');});
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd8/classio_1_1_byte_buffer.html">ByteBuffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcd/structio_1_1_inet_socket_address.html">InetSocketAddress</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -122,6 +125,11 @@ Enumerations</h2></td></tr>
 <a class="el" href="../../d1/d96/namespaceio.html#aaeb92d42f5a6e27b8ba19f18d69d142baa5493f8d595b6a5773a236abd0ddaae3">ioByteOrder_LITTLE_ENDIAN</a>
  }</td></tr>
 <tr class="separator:aaeb92d42f5a6e27b8ba19f18d69d142b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aadb454a633077599c62b5de87f8107a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d96/namespaceio.html#aadb454a633077599c62b5de87f8107a2">operator&lt;</a> (const <a class="el" href="../../df/dcd/structio_1_1_inet_socket_address.html">io::InetSocketAddress</a> &amp;left, const <a class="el" href="../../df/dcd/structio_1_1_inet_socket_address.html">io::InetSocketAddress</a> &amp;right)</td></tr>
+<tr class="separator:aadb454a633077599c62b5de87f8107a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="aaeb92d42f5a6e27b8ba19f18d69d142b"></a>
@@ -151,13 +159,64 @@ Enumerations</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="aadb454a633077599c62b5de87f8107a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool io::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/dcd/structio_1_1_inet_socket_address.html">io::InetSocketAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/dcd/structio_1_1_inet_socket_address.html">io::InetSocketAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="../../d1/d80/_inet_socket_address_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../d1/d80/_inet_socket_address_8hpp_source.html">InetSocketAddress.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                                                                                  {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <span class="keywordtype">bool</span> lt = left.<a class="code" href="../../df/dcd/structio_1_1_inet_socket_address.html#ae29278cd78b4c54a949101deff4fef8d">_inetAddress</a> &lt; right.<a class="code" href="../../df/dcd/structio_1_1_inet_socket_address.html#ae29278cd78b4c54a949101deff4fef8d">_inetAddress</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <span class="keywordflow">if</span>( lt ) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;         <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keywordtype">bool</span> gt = left.<a class="code" href="../../df/dcd/structio_1_1_inet_socket_address.html#ae29278cd78b4c54a949101deff4fef8d">_inetAddress</a> &gt; right.<a class="code" href="../../df/dcd/structio_1_1_inet_socket_address.html#ae29278cd78b4c54a949101deff4fef8d">_inetAddress</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="keywordflow">if</span>( gt ) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;         <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      lt = left.<a class="code" href="../../df/dcd/structio_1_1_inet_socket_address.html#a4c4f4deb906808fb34147da2d6043135">_port</a> &lt; right.<a class="code" href="../../df/dcd/structio_1_1_inet_socket_address.html#a4c4f4deb906808fb34147da2d6043135">_port</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="keywordflow">return</span> lt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;   }</div>
+<div class="ttc" id="structio_1_1_inet_socket_address_html_ae29278cd78b4c54a949101deff4fef8d"><div class="ttname"><a href="../../df/dcd/structio_1_1_inet_socket_address.html#ae29278cd78b4c54a949101deff4fef8d">io::InetSocketAddress::_inetAddress</a></div><div class="ttdeci">std::string _inetAddress</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d80/_inet_socket_address_8hpp_source.html#l00009">InetSocketAddress.hpp:9</a></div></div>
+<div class="ttc" id="structio_1_1_inet_socket_address_html_a4c4f4deb906808fb34147da2d6043135"><div class="ttname"><a href="../../df/dcd/structio_1_1_inet_socket_address.html#a4c4f4deb906808fb34147da2d6043135">io::InetSocketAddress::_port</a></div><div class="ttdeci">unsigned short _port</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d80/_inet_socket_address_8hpp_source.html#l00010">InetSocketAddress.hpp:10</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d96/namespaceio.html">io</a></li>
-    <li class="footer">Generated on Sun Jan 10 2016 01:45:36 for dcrud by
+    <li class="footer">Generated on Sun Jan 10 2016 19:24:09 for dcrud by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
